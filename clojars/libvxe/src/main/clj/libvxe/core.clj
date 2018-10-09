@@ -3,7 +3,10 @@
    ;; [clojure.data.xml]
    [clj-http.client]
    [cemerick.pomegranate]
-   [java-time]))
+   [java-time])
+  (:use
+   [me.raynes.conch.low-level :as conch]
+   [clojure.java.shell :only [sh]]))
 
 (defmacro vxe-hotload-dependency [coordinates]
   (do

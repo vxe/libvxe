@@ -52,7 +52,7 @@
   :source-paths ["src/main/clj"]
   :java-source-paths ["src/main/java"]
   ;; :main server.handler
-  ;; :repl-options {:init-ns server.handler}
+  :repl-options {:init-ns libvxe.core}
 
   :cljsbuild {:builds
               [{:id "dev"
