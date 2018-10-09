@@ -4,11 +4,43 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  
-  
   :min-lein-version "2.7.1"
 
-  :dependencies [[org.clojure/clojure "1.9.0"]
+  :dependencies [ ;; clj-vxe
+                 [com.cemerick/pomegranate "0.4.0"]
+                 [com.cemerick/url "0.1.1"]
+                 [org.clojure/data.xml "0.0.8"]
+                 [me.raynes/conch "0.8.0"]
+                 ;; ad
+                 [duratom "0.4.1"]
+                 ;; wiggle board
+                 [metosin/compojure-api "1.1.11"]
+                 [ring/ring-core "1.6.3"]
+                 [ring/ring-jetty-adapter "1.6.3"]
+                 [ring/ring-devel "1.6.3"]
+                 [ring/ring-json "0.4.0"]
+                 [ring-middleware "0.1.0-SNAPSHOT"]
+                 [ring "1.6.3"]
+                 [org.clojure/tools.logging "0.2.4"]
+                 [log4j/log4j "1.2.17" :exclusions [javax.mail/mail
+                                                    javax.jms/jms
+                                                    com.sun.jmdk/jmxtools
+                                                    com.sun.jmx/jmxri]]
+                 [clojure.java-time "0.3.2"]
+                 [doric "0.9.0"]
+                 [io.forward/yaml "1.0.9"]
+                 [com.rpl/specter "1.1.1"]
+                 ;; nzgb
+                 ;; [clj-vxe "0.4.0-SNAPSHOT"]
+                 [cheshire "5.8.0"]
+                 [clj-http "3.8.0"] 
+                 [org.clojure/clojurescript "1.10.238"]
+                 [org.clojure/core.async  "0.4.474"]
+                 [reagent "0.7.0"]
+                 ;; java
+                 [org.apache.commons/commons-math3 "3.6.1"]
+                 ;; core
+                 [org.clojure/clojure "1.9.0"]
                  [org.clojure/clojurescript "1.10.238"]
                  [org.clojure/core.async  "0.4.474"]
                  [reagent "0.7.0"]]
@@ -19,6 +51,8 @@
 
   :source-paths ["src/main/clj"]
   :java-source-paths ["src/main/java"]
+  ;; :main server.handler
+  ;; :repl-options {:init-ns server.handler}
 
   :cljsbuild {:builds
               [{:id "dev"
