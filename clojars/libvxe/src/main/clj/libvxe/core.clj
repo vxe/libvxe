@@ -16,6 +16,11 @@
                                                                  {"clojars" "https://clojars.org/repo"}))))
 
 ;; shell wrappers
+(defn expand-home [s]
+  (if (.startsWith s "~")
+    (clojure.string/replace-first s "~" (System/getProperty "user.home"))
+    s))
+
 (defn pwd []
   (System/getProperty "user.dir"))
 
