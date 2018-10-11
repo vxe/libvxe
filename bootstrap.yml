@@ -1,0 +1,34 @@
+---
+- name: setup libvxe cpp build environment
+  hosts: localhost
+  vars:
+    icicles_dir: "{{ lookup('env','HOME') }}/.emacs.d/lib/icicles"
+    HOME: "{{ lookup('env','HOME') }}"
+    USER: "{{ lookup('env','USER') }}"
+  tasks:
+    # - name: download "ycmb" 
+    #   git:
+    #     repo: 'https://github.com/Valloric/ycmd.git'
+    #     dest: "{{ HOME }}/.emacs.d/opt/ycmb"
+    #     clone: yes
+    #     update: no
+    #     track_submodules: yes
+    #     accept_hostkey: yes
+    # - name: compile "ycmb"
+    #   shell: ". {{ HOME }}/.emacs.d/var/emacs/bin/activate && ./build.py"
+    #   args:
+    #     chdir: "{{ HOME }}/.emacs.d/opt/ycmb"
+    # - name: create directory structure needed for "eclipse jdt" 
+    #   file:
+    #     path: "{{ HOME }}/.emacs.d/eclipse.jdt.ls/server"
+    #     state: directory
+    #     recurse: yes
+    # - name: download "eclipse jdt" 
+    #   shell: "wget 'http://download.eclipse.org/jdtls/snapshots/jdt-language-server-latest.tar.gz'"
+    #   args:
+    #     chdir: "{{ HOME }}/.emacs.d/eclipse.jdt.ls/server"
+    # - name: extract "eclipse jdt" 
+    #   shell: "tar -xvf jdt-language-server-latest.tar.gz"
+    #   args:
+    #     chdir: "{{ HOME }}/.emacs.d/eclipse.jdt.ls/server"
+        
