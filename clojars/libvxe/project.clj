@@ -6,7 +6,9 @@
 
   :min-lein-version "2.7.1"
 
-  :dependencies [ ;; clj-vxe
+  :dependencies [ ;; ipmi
+                 [org.anarres.ipmi/ipmi-protocol "1.0.1"]
+                 ;; clj-vxe
                  [com.cemerick/pomegranate "0.4.0"]
                  [com.cemerick/url "0.1.1"]
                  [org.clojure/data.xml "0.0.8"]
