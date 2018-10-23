@@ -4,16 +4,14 @@
 #+OPTIONS: toc:nil
 
 
+- [ ] hylang essentia
+- [ ] ctci problem texts
+
 ** clojure
-
 ** common-lisp
-
 ** racket
-
 ** hy
-
 ** forth
-
 ** mmix
 
 
