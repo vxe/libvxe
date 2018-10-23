@@ -4,13 +4,34 @@
 #+OPTIONS: toc:nil
 
 
+- [ ]
+- [ ] given a total calorie target how to divide up meals?
+- [ ] macro-nutrient counter
+  - given:
+    - name
+    - carbs
+    - fat
+    - protein
+    - service size
+  - the following are known
+    - weekly quantity needed for meal prep
+    - total calories consumed
+    - 
+
+
+  
 - [ ] hylang essentia
+  - [ ] install deps
+  #+BEGIN_SRC shell
+  brew install libyaml fftw ffmpeg libsamplerate libtag
+  # then continue http://essentia.upf.edu/documentation/installing.html
+  #+END_SRC
 - [ ] ctci problem texts
 
-** clojure
+** clojure/java
+** hy/python
 ** common-lisp
 ** racket
-** hy
 ** forth
 ** mmix
 
