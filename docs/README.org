@@ -5,19 +5,6 @@
 
 
 - [ ]
-- [ ] given a total calorie target how to divide up meals?
-- [ ] macro-nutrient counter
-  - given:
-    - name
-    - carbs
-    - fat
-    - protein
-    - service size
-  - the following are known
-    - weekly quantity needed for meal prep
-    - total calories consumed
-    - 
-
 
   
 - [ ] hylang essentia
@@ -29,6 +16,7 @@
 - [ ] ctci problem texts
 
 ** clojure/java
+*** [[file:./food-database.org][food-database]]
 ** hy/python
 ** common-lisp
 ** racket
