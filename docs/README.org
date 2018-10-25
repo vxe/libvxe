@@ -3,21 +3,23 @@
 #+STARTUP: indent
 #+OPTIONS: toc:nil
 
-
-- [ ]
-
-  
-- [ ] hylang essentia
-  - [ ] install deps
-  #+BEGIN_SRC shell
-  brew install libyaml fftw ffmpeg libsamplerate libtag
+* social-media
+** twitter
+** hacker-news
+** irc
+* languages
+** clojure/java
   # then continue http://essentia.upf.edu/documentation/installing.html
   #+END_SRC
 - [ ] ctci problem texts
-
-** clojure/java
 *** [[file:./food-database.org][food-database]]
 ** hy/python
+*** [[file:./matplotlib.org][matplotlib]]
+*** [[file:tensorflow.org][tensorflow]]
+
+** clojure/java
+- [ ] ctci problem texts
+*** [[file:./food-database.org][food-database]]
 ** common-lisp
 ** racket
 ** forth
