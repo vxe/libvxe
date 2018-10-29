@@ -22,3 +22,7 @@
 ;; (defmain [&rest args]
 ;;       (while True
 ;;         (time.sleep 1)))
+
+
+
+(import [ClusterShell.Task [task_self]])

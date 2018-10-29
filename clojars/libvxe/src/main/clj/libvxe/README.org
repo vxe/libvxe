@@ -1,0 +1,28 @@
+# -*- mode:org -*-
+#+TITLE: implementation
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+description
+** Overview :TOC:
+- [[#timingconcurrency][timing/concurrency]]
+- [[#repl-customization][repl-customization]]
+  - [[#dependencies][dependencies]]
+  - [[#shell-wrappers][shell-wrappers]]
+- [[#map-utilities][map utilities]]
+- [[#array-utilities][array utilities]]
+- [[#set-utilites][set utilites]]
+- [[#list-utilities][list utilities]]
+- [[#number-utilites][number utilites]]
+- [[#string-utilities][string utilities]]
+
+* timing/concurrency 
+* repl-customization
+** dependencies
+** shell-wrappers
+* map utilities
+* array utilities
+* set utilites
+* list utilities
+* number utilites
+* string utilities
+

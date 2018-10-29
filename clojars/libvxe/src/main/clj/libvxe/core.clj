@@ -8,6 +8,13 @@
    [me.raynes.conch.low-level :as conch]
    [clojure.java.shell :only [sh]]))
 
+(defn cron [mutator duration]
+  (future (loop []
+            (doall
+             (mutator)
+             (Thread/sleep duration))
+            (recur))))
+
 (defmacro vxe-hotload-dependency [coordinates]
   (do
     (use '[cemerick.pomegranate :only (add-dependencies)])

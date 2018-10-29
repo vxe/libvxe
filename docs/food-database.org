@@ -1,0 +1,44 @@
+# _*_ mode:org _*_
+#+TITLE: food-database
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+- [ ] given a total calorie target how to divide up meals?
+  well what you really 
+
+- [X] macro-nutrient counter
+  - given:
+    - name
+    - carbs
+    - fat
+    - protein
+    - service size
+  - the following are known
+    - weekly quantity needed for meal prep
+    - total calories consumed
+    - 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:
