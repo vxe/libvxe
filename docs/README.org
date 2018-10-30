@@ -8,10 +8,6 @@
 ** hacker-news
 ** irc
 * languages
-** clojure/java
-  # then continue http://essentia.upf.edu/documentation/installing.html
-  #+END_SRC
-
 ** hy/python
 *** [[file:./matplotlib.org][matplotlib]]
 *** [[file:tensorflow.org][tensorflow]]
@@ -63,3 +59,13 @@
 # Local Variables:
 # eval: (wiki-mode)
 # End:
+
+
+* tools
+** [[file:./maxima.org][maxima]]
+** [[file:./pandoc.org][pandoc]]
+** [[file:./emacs.org][emacs]]
+*** [[file:./window-geometry.org][window-geometry]]
+** swig
+** ansible
+** antlr
