@@ -1,0 +1,34 @@
+# _*_ mode:org _*_
+#+TITLE: nrepl
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+* hylang
+the thought he is fire up an nrepl server, and connect to it from
+cider. its a long shot.  Lets put it init.oy
+
+
+A hy lsp implementation would be ideal.  I lost weeks of my life
+dealing with cider+nrepl
+
+an evolutionary dead end, cider+nrepl can be a true nightmare at
+times.  a hy lsp would be a major milestone, is anyone working on that?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:

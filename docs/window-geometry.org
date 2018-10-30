@@ -1,0 +1,36 @@
+# _*_ mode:org _*_
+#+TITLE: window-geometry
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+
+
+* gnus window split
+1. (delete-other-windows)
+2. (split-window-below (/ (window-total-height) 3))
+3. (split-window-right (/ (window-total-width) 4))
+
+
+this splits the 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:

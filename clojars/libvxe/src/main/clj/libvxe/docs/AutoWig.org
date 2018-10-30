@@ -1,0 +1,33 @@
+# _*_ mode:org _*_
+#+TITLE: AutoWig
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+
+A library for interactive generation of swig headers, if nothing else
+worth looking at an intesting approach to the problem which heretofore
+has only been handled as a batch process.
+
+
+
+
+
+
+https://arxiv.org/pdf/1705.11000.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:

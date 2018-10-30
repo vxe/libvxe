@@ -1,0 +1,48 @@
+# _*_ mode:org _*_
+#+TITLE: maxima
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+* variable-substituton
+#+BEGIN_QUOTE
+At this level of algebraic abstraction we do all operations using
+variable elimination.  Variable elimination is the process of
+combining n polynomial equations so that m variables do not appear in
+the (n-m) resulting equations (where n > m).  Common techniques used
+include resultants [1][2][4][5] and Groebner Bases [3][4][5].
+
+https://people.csail.mit.edu/jaffer/lambda.txt
+#+END_QUOTE
+
+#+BEGIN_SRC maxima :results raw
+eliminate([a+c^2=b,b+c^2=2],[c]);
+#+END_SRC
+
+#+RESULTS:
+
+
+* intro
+the most epic computer algebra system known to man
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:

@@ -1,0 +1,85 @@
+# -*- mode:org -*-
+#+TITLE: truffle
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+truffle seem to be the interop lay with which you can implement
+interpreters for languages which will get consumed by graal and turned
+into whatever it feeds to the JIT which in turn produces machine code.
+
+
+** overview :TOC:
+- [[#the-source-object][the Source object]]
+  - [[#initialization][initialization]]
+  - [[#from-file][from file]]
+  - [[#from-url][from url]]
+  - [[#characters][characters]]
+  - [[#as-output-from-a-reader][as output from a Reader]]
+  - [[#from-binary][from binary]]
+
+* the Source object
+
+https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/Source.Builder.html
+this is essentially the abstract syntax tree representation of the
+source language modified to be taken as input the graalvm.
+
+** initialization
+   so you need on of these ~Source.Builder~ object
+   #+BEGIN_EXAMPLE java
+     public class Source.Builder  extends Object
+   #+END_EXAMPLE
+
+   #+BEGIN_EXAMPLE java
+     // Once your builder is configured, call Source.Builder.build() 
+     // to perform the loading and construction of new Source.
+   #+END_EXAMPLE
+
+   /and then you have some choices to make/
+** from file
+   #+BEGIN_EXAMPLE java
+    // To load a source from disk one can use:
+    File file = new File(dir, name);
+    assert name.endsWith(".java") : "Imagine proper file";
+
+    String language = Source.findLanguage(file);
+    Source source = Source.newBuilder(language, file).build();
+    assert file.getName().equals(source.getName());
+    assert file.getPath().equals(source.getPath());
+    assert file.toURI().equals(source.getURI());
+
+   #+END_EXAMPLE
+** from url
+   #+BEGIN_EXAMPLE java
+     // To load source from a URL one can use:
+     URL resource = relativeClass.getResource("sample.js");
+     Source source = Source.newBuilder("js", resource).build();
+     assert resource.toExternalForm().equals(source.getPath());
+     assert "sample.js".equals(source.getName());
+     assert resource.toURI().equals(source.getURI());
+
+   #+END_EXAMPLE
+** characters
+   #+BEGIN_EXAMPLE java
+    // To create a source representing characters:
+    Source source = Source.newBuilder("js", "function() {\n" + "  return 'Hi';\n" + "}\n", "hi.js").buildLiteral();
+    assert "hi.js".equals(source.getName());
+   #+END_EXAMPLE
+
+** as output from a Reader
+   #+BEGIN_EXAMPLE java
+     // or read a source from a Reader:
+     Reader stream = new InputStreamReader(relativeClass.getResourceAsStream("sample.js"));
+     Source source = Source.newBuilder("js", stream, "sample.js").build();
+     assert "sample.js".equals(source.getName());
+
+   #+END_EXAMPLE
+** from binary
+   wait, what?
+   #+BEGIN_EXAMPLE java
+     // To create a source representing bytes:
+     byte[] bytes = new byte[] {/* Binary */};
+     Source source = Source.newBuilder("llvm",ByteSequence.create(bytes),"<literal>").buildLiteral();
+
+   #+END_EXAMPLE
+
+       https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/Source.Builder.html

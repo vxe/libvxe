@@ -3,24 +3,7 @@
 #+STARTUP: indent
 #+OPTIONS: toc:nil
 
-* social-media
-** twitter
-** hacker-news
-** irc
-* languages
-** hy/python
-*** [[file:./matplotlib.org][matplotlib]]
-*** [[file:tensorflow.org][tensorflow]]
-
-** clojure/java
-- [ ] ctci problem texts
-*** [[file:./food-database.org][food-database]]
-** common-lisp
-** racket
-** forth
-** mmix
-
-* languages
+* libraries
 ** c++
 *** opencv
 ** forth
@@ -56,16 +39,18 @@
 
 
 
-# Local Variables:
-# eval: (wiki-mode)
-# End:
-
-
 * tools
+** llvm
 ** [[file:./maxima.org][maxima]]
 ** [[file:./pandoc.org][pandoc]]
 ** [[file:./emacs.org][emacs]]
-*** [[file:./window-geometry.org][window-geometry]]
+
 ** swig
 ** ansible
 ** antlr
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:

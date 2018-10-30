@@ -1,0 +1,44 @@
+# _*_ mode:org _*_
+#+TITLE: loco
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+see: [[file:constraint-satisfaction::*solver%20client][constraint programming]]
+
+
+** model definition
+ #+BEGIN_SRC clojure
+   (def model
+     [($in :x 1 6)
+      ($in :y 3 7)
+      ($= ($+ :x :y) 10)])
+ #+END_SRC
+
+** solver client
+   #+BEGIN_SRC clojure
+   (solutions model)
+   #+END_SRC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:

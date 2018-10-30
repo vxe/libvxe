@@ -1,0 +1,74 @@
+# _*_ mode:org _*_
+#+TITLE: flask
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+essentially a translation of this tutorial https://codeburst.io/this-is-how-easy-it-is-to-create-a-rest-api-8a25122ab1f3
+
+
+* user class
+#+BEGIN_SRC hy
+  (defclass User [flask_restful.Resource]
+            (defn get [self name])
+            (defn post [self name])
+            (defn put [self name])
+            (defn delete [self name]))
+#+END_SRC
+
+* users database
+#+BEGIN_SRC hy
+(setv users [
+{
+:name "nick"
+:age 5
+:occupation "hobo"
+}
+
+{
+:name "amanda"
+:age 5
+:occupation "train-conductor"
+}
+{
+:name "jess"
+:age 26
+:occupation "my-fave"
+}
+
+
+])
+#+END_SRC
+
+* load api and rest object
+#+BEGIN_SRC hy
+(setv app (flask.Flask __name__))
+(setv api (flask_restful.Api app))
+#+END_SRC
+
+* import
+#+BEGIN_SRC hy
+(import flask)
+(import flask_restful)
+#+END_SRC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:

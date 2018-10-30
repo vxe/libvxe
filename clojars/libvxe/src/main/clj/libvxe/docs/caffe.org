@@ -1,0 +1,36 @@
+# _*_ mode:org _*_
+#+TITLE: caffe
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+
+A deep learning framework made with expression, speed, and modularity
+in mind.
+
+examples:
+- [ ] netdissect for CNN based image classification
+  https://github.com/CSAILVision/NetDissect
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:

@@ -1,0 +1,77 @@
+# _*_ mode:org _*_
+#+TITLE: weka
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+
+- [ ] implement the weka gui in elisp
+- [ ] arff format processing
+
+* weka.classifiers
+- take in a ARFF for training
+- take in an ARFF for testing
+- cross-validation parameters
+- filter parameters
+- 
+
+** ZeroR
+
+ #+BEGIN_QUOTE
+  ZeroR’s (= weka.classifiers.rules.ZeroR) model just consists of a
+  single value: the most common class, or the median of all numeric
+  values in case of predicting a numeric value (= regression
+  learning). ZeroR is a trivial classifier, but it gives a lower bound
+  on the performance of a given dataset which should be significantly
+  improved by more complex classifiers. As such it is a reasonable test
+  on how well the class can be predicted without considering the other
+  attributes.
+ #+END_QUOTE
+
+ http://weka.sourceforge.net/doc.dev/
+** Instance attributes types
+*** nominal
+*** numeric
+*** string
+
+
+* weka.filters package
+
+given an instance operate it on it, you know in the normal data
+processing idiom of 'filters' in a pipleline.
+
+
+
+
+* Instance object
+
+an Instance is serialized in an ARFF
+
+#+BEGIN_QUOTE
+A dataset is roughly equivalent to a two-dimensional spreadsheet or
+database table.
+
+In weka a dataset is implemented by a collecion of Instances
+#+END_QUOTE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:

@@ -1,0 +1,31 @@
+# _*_ mode:org _*_
+#+TITLE: commons-math
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+
+call this the lamer version of the GSL, still have had some success
+with the correlation and stats functions, so worth some additional investigation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:
