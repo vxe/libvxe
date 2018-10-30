@@ -26,6 +26,26 @@
 
 ;;; Code:
 
+(defun lv:grep (stdin regex)
+  (interactive)
+  (-filter
+   (lambda (output)
+     (s-matches? regex output))
+   stdin))
+
+
+(defun lv:awk (stdin index)
+  (interactive)
+  (-map
+   (lambda (lines)
+     (nth (- index 1) (s-split " " lines)))
+   stdin))
+
+(defun lv:sed (stdin regex replacement)
+  (interactive)
+  (-map (lambda (lines)
+          (s-replace regex replacement lines))
+        stdin))
 
 
 (provide 'libvxe)
