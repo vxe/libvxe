@@ -6,12 +6,12 @@ project (libvxe)
 
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY lib)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY lib)
-
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ".")
+set (CMAKE_SHARED_LIBRARY_SUFFIX ".so")
 
 include_directories(include)
 
 
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)
-# add_executable(libvxe src/core.cc)
+add_library(libvxe SHARED src/hello-emacs.c)
