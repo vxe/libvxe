@@ -8,6 +8,7 @@ project (libvxe)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ".")
 set (CMAKE_SHARED_LIBRARY_SUFFIX ".so")
+set (CMAKE_EXPORT_COMPILE_COMMANDS true)
 
 include_directories(include)
 
