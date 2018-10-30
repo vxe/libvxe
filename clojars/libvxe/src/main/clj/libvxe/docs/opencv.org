@@ -1,0 +1,18 @@
+# _*_ mode:org _*_
+#+TITLE: opencv
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+
+image hacking:
+
+* image import
+
+assume an image purp.png
+#+BEGIN_SRC hy
+(import cv2)
+(.imread cv2 "purp.png")
+#+END_SRC
+
+
+

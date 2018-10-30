@@ -1,0 +1,42 @@
+# _*_ mode:org _*_
+#+TITLE: matplotlib
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+* questions
+  1. how to handle negative index arrays
+
+
+* sine example
+#+BEGIN_SRC hy
+(setv x (.linspace numpy 0 (* 2 numpy.pi) 20))
+(setv y (.sin numpy x))
+(setv yp None)
+(setv xi (.linspace numpy (nth x 0) (nth 0 -1) 100))
+#+END_SRC
+
+
+how to plot things?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:

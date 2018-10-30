@@ -1,0 +1,96 @@
+# _*_ mode:org _*_
+#+TITLE: rolling-stones
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+what this is a wrapper around [[http://www.sat4j.org/doc.php][sat4j]] , a solver for boolean
+satisfiability, which to me seems like a search problem.  However I
+don't have any reason to prove that is the correct classification.
+
+ok.
+
+Similarly to constraint satisfaction, so pose the problem as a model,
+feed that model to solver, and collect the solution
+
+
+#+BEGIN_SRC clojure
+(sat/solve [[1] [1 2] [-1 2 -3]])
+[1 -2 -3]
+#+END_SRC
+
+ok, what this means is that if 1 is true, then 2 and 3 must be false,
+negative signs are NOT.  Recall that each interior vector is AND'd
+together.
+
+
++This problem is a vector of clauses, each of which is OR'd, in every+
++possible combination, and output the values for which those OR's+
++evaluate to true.+
++The outer vector is an and.+
+
+
+however where this becomes cool is when start trying to lazily no a
+bunch of things which you need and combinations that you don't want
+
+#+BEGIN_SRC clojure
+  (sat/solutions-symbolic-cnf [[:ams :ap1 :ash :atl :bln :bos :chi :dal :drf :fra :hkg :hou :lax :lon :man :mia :msp :nyc :osa :par :rno :sea :sel :sin :sjc :syd :tyo] [(NOR [:lax :sjc])] ])
+
+(require '[rolling-stones.core :as sat :refer [! NOT AND OR XOR IFF IMP NOR NAND at-least at-most exactly]])
+
+
+  (clojure.pprint/pprint
+   (sat/solutions-symbolic-cnf
+    [
+     [(AND [:ams :ap1 :ash :atl :bln :bos :chi :dal :drf :fra :hkg :hou :lax :lon :man :mia :msp :nyc :osa :par :rno :sea :sel :sin :sjc :syd :tyo])] 
+     [(NAND [:lax :sjc :sea :den])]
+     [(NAND [:mia :ash :atl :bos])]
+     [(NAND [:mia :ash :atl :bos])]
+     [(NAND [:chi :nyc :ash])]
+     [(NAND [:tyo :ap1 :osa])]
+     [(NAND [:fra :lon :par])]]))
+#+END_SRC
+
+
+
+** generating all solutions
+
+it will also give you a list of all solutions like so:
+
+#+BEGIN_SRC clojure
+(sat/solutions [[1] [1 2] [-1 2 -3]])
+([1 -2 -3] [1 2 -3] [1 2 3])
+#+END_SRC
+
+You can imagine implementing a permutation/combination finding
+function with a call like this.
+*** unsatasfiability
+    #+BEGIN_SRC clojure
+    (sat/solutions [[1] [-1]])
+    nil
+    #+END_SRC
+    works as expected.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  # Local Variables:
+  # eval: (wiki-mode)
+  # End:

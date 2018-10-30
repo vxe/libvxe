@@ -11,8 +11,7 @@
 ** clojure/java
   # then continue http://essentia.upf.edu/documentation/installing.html
   #+END_SRC
-- [ ] ctci problem texts
-*** [[file:./food-database.org][food-database]]
+
 ** hy/python
 *** [[file:./matplotlib.org][matplotlib]]
 *** [[file:tensorflow.org][tensorflow]]
@@ -24,6 +23,37 @@
 ** racket
 ** forth
 ** mmix
+
+* languages
+** c++
+*** opencv
+** forth
+** clojure/java
+- [ ] ctci problem texts
+*** [[file:./food-database.org][food-database]]
+*** [[file:./commons-math.org][commons-math]]
+*** [[file:./weka.org][weka]]
+*** [[file:./rolling-stones.org][rolling-stones]]
+*** [[file:./loco.org][loco]]
+*** [[file:./graalvm][graalvm]]
+**** [[file:./truffle.org][truffle]]
+** common-lisp
+** [[file:./racket.org][racket]]
+** asm
+** clojurescript
+** javascript
+*** [[file:./react-components.org][react-components]]
+*** [[file:./vorpal.org][vorpal]]
+** [[file:./hy.org][hy]] 
+*** [[file:./sklearn.org][sklearn]]
+*** essentia
+*** [[file:./flask.org][flask]]
+*** [[file:./opencv.org][opencv]]
+*** [[file:./turicreate.org][turicreate]]
+*** [[file:./nrepl.org][nrepl]]
+** java
+
+** elisp
 
 
 

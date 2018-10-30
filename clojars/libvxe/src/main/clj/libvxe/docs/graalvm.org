@@ -1,0 +1,24 @@
+# -*- mode:org -*-
+#+TITLE: graalvm
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+good old graal, the coolest thing to happen to the industry and
+potentially the thing which will bring its all to its knees.  In
+either case its probably worth knowing there is to about it.
+** Overview :TOC:
+- [[#hello-world][hello world]]
+
+* hello world
+  - [ ] add graalvm to PATH
+  - [ ] statement to create a [[https://www.graalvm.org/sdk/javadoc/org/graalvm/polyglot/Source.html][Source]] object
+  #+BEGIN_SRC clojure
+  ;; this is broken because you can't eval plain string, you need a Source object
+    (let [vm (org.graalvm.polyglot.Context/create (into-array String ["js"] ))]
+      (.eval vm "print('hi')"))
+  #+END_SRC
+
+
+  yeah!  not bad, also for some reason, cider doesn't like my
+  CLASSPATH, its not seeing truffle, I'll paste the error here some
+  time.

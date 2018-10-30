@@ -1,0 +1,53 @@
+# _*_ mode:org _*_
+#+TITLE: racket
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+so after much deliberation, I'm dropping guile in favor of racket for
+digging into scheme.  A couple reasons:
+
+1. guile is most used for guix and extending a lot of other
+   applications that I don't use (not for lack of trying, for lack of
+   stability)
+2. racket is a mature scheme in its own right with an active
+   community, aka it has a package manager.  Really thats it
+3. Nice metalanguage building tools, probably will go nicely with SICP
+   and the like
+
+
++so step one as usual is calling a shell command:+
+
+step 1 is forcing org-babel to use racket, you're looking for ~geiser-active-implementations~
+
+a quick test:
+
+#+BEGIN_SRC scheme
+(+ 2 3)
+#+END_SRC
+
+#+RESULTS:
+: 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:

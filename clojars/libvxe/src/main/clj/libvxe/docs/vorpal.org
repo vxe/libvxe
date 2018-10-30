@@ -1,0 +1,62 @@
+# _*_ mode:org _*_
+#+TITLE: vorpal
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+
+a library for making CLIs.  Because shell scripters have chosen node,
+its the clear winner.  Don't believe me, look at this noise:
+
+#+BEGIN_SRC 
+
+#+END_SRC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# _*_ mode:org _*_
+#+TITLE: vorpal
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:
+
+* local_vars
+  # Local Variables:
+  # eval: (wiki-mode)
+  # End:

@@ -1,0 +1,33 @@
+# _*_ mode:org _*_
+#+TITLE: turicreate
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+An apple machine learning project, most useable from hy.
+** loading images
+ #+BEGIN_SRC hy 
+ (.load_images turicreate.image_analysis "purp.png")
+ #+END_SRC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ # Local Variables:
+ # eval: (wiki-mode)
+ # End:
