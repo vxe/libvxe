@@ -49,6 +49,10 @@
 ** ansible
 ** antlr
 * algorithms
+** [[file:./ctci.org][ctci]]
+** [[file:./README-cph.org][cph]]
+** rosetta-code
+
 
 # Local Variables:
 # eval: (wiki-mode)
