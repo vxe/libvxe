@@ -4,9 +4,6 @@
 #+OPTIONS: toc:nil
 
 * libraries
-** c++
-*** opencv
-** forth
 ** clojure/java
 - [ ] ctci problem texts
 *** [[file:./food-database.org][food-database]]
@@ -16,13 +13,6 @@
 *** [[file:./loco.org][loco]]
 *** [[file:./graalvm][graalvm]]
 **** [[file:./truffle.org][truffle]]
-** common-lisp
-** [[file:./racket.org][racket]]
-** asm
-** clojurescript
-** javascript
-*** [[file:./react-components.org][react-components]]
-*** [[file:./vorpal.org][vorpal]]
 ** [[file:./hy.org][hy]] 
 *** [[file:./sklearn.org][sklearn]]
 *** essentia
@@ -30,6 +20,16 @@
 *** [[file:./opencv.org][opencv]]
 *** [[file:./turicreate.org][turicreate]]
 *** [[file:./nrepl.org][nrepl]]
+** c++
+*** opencv
+** forth
+** common-lisp
+** [[file:./racket.org][racket]]
+** asm
+** clojurescript
+** javascript
+*** [[file:./react-components.org][react-components]]
+*** [[file:./vorpal.org][vorpal]]
 ** java
 
 ** elisp
@@ -48,8 +48,7 @@
 ** swig
 ** ansible
 ** antlr
-
-
+* algorithms
 
 # Local Variables:
 # eval: (wiki-mode)
