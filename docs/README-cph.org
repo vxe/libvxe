@@ -9,7 +9,7 @@ aka, competitive programming handbook https://cses.fi/book/book.pdf
 * Contents
 ** [[file:./cph-preface.org][cph-preface]]
 ** [[file:./cph-basic-techniques.org][cph-basic-techniques]]
-*** cph-1-introduction
+*** [[file:./cph-1-introduction.org][cph-1-introduction]]
 **** cph-1.1-programming-languages
 **** cph-1.2-input-and-output
 **** cph-1.3-working-with-numbers
@@ -161,21 +161,11 @@ aka, competitive programming handbook https://cses.fi/book/book.pdf
 **** cph-30.3-convex-hull-problem
 * Books
 
-  281
-
-  vii
-
- viii
-
-  ix
-
- x
-
  Part I
   Basic techniques
 
   1
-
+** bookmark
 Chapter 1
   Introduction
   Competitive programming combines two topics: (1) the design of algorithms and
