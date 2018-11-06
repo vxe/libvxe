@@ -1,0 +1,8 @@
+* DECREASE-KEY
+
+DECREASE-KEY(H, x, k)
+
+assigns to element x within heap H the new key value k, which we assume
+to be no greater than its current key value.1
+
+* software-engineering/data-structures/maps/HASH-TABLE/DECREASE-KEY

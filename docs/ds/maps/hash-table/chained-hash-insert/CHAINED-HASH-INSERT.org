@@ -1,0 +1,5 @@
+* CHAINED-HASH-INSERT
+
+CHAINED-HASH-INSERT(T,x) 1 insert x at the head of list T[h(x.key)]
+
+* software-engineering/data-structures/maps/HASH-TABLE/CHAINED-HASH-INSERT

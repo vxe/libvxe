@@ -1,0 +1,8 @@
+* MATRIX-CHAIN-MULTIPLY
+
+Give a recursive algorithm MATRIX-CHAIN-MULTIPLY.A; s; i; j/ that
+actually performs the optimal matrix-chain multiplication, given the
+sequence of matrices hA1; A2;:::;Ani, the s table computed by
+MATRIX-CHAIN-ORDER, and the indices i and j.
+
+* software-engineering/data-structures/matricies/MATRIX-CHAIN-MULTIPLY

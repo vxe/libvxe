@@ -1,0 +1,8 @@
+* MIN-HEAPIFY
+
+Starting with the procedure MAX-HEAPIFY, write pseudocode for the
+procedure MIN-HEAPIFY.A; i/, which performs the corresponding
+manipulation on a minheap. How does the running time of MIN-HEAPIFY
+compare to that of MAXHEAPIFY?
+
+* software-engineering/data-structures/trees/HEAP/MIN-HEAPIFY

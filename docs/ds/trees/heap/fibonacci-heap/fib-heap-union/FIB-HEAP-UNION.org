@@ -1,0 +1,13 @@
+* FIB-HEAP-UNION
+
+The following procedure unites Fibonacci heaps H₁ and H₂, destroying H₁
+and H₂ in the process. It simply concatenates the root lists of H₁ and
+H₂ and then determines the new minimum node. Afterward, the objects
+representing H₁ and H₂ will never be used again.
+
+FIB-HEAP-UNION(H₁, H₂) 1 H = MAKE-FIB-HEAP() 2 H.min = H₁.min 3
+concatenate the root list of H₂ with the root list of H 4 if (H₁.min ==
+NIL or H₂.min ≠ NIL and= H₂.min.key < H₁.min.key) 5 H.min = H₂.min 6 H.n
+= H₁.n + H₂.n 7 return H
+
+* software-engineering/data-structures/trees/HEAP/fibonacci-heap/FIB-HEAP-UNION

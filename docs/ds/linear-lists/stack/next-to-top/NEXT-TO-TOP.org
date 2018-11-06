@@ -1,0 +1,6 @@
+* NEXT-TO-TOP
+
+NEXT-TO-TOP(S) which returns the point one entry below the top of stack
+S without changing
+
+* software-engineering/data-structures/linear-lists/STACK/NEXT-TO-TOP

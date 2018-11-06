@@ -1,0 +1,14 @@
+* MAYBE-MST-A
+
+MAYBE-MST-A(G,w) 1 sort the edges into nonincreasing order of edge
+weights w 2 T = E 3 for each edge e, taken in nonincreasing order by
+weight 4 if T - {e} is a connected graph 5 T = T - {e} 6 return T
+
+In this problem, we give pseudocode for three different algorithms. Each
+one takes a connected graph and a weight function as input and returns a
+set of edges T. For each algorithm, either prove that T is a minimum
+spanning tree or prove that T is not necessarily a minimum spanning
+tree. Also describe the most efficient implementation of each algorithm,
+whether or not it computes a minimum spanning tree.
+
+* software-engineering/data-structures/graphs/mst/MAYBE-MST-A

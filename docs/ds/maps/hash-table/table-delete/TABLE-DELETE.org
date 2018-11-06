@@ -1,0 +1,10 @@
+* TABLE-DELETE
+
+We omit the code for TABLE-DELETE, since it is analogous to
+TABLE-INSERT.
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 468). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/maps/HASH-TABLE/TABLE-DELETE

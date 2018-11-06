@@ -1,0 +1,17 @@
+* TREAP-INSERT
+
+TREAP-INSERT performs a search and then a sequence of rotations.
+Although these two operations have the same expected running time, they
+have different costs in practice. A search reads information from the
+treap without modifying it. In contrast, a rotation changes parent and
+child pointers within the treap. On most computers, read operations are
+much faster than write operations. Thus we would like TREAP-INSERT to
+perform few rotations. We will show that the expected number of
+rotations performed is bounded by a constant.
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 336). The MIT Press. Kindle
+Edition.
+
+[[TREAP-INSERT/7E144CA6-A1FD-432F-83C8-A6408D4F3453.png]]
+* software-engineering/data-structures/trees/search-tree/treap/TREAP-INSERT

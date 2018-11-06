@@ -1,0 +1,7 @@
+* APPROX-VERTEX-COVER
+
+APPROX-VERTEX-COVER(G) 1 C = nil 2 E' = G.E 3 while != nil 4 let (u,v)
+be an arbitrary edge E' 5 C = C ∪ {u,v} 6 remove from E' every edge
+incident on either u or  v 7 return C
+
+* software-engineering/data-structures/graphs/vertex-cover/APPROX-VERTEX-COVER

@@ -1,0 +1,14 @@
+* B-TREE-INSERT
+
+B-TREE-INSERT(T,k) 1 r = T.root 2 if r.n == 2t - 1 3 s = ALLOCATE-NODE()
+4 T.root = s 5 s.leaf = FALSE 6 s.n = 0 7 s.c\_1 = r 8
+B-TREE-SPLIT-CHILD(s,1) 9 B-TREE-INSERT-NONFULL(s,k) 10 else 11
+B-TREE-INSERT-NONFULL(r,k)
+
+Inserting a key into a B-tree in a single pass down the tree We insert a
+key k into a B-tree T of height h in a single pass down the tree,
+requiring O(h)disk accesses. The CPU time required is O(h) =O(t log\_t
+n)The B-TREE-INSERT procedure uses B-TREE-SPLIT-CHILD to guarantee that
+the recursion never descends to a full node.
+
+* software-engineering/data-structures/trees/search-tree/b-TREE/B-TREE-INSERT

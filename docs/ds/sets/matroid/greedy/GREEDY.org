@@ -1,0 +1,10 @@
+* GREEDY
+
+GREEDY(M,w) 1 A = ∅\\
+2 sort M.S into monotonically decreasing order by weight w 3 for each x
+∈ M.S taken in monotonically decreasing order by weight w(x) 4 if A ∪
+{x} ∈ M.I 5 A = A ∪ {x} 6 return A
+
+M is weighted matroid w is the weight function
+
+* software-engineering/data-structures/sets/matroid/GREEDY

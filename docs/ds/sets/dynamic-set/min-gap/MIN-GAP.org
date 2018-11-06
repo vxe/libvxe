@@ -1,0 +1,7 @@
+* MIN-GAP
+
+Show how to maintain a dynamic set Q of numbers that supports the
+operation MIN-GAP, which gives the magnitude of the difference of the
+two closest numbers in Q.
+
+* software-engineering/data-structures/sets/dynamic-set/MIN-GAP

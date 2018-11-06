@@ -1,0 +1,11 @@
+* PROTO-vEB-SUCCESSOR
+
+PROTO-VEB-SUCCESSOR(V,x) 1 if V.u == 2 2 if x == 0 and V.A[1] === 1 3
+return 1 4 else return NIL 5 else offset =
+PROTO-VEB-SUCCESSOR(V.cluster[high(x)], low(x)) 6 if offset ≠ NIL 7
+return index(high(x), offset) 8 else succ-cluster =
+PROTO-VEB-SUCCESSOR(V.summary, high(x)) 9 if succ-cluster == NIL 10
+return NIL 11 else offset = PROTO-VEB-MINIMUM(V.cluster[succ-cluster])
+12 return index(succ-cluster, offset)
+
+* software-engineering/data-structures/maps/veb-tree/PROTO-vEB-SUCCESSOR

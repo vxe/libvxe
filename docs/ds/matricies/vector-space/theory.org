@@ -1,0 +1,20 @@
+* theory
+
+* software-engineering/data-structures/matricies/vector-space
+
+A vector space (also called a linear space) is a collection of objects
+called vectors, which may be
+[[https://en.wikipedia.org/wiki/Vector_addition][added]] together and
+[[https://en.wikipedia.org/wiki/Scalar_multiplication][multiplied]]
+("scaled") by numbers, called
+*[[https://en.wikipedia.org/wiki/Scalar_(mathematics)][scalars]]*.
+Scalars are often taken to be
+[[https://en.wikipedia.org/wiki/Real_number][real numbers]] , but there
+are also vector spaces with scalar multiplication by
+[[https://en.wikipedia.org/wiki/Complex_number][complex numbers]] ,
+[[https://en.wikipedia.org/wiki/Rational_number][rational numbers]] , or
+generally any
+[[https://en.wikipedia.org/wiki/Field_(mathematics)][field]] . The
+operations of vector addition and scalar multiplication must satisfy
+certain requirements, called
+[[https://en.wikipedia.org/wiki/Axiom][axioms]] , listed below.

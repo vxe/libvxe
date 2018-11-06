@@ -1,0 +1,11 @@
+* SUCCESSOR
+
+SUCCESSOR(S,x) A query that, given an element x whose key is from a
+totally ordered set S, returns a pointer to the next larger element in
+S, or NIL if x is the maximum element.
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 230). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/sets/ordered-set/SUCCESSOR

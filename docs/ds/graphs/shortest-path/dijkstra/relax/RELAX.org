@@ -1,0 +1,6 @@
+* RELAX
+
+RELAX(u, v, w) 1 if v.d > u.d + w(u,v) 2 v.d == u.d= + w(u, v) 3 v.π = u
+
+[[RELAX/5E078641-2D61-4E52-874B-6F419033140B.png]]
+* software-engineering/data-structures/graphs/shortest-path/DIJKSTRA/relax

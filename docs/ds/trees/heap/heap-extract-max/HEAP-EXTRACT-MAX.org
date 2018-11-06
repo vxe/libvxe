@@ -1,0 +1,7 @@
+* HEAP-EXTRACT-MAX
+
+HEAP-EXTRACT-MAX(A) 1 if A.heap-size < 1 2 error “heap underflow” 3 max
+= A[1] 4 A[1] = A[A.heap-size] 5 A.heap-size = A.heap-size - 1 6
+MAX-HEAPIFY(A,1) 7 return max
+
+* software-engineering/data-structures/trees/HEAP/HEAP-EXTRACT-MAX

@@ -1,0 +1,11 @@
+* FINITE-AUTOMATON-MATCHER
+
+FINITE-AUTOMATON-MATCHER(T,δ,m) 1 n = T.length 2 q = 0 3 for i = 1 to n
+4 q = δ(q, T[i]) 5 if q == m 6 print “Pattern occurs with shift” i -m
+
+To clarify the operation of a string-matching automaton, we now give a
+simple, efficient program for simulating the behavior of such an
+automaton (represented by its transition function δ) in finding
+occurrences of a pattern P of length m in an input text T [1..n].
+
+* software-engineering/data-structures/text/FINITE-AUTOMATON-MATCHER

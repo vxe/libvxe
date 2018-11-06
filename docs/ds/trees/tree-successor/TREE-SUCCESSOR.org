@@ -1,0 +1,10 @@
+* TREE-SUCCESSOR
+
+TREE-SUCCESSOR(x) 1 if x.right ≠ NIL 2 return TREE-MINIMUM(x.right) 3 y
+= x.p 4 while y ≠ NIL and x == y.right 5 x = y 6 y = y.p 7 return y
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 292). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/trees/TREE-SUCCESSOR

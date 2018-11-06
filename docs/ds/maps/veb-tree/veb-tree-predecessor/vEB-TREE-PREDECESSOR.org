@@ -1,0 +1,18 @@
+* vEB-TREE-PREDECESSOR
+
+VEB-TREE-PREDECESSOR(V,x) 1 if V.u == 2 2 if x == 1 and V.min == 0 3
+return 0 4 else return NIL 5 elseif V.max ≠ NIL and x > V.max 6 return
+V.max 7 else min-low = VEB-TREE-MINIMUM(V.cluster[high.x]) 8 if min-low
+≠ NIL and low(x) > min-low 9 offset =
+VEB-TREE-PREDECESSOR(V.cluster[high.(x)], low(x)) 10 return
+index(high(x), offset) 11 else pred-cluster =
+VEB-TREE-PREDECESSOR(V.summary, high(x)) 12 if pred-cluster == NIL 13 if
+V.min ≠ NIL an= x > V.min 14 return V.min 15 else return NIL 16 else
+offset = VEB-TREE-MAXIMUM(V.cluster[pred-cluster]) 17 return
+index(pred-cluster, offset)
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 552). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/maps/veb-tree/vEB-TREE-PREDECESSOR

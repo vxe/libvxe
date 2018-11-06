@@ -1,0 +1,6 @@
+* FIND-SET
+
+and the query FINDSET(U)identifies the unique set that contains a given
+element at the moment.
+
+* software-engineering/data-structures/sets/FIND-SET

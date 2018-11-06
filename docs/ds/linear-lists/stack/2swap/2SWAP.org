@@ -1,0 +1,5 @@
+2SWAP\\
+( d1 d2 -- d2 d1 ) Reverses the top two pairs of numbers.
+
+* software-engineering/languages/forth/stack-operations/2swap
+#software-engineering/data-structures/linear-lists/STACK/2swap

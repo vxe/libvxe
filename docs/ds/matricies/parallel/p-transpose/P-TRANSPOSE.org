@@ -1,0 +1,6 @@
+* P-TRANSPOSE
+
+P-TRANSPOSE(A) 1 n = A.rows 2 parallel for j = 2 to n 3 parallel for new
+i = 1 to j - 1 4 exchange aᵢⱼ with aⱼᵢ
+
+* software-engineering/data-structures/matricies/parallel/P-TRANSPOSE

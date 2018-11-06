@@ -1,0 +1,9 @@
+* ON-SEGMENT
+
+ON-SEGMENT(pi, pj, pk) 1 if min(xi, xj) ≤ xₖ ≤ max(xᵢ, xⱼ) and min(yᵢ,
+yⱼ) ≤ yₖ ≤ max(yᵢ, yⱼ) 2 return TRUE 3 else return FALSE
+
+ON-SEGMENT, which determines whether a point known to be colinear with a
+segment lies on that segment.
+
+* software-engineering/data-structures/sets/point-set/ON-SEGMENT

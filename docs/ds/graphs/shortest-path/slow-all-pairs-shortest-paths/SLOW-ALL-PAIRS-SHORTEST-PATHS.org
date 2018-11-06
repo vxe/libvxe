@@ -1,0 +1,7 @@
+* SLOW-ALL-PAIRS-SHORTEST-PATHS
+
+SLOW-ALL-PAIRS-SHORTEST-PATHS(W) 1 n = W.rows 2 L⁽¹⁾ = W 3 for m = 2 to
+n - 1 4 let L⁽ᵐ⁾ be a new n x n matrix 5 L⁽ᵐ⁾ =
+EXTEND-SHORTEST-PATHS(L⁽ᵐ⁻¹⁾,W) 6 return L⁽ⁿ⁻¹⁾
+
+* software-engineering/data-structures/graphs/shortest-path/SLOW-ALL-PAIRS-SHORTEST-PATHS

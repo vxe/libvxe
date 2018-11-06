@@ -1,0 +1,14 @@
+* PRINT-SET
+
+Suppose that we wish to add the operation PRINT-SET.x\_, which is given
+a node x and prints all the members of x's set, in any order. Show how
+we can add just a single attribute to each node in a disjoint-set forest
+so that PRINT-SET.x\_ takes time linear in the number of members of x's
+set and the asymptotic running times of the other operations are
+unchanged. Assume that we can print each member of the set in O.1/ time.
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 572). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/sets/PRINT-SET

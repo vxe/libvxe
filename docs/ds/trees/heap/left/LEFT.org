@@ -1,0 +1,7 @@
+* LEFT
+
+LEFT(i) 1 return 2i
+
+idk what i is , it has something to do with a head
+
+* software-engineering/data-structures/trees/HEAP/LEFT

@@ -1,0 +1,9 @@
+* ADD-SUBARRAY
+
+ADD-SUBARRAY(A,B,C,i,j) 1 for k = i to j 2 C[k] = A[k] + B[k]
+
+so wtf, is C empty or wat? not at all visualize the three arrays like an
+addition sum, C is the bottom line with the final answer. the sub array
+defined by i to j are the digits to be added in A and B
+
+* software-engineering/data-structures/linear-lists/array/ADD-SUBARRAY

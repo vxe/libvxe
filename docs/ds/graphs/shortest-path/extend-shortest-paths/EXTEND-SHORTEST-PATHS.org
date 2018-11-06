@@ -1,0 +1,9 @@
+* EXTEND-SHORTEST-PATHS
+
+EXTEND-SHORTEST-PATHS(L,W) 1 n = L.rows 2 let L' = (l'ᵢⱼ) be a new n x n
+matrix 3 for i = 1 to n 4 for j = 1 to n 5 l'ᵢⱼ = ∞ 6 for k = 1 to n 7
+l'ᵢⱼ = min (l'/{ij}, l/{ik}+ w\_{kj}) 8 return L'
+
+* software-engineering/data-structures/graphs/shortest-path/EXTEND-SHORTEST-PATHS
+
+* software-engineering/interview/recursion-and-dynamic-programming

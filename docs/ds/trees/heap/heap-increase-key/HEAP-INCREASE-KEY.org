@@ -1,0 +1,7 @@
+* HEAP-INCREASE-KEY
+
+HEAP-INCREASE-KEY(A,i,key) 1 if key < A[i] 2 error “new key is smaller
+than current key” 3 A[i] = key 4 while i > 1 and A[PARENT(i)] < A[i] 5
+exchange A[i] with A[PARENT(i)] 6 i = PARENT(i)
+
+* software-engineering/data-structures/trees/HEAP/HEAP-INCREASE-KEY

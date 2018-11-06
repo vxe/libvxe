@@ -1,0 +1,9 @@
+* vEB-TREE-INSERT
+
+VEB-TREE-INSERT(V,x) 1 if V.min == NIL 2 VEB-EMPTY-TREE-INSERT(V, x) 3
+else if x < V.min 4 exchange x with V.min 5 if V.u > 2 6 if
+VEB-TREE-MINIMUM(V.cluster[high(x)]) == NIL 7 VEB-TREE-INSERT(V.summary,
+high(x)) 8 VEB-EMPTY-TREE-INSERT(V.cluster[high(x)], low(x)) 9 else
+VEB-TREE-INSERT(V.cluster[high(x)],low(x)) 10 if x > V.max 11 V.max = x
+
+* software-engineering/data-structures/maps/veb-tree/vEB-TREE-INSERT

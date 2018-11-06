@@ -1,0 +1,9 @@
+* BELOW
+
+BELOW(T,s) return the segment immediately below segment s in T.
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 1024). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/sets/point-set/BELOW

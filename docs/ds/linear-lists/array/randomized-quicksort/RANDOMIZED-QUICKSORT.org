@@ -1,0 +1,7 @@
+* RANDOMIZED-QUICKSORT
+
+RANDOMIZED-QUICKSORT(A, p, r) 1 if p < r 2 q = RANDOMIZED-PARTITION(A,
+p, r) 3 RANDOMIZED-QUICKSORT(A, p, q - 1) 4 RANDOMIZED-QUICKSORT(A, q +
+1, r)
+
+* software-engineering/data-structures/linear-lists/array/RANDOMIZED-QUICKSORT

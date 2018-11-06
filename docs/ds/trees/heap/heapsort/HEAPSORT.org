@@ -1,0 +1,9 @@
+* HEAPSORT
+
+The HEAPSORT procedure, which runs in O(n lg n) time, sorts an array in
+place.
+
+HEAPSORT(A) 1 BUILD-MAX-HEAP(A) 2 for i = A.length downto 2 3 exchange
+A[1] with A[i] 4 A.heap-size = A.heap-size - 1 5 MAX-HEAPIFY(A,1)
+
+* software-engineering/data-structures/trees/HEAP/HEAPSORT

@@ -1,0 +1,6 @@
+* ENQUEUE
+
+ENQUEUE(Q,x) 1 Q ⌊Q.tail⌋ = x 2 if Q.tail == Q.length 3 Q.tail = 1 4
+else Q.tail = Q.tail + 1
+
+* software-engineering/data-structures/linear-lists/QUEUE/ENQUEUE

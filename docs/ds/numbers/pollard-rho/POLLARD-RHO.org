@@ -1,0 +1,12 @@
+* POLLARD-RHO
+
+Trial division by all integers up to R is guaranteed to factor
+completely any number up to R². For the same amount of work, the
+following procedure, POLLARD-RHO, factors any number up to R⁴ (unless we
+are unlucky).
+
+POLLARD-RHO(n) 1 i = 1 2 x₁ = RANDOM(0,n - 1) 3 y = x₁ 4 k = 2 5 while
+TRUE 6 i = i + 1 7 xᵢ = (x²ᵢ₋₁ - 1) mod n 8 d = gcd(y - xᵢ,n) 9 if d ≠ 1
+and d ≠ n 10 print d 11 if i == k 12 y = xᵢ 13 k = 2k
+
+* software-engineering/data-structures/numbers/POLLARD-RHO

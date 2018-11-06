@@ -1,0 +1,13 @@
+* augmenting-paths
+
+Augmenting paths Given a flow network G(V,E) and a flow f, an
+*augmenting path* p is a simple path from s to t in the residual network
+G\_f. By the definition of the residual network, we may increase the
+flow on an edge (u,v) of an augmenting path by up to c\_f(u,v)/ without
+violating the capacity constraint on whichever of (u,v) and (v,u) is in
+the original flow network G.
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 719). The MIT Press. Kindle
+Edition.
+#software-engineering/data-structures/graphs/maximum-flow/FORD-FULKERSON-METHOD/concepts/augmenting-paths

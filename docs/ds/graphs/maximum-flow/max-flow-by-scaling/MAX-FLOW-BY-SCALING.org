@@ -1,0 +1,13 @@
+* MAX-FLOW-BY-SCALING
+
+We can use the following modification of FORD-FULKERSON-METHOD to
+compute a maximum flow in G:
+
+MAX-FLOW-BY-SCALING(G,s,t) 1 C = max₍ᵤᵥ₎\_∈E c(u,v) 2 initialize flow f
+to 0 3 K = 2\^⌊lgC⌋\\
+4 while K ≥ 1 5 while there exists an augmenting path p of capacity at
+least K 6 augment flow f along p 7 K = K / 2 8 return f
+
+exercise 26-5
+
+* software-engineering/data-structures/graphs/maximum-flow/MAX-FLOW-BY-SCALING

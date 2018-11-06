@@ -1,0 +1,11 @@
+* B-TREE-SPLIT-CHILD
+
+B-TREE-SPLIT-CHILD(x,i) 1 z = ALLOCATE-NODE() 2 y = x.ci 3 z.leaf =
+y.leaf 4 z.n = t -1 5 for j = 1 to t - 1 6 z.key\_j = y.key\_{j+t} 7
+if not y.leaf 8 for j =1 to t 9 z.c\_j = y.c\_{j+t} 10 y\_n = t - 1 11
+for j = x.n + 1 downto i + 1 12 x.c\_{j+1} + x.c\_j 13 x 14 for j D x:n
+downto i 15 x.key\_{j+1} = x.key\_{j} 16 x.key\_i = y.key\_t 17 x.n =
+x.n +1 18 DISK-WRITE(y) 19 DISK-WRITE(z) 20 DISK-WRITE(x)
+
+[[B-TREE-SPLIT-CHILD/image.png]]
+* software-engineering/data-structures/trees/search-tree/b-TREE/B-TREE-SPLIT-CHILD

@@ -1,0 +1,12 @@
+* TOP
+
+aka peek
+
+the functions TOP.S/, which returns the point on top of stack S without
+changing S,
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 1031). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/linear-lists/STACK/TOP

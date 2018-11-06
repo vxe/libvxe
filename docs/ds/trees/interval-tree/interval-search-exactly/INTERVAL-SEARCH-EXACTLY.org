@@ -1,0 +1,11 @@
+* INTERVAL-SEARCH-EXACTLY
+
+Suggest modifications to the interval-tree procedures to support the new
+operation INTERVAL-SEARCH-EXACTLY.T; i\_, where T is an interval tree
+and i is an interval. The operation should return a pointer to a node x
+in T such that x:int:low D i:low and x:int:high D i:high, or T:nil if T
+contains no such node. All operations, including
+INTERVAL-SEARCH-EXACTLY, should run in O.lg n\_ time on an n-node
+interval tree.
+
+* software-engineering/data-structures/trees/interval-tree/INTERVAL-SEARCH-EXACTLY

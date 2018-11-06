@@ -1,0 +1,9 @@
+* CASCADING-CUT
+
+CASCADING-CUT(H,y) 1 z = y.p 2 if z != nil 3 if y.mark == false 4 y.mark
+= true 5 else CUT(H,y,z) 6 CASCADING-CUT(H,z)
+
+The CASCADING-CUT procedure recurses its way up the tree until it finds
+either a root or an unmarked node.
+
+* software-engineering/data-structures/trees/HEAP/CASCADING-CUT

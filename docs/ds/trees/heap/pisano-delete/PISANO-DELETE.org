@@ -1,0 +1,7 @@
+* PISANO-DELETE
+
+PISANO-DELETE(H,x) 1 if x == H.min 2 FIB-HEAP-EXTRACT-MIN(H) 3 else y =
+x.p 4 if y ≠ NIL 5 CUT(H, x, y) 6 CASCADING-CUT(H, y) 7 add x's child
+list to the root list of H 8 remove x from the root list of H
+
+* software-engineering/data-structures/trees/HEAP/PISANO-DELETE

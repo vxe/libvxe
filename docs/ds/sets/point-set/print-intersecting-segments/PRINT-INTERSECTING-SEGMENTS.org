@@ -1,0 +1,10 @@
+* PRINT-INTERSECTING-SEGMENTS
+
+The professor calls the resulting procedure PRINT-INTERSECTING-SEGMENTS
+and claims that it prints all intersections, from left to right, as they
+occur in the set of line segments. Professor Dixon disagrees, claiming
+that Professor Mason's idea is incorrect. Which professor is right? Will
+PRINT-INTERSECTING-SEGMENTS always find the leftmost intersection first?
+Will it always find all the intersections?
+
+* software-engineering/data-structures/sets/point-set/PRINT-INTERSECTING-SEGMENTS

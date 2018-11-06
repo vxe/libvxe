@@ -1,0 +1,5 @@
+* PARENT
+
+PARENT(i) 1 return ⌊i/2⌋
+
+* software-engineering/data-structures/trees/HEAP/PARENT

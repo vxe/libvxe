@@ -1,0 +1,9 @@
+* CUT
+
+CUT(H,x,y) 1 remove x from the child list of y, decrementing y.degree 2
+add x to the root list of H 3 x.p = NIL 4 x.mark = FALSE
+
+The CUT procedure “cuts” the link between x and its parent y, making x a
+root.
+
+* software-engineering/data-structures/trees/HEAP/fibonacci-heap/CUT

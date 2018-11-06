@@ -1,0 +1,5 @@
+SWAP\\
+( n1 n2 -- n2 n1 ) Reverses the top two stack items.
+
+* software-engineering/languages/forth/stack-operations/swap
+#software-engineering/data-structures/linear-lists/STACK/swap

@@ -1,0 +1,12 @@
+* EXTRACT-MIN
+
+fundamental heap operation
+
+EXTRACT-MIN(H) deletes the element from heap H whose key is minimum,
+returning a pointer to the element.
+
+in the case of Dijkstras algorithm it need not be a heap, but any
+priority queue
+
+* software-engineering/data-structures/trees/HEAP/EXTRACT-MIN
+#software-engineering/data-structures/graphs/shortest-path/DIJKSTRA/EXTRACT-MIN

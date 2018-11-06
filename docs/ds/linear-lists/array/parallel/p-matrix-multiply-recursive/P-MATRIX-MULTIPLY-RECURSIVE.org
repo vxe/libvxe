@@ -1,0 +1,19 @@
+* P-MATRIX-MULTIPLY-RECURSIVE
+
+A divide-and-conquer multithreaded algorithm for matrix multiplication
+
+P-MATRIX-MULTIPLY-RECURSIVE(C, A, B) 1 n = A.rows 2 if n == 1 3 c₁₁ =
+a₁₁b₁₁ 4 else let T be a new n x n matrix 5 partition (A, B, C) and T
+into n/2 x n/2 submatrices A₁₁, A₁₂, A₂₁, A₂₂;B₁₁, B₁₂, B₂₁, B₂₂; C₁₁,
+C₁₂, C₂₁, C₂₂, and T₁₁, T₁₂, T₂₁, T₂₂, respectively 6 spawn
+P-MATRIX-MULTIPLY-RECURSIVE(C₁₁, A₁₁, B₁₁) 7 spawn
+P-MATRIX-MULTIPLY-RECURSIVE(C₁₂, A₁₁, B₁₂) 8 spawn
+P-MATRIX-MULTIPLY-RECURSIVE(C₂₁, A₂₁, B₁₁) 9 spawn
+P-MATRIX-MULTIPLY-RECURSIVE(C₂₂, A₂₁, B₁₂) 10 spawn
+P-MATRIX-MULTIPLY-RECURSIVE(T₁₁, A₁₂, B₂₁) 11 spawn
+P-MATRIX-MULTIPLY-RECURSIVE(T₁₂, A₁₂, B₂₂) 12 spawn
+P-MATRIX-MULTIPLY-RECURSIVE(T₂₁, A₂₂, B₂₁) 13
+P-MATRIX-MULTIPLY-RECURSIVE(T₂₂,A₂₂,B₂₂) 14 sync 15 parallel for i = 1
+to n 16 parallel for new j = 1 to n 17 cᵢⱼ = cᵢⱼ + tᵢⱼ
+
+* software-engineering/data-structures/linear-lists/array/parallel/P-MATRIX-MULTIPLY-RECURSIVE

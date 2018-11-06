@@ -1,0 +1,7 @@
+* RELABEL
+
+RELABEL(u) 1 Applies when u is overflowing and for all v ∈ V such that
+(u,v), u.h ∈ E\_f, we have u.h ≤ v.h 2 Action. Increase the height of u.
+3 u.h = 1 + min{v.h : (u,v) ∈ E\_f }
+
+* software-engineering/data-structures/graphs/maximum-flow/RELABEL-TO-FRONT

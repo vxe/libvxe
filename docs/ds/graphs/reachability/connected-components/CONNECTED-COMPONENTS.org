@@ -1,0 +1,13 @@
+* CONNECTED-COMPONENTS
+
+CONNECTED-COMPONENTS(G) 1 for each vertex  v ∈ G.V 2 MAKE-SET(v) 3 for
+each edge (u,v) ∈ G.E 4 if FIND-SET(u) ~= FIND-SET(v) 5 UNION(u,v)
+
+The procedure CONNECTED-COMPONENTS that follows uses the disjoint-set
+operations to compute the connected components of a graph. Once
+CONNECTED-COMPONENTS has preprocessed the graph, the procedure
+SAME-COMPONENT answers queries about whether two vertices are in the
+same connected component.1 (In pseudocode, we denote the set of vertices
+of a graph G by G.V and the set of edges by G.E.)
+
+* software-engineering/data-structures/graphs/reachability/CONNECTED-COMPONENTS

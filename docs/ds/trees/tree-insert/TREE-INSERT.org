@@ -1,0 +1,13 @@
+* TREE-INSERT
+
+TREE-INSERT(T, z) 1 y = NIL 2 x = T.root 3 while x ≠ NIL 4 y = x 5 if
+z.key < x.key 6 x = x.left 7 else x = x.right 8 z.p = y 9 if y == NIL 10
+T.root = z tree T was empty 11 elseif z.key < y.key 12 y.left = z 13
+else y.right = z
+
+[[TREE-INSERT/408B4C97-B85E-4002-BD14-667409841F16.png]]
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 294). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/trees/TREE-INSERT

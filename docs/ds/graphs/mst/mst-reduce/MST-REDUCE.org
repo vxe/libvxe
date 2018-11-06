@@ -1,0 +1,18 @@
+* MST-REDUCE
+
+contracted, we update it according to the above scheme for choosing edge
+weights. The procedure MST-REDUCE takes inputs G and T, and it returns a
+contracted graph G0 with updated attributes orig0 and c0. The procedure
+also accumulates edges of G into the minimum spanning tree T.
+
+MST-REDUCE(G,T) 1 for each v ∈ G.V 2 v.mark = FALSE 3 MAKE-SET(v) 4 for
+each u ∈ G.V 5 if u.mark === FALSE 6 choose ∈ G.Adj[u] such that (u,v).c
+is minimized 7 UNION(u,v) 8 T = T ∪ {(u,v).orig} 9 u.mark = v.mark =
+TRUE 10 G'.V = {FIND-SET(v) : v ∈ G.V} 11 G'.E = ∅ 12 for each (x,y) ∈
+G.E 13 u = FIND-SET(x) 14 v = FIND-SET(y) 15 if u ≠ v 16 if (u,v) !∈
+G'.E 17 G'.E = G'.E ∪ {(u,v)} 18 (u,v).orig' = (x,y).orig 19 (u,v).c' =
+(x,y).c 20 else if (x,y).c < (u,v).c' 21 (u,v).orig' = (x,y).orig 22
+(u,v).c' = (x,y).c 23 construct adjacency lists G'.Adj for G' 24 return
+G' and T
+
+* software-engineering/data-structures/graphs/mst/MST-REDUCE

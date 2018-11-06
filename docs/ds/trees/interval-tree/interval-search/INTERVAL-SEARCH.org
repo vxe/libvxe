@@ -1,0 +1,7 @@
+* INTERVAL-SEARCH
+
+INTERVAL-SEARCH(T) 1 x = T.root 2 while x ≠ T.nil an= i d[s not overlap
+x.int 3 if x.left ≠ T.nil and x.left.max ≥ i.low 4 x = x.left 5 else x =
+x.right 6 return x
+
+* software-engineering/data-structures/trees/interval-tree/INTERVAL-SEARCH

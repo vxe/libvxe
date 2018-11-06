@@ -1,0 +1,10 @@
+* LIST-INSERT
+
+Inserting into a linked list Given an element x whose key attribute has
+already been set, the LIST-INSERT procedure “splices” x onto the front
+of the linked list, as shown in Figure 10.3(b).
+
+LIST-INSERT(L,x) 1 x.next = L.head 2 if L.head ≠ NIL 3 L.head.prev = x 4
+L.head = x 5 x.prev = NIL
+
+* software-engineering/data-structures/linear-lists/LINKED-LIST/LIST-INSERT

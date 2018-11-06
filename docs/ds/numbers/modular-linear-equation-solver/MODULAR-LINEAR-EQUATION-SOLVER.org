@@ -1,0 +1,7 @@
+* MODULAR-LINEAR-EQUATION-SOLVER
+
+MODULAR-LINEAR-EQUATION-SOLVER(a, b, n) 1 (d, x', y') =
+EXTENDED-EUCLID(a, n) 2 if d | b 3 x₀ = x'(b/d) mod n 4 for i = 0 to = -
+1 5 print(x₀ + i(n/d)) mod n 6 else print “no solutions”
+
+* software-engineering/data-structures/numbers/MODULAR-LINEAR-EQUATION-SOLVER

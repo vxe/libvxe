@@ -1,0 +1,7 @@
+* PREDECESSOR
+
+PREDECESSOR.S; x/ A query that, given an element x whose key is from a
+totally ordered set S, returns a pointer to the next smaller element in
+S, or NIL if x is the minimum element.
+
+* software-engineering/data-structures/sets/ordered-set/PREDECESSOR

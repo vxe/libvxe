@@ -1,0 +1,8 @@
+completely-fair-scheduler
+
+"CFS uses a red-black tree to manage the list of runnable processes and
+efficiently find the process with the smallest vruntime"
+
+* software-engineering/books/linux-kernel-development/4-process-scheduling/CFS
+
+* software-engineering/data-structures/trees/search-tree/red-black-tree

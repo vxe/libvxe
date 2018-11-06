@@ -1,0 +1,5 @@
+* vEB-TREE-MINIMUM
+
+VEB-TREE-MINIMUM(V) 1 return V.min
+
+* software-engineering/data-structures/maps/veb-tree/vEB-TREE-MINIMUM

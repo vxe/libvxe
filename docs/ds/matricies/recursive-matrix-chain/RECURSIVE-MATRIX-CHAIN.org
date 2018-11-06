@@ -1,0 +1,8 @@
+* RECURSIVE-MATRIX-CHAIN
+
+RECURSIVE-MATRIX-CHAIN(p, i, j) 1 if i == j 2 return 0 3 m[i, j] = 1 4
+for k = i to j - 1 5 q = RECURSIVE-MATRIX-CHAIN(p, i, k) +
+RECURSIVE-MATRIX-CHAIN(p, k + 1, j)+ pᵢ₋₁pₖpⱼ 6 if q < m[i, j] 7 m[i, j]
+= q 8 return m[i, j]
+
+* software-engineering/data-structures/matricies/RECURSIVE-MATRIX-CHAIN

@@ -1,0 +1,10 @@
+* RIGHT-ROTATE
+
+[[RIGHT-ROTATE/DB9CFABE-4007-43CB-ADBB-CFF8C59544F4.png]]
+RIGHT-ROTATE(T,x) 1 y = x.left set y 2 x.left = y.right / turn y's left
+subtree into x's right subtree 3 if y.right ≠ T.nil 4 y.right.p = x 5
+y.p = x.p link x's parent to y 6 if x.p == T.nil 7 T.root = y 8 elseif x
+== x.p.right 9 x.p.right = y 10 else x.p.left = y 11 y.right = x put x
+on y's left 12 x.p = y
+
+* software-engineering/data-structures/trees/search-tree/RIGHT-ROTATE

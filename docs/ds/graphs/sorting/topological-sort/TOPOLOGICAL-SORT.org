@@ -1,0 +1,7 @@
+* TOPOLOGICAL-SORT
+
+TOPOLOGICAL-SORT(G) 1 call DFS(G) to compute finishing times v.f for
+each vertex v 2 as each vertex is finished, insert it onto the front of
+a linked list 3 return the linked list of vertices
+
+* software-engineering/data-structures/graphs/sorting/TOPOLOGICAL-SORT

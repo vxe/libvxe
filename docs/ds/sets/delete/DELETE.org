@@ -1,0 +1,7 @@
+* DELETE
+
+DELETE(S,i,x) A modifying operation that, given a pointer x to an
+element in the set S, removes x from S. (Note that this operation takes
+a pointer to an element x, not a key value.)
+
+* software-engineering/data-structures/sets/DELETE

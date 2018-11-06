@@ -1,0 +1,9 @@
+* vEB-TREE-MAXIMUM
+
+VEB-TREE-MAXIMUM(V) 1 return V.max
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 550). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/maps/veb-tree/vEB-TREE-MAXIMUM

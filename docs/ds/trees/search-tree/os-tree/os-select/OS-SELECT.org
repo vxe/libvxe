@@ -1,0 +1,11 @@
+* OS-SELECT
+
+The procedure OS-SELECT(x, i) returns a pointer to the node containing
+the ith smallest key in the subtree rooted at x. To find the node with
+the ith smallest key in an order-statistic tree T, we call
+OS-SELECT(T.root,i)
+
+OS-SELECT(x,i) 1 r = x.left.size + 1 2 if i == r 3 return x 4 elseif i <
+r 5 return OS-SELECT(.x.left,i) 6 else return OS-SELECT(x.right, i - r)
+
+* software-engineering/data-structures/trees/search-tree/os-tree/OS-SELECT

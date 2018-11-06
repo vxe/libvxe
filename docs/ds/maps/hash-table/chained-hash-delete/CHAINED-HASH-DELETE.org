@@ -1,0 +1,5 @@
+* CHAINED-HASH-DELETE
+
+CHAINED-HASH-DELETE(T,x) 1 delete x from the list T[h(x.key)]
+
+* software-engineering/data-structures/maps/HASH-TABLE/CHAINED-HASH-DELETE

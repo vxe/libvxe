@@ -1,0 +1,7 @@
+* EXACT-SUBSET-SUM
+
+EXACT-SUBSET-SUM(S,t) 1 n = |S| 2 L₀ = <0> 3 for i = 1 to n 4 Lᵢ =
+MERGE-LISTS(Lᵢ₋₁, Lᵢ₋₁ + xᵢ) 5 remove from Lᵢ every element that is
+greater than t 6 return the largest element in L\_n
+
+* software-engineering/data-structures/sets/subsets/EXACT-SUBSET-SUM

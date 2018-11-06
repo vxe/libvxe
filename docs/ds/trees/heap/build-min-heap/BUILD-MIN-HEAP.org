@@ -1,0 +1,8 @@
+* BUILD-MIN-HEAP
+
+Hence, we can build a max-heap from an unordered array in linear time.
+We can build a min-heap by the procedure BUILD-MIN-HEAP, which is the
+same as BUILD-MAX-HEAP but with the call to MAX-HEAPIFY in line 3
+replaced by a call to MIN-HEAPIFY
+
+* software-engineering/data-structures/trees/HEAP/BUILD-MIN-HEAP

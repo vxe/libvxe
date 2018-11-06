@@ -1,0 +1,7 @@
+* HEAP-DELETE
+
+The operation HEAP-DELETE.A; i/ deletes the item in node i from heap A.
+Give an implementation of HEAP-DELETE that runs in O.lg n/ time for an
+n-element max-heap.
+
+* software-engineering/data-structures/trees/HEAP/HEAP-DELETE

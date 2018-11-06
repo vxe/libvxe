@@ -1,0 +1,8 @@
+* P-SCAN-DOWN
+
+P-SCAN-DOWN(v,x, t, y, i, j)\\
+1 if i == j 2 y[i] = v ⨂ x[i] 3 else 4 k = ⌊i + j / 2 ⌋ 5 spawn
+P-SCAN-DOWN(\_\_\_\_\_\_\_\_\_,x,t,y,i,k) / fill in the blank 6
+P-SCAN-DOWN(\_\_\_\_\_\_\_\_\_,x,t,y,k + 1,j) / fill in the blank 7 sync
+
+* software-engineering/data-structures/linear-lists/array/parallel/P-SCAN-DOWN

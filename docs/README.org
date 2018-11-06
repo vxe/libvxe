@@ -49,6 +49,7 @@
 ** ansible
 ** antlr
 * algorithms
+** [[file:./clrs.org][clrs]]
 ** [[file:./README-ctci.org][ctci]]
 ** [[file:./README-cph.org][cph]]
 ** [[file:./rosetta-code.org][rosetta-code]]

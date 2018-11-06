@@ -1,0 +1,7 @@
+* GRAFT
+
+GRAFT(r, v) makes node r, which is assumed to be the root of a tree,
+become the child of node , which is assumed to be in a different tree
+than r but may or may not itself be a root.
+
+* software-engineering/data-structures/sets/disjoint-set/GRAFT

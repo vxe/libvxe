@@ -1,0 +1,5 @@
+* DELETE-LARGER-HALF
+
+DELETE-LARGER-HALF(S)/ deletes the largest djSj =2e elements from S.
+
+* software-engineering/data-structures/sets/multiset/DELETE-LARGE-HALF

@@ -1,0 +1,5 @@
+* FIND-DEPTH
+
+FIND-DEPTH(v) returns the depth of node v within its tree.
+
+* software-engineering/data-structures/trees/FIND-DEPTH

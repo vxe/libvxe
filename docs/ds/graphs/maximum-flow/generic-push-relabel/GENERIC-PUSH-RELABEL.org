@@ -1,0 +1,7 @@
+* GENERIC-PUSH-RELABEL
+
+GENERIC-PUSH-RELABEL(G) 1 INITIALIZE-PREFLOW(G,s) 2 while there exists
+an applicable push or relabel operation 3 select an applicable push or
+relabel operation and perform it
+
+* software-engineering/data-structures/graphs/maximum-flow/GENERIC-PUSH-RELABEL

@@ -1,0 +1,9 @@
+* BIT-REVERSE-COPY
+
+BIT-REVERSE-COPY(a,A) 1 n = a.length 2 for k = 0 to n  - 1 3 A[rev(k)]
+= a\_k
+
+let rev(k) be the lg n-bit integer formed by reversing the bits of the
+binary representation of k,
+
+* software-engineering/data-structures/linear-lists/bit-vector/BIT-REVERSE-COPY

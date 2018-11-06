@@ -1,0 +1,6 @@
+* EXTRACT-MAX
+
+EXTRACT-MAX(S) removes and returns the element of S with the largest
+key.
+
+* software-engineering/data-structures/sets/EXTRACT-MAX

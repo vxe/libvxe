@@ -1,0 +1,10 @@
+* RB-ENUMERATE
+
+We wish to augment red-black trees with an operation RB-ENUMERATE.x, a,
+b/ that outputs all the keys k such that a ≤ k ≤ b in a red-black tree
+roote= at x. Describe how to implement RB-ENUMERATE in Θ(m+lg n) time,
+where m is the number of keys that are output and n is the number of
+internal nodes in the tree. (Hint. You do not need to add new attributes
+to the red-black tree.)
+
+* software-engineering/data-structures/trees/search-tree/red-black-tree/RB-ENUMERATE

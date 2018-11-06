@@ -1,0 +1,7 @@
+* OS-KEY-RANK
+
+Write a recursive procedure OS-KEY-RANK(T,k) that takes as input an
+order statistic tree T and a key k and returns the rank of k in the
+dynamic set represented by T. Assume that the keys of T are distinct.
+
+* software-engineering/data-structures/trees/search-tree/os-tree/OS-KEY-RANK

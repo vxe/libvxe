@@ -1,0 +1,20 @@
+* vEB-TREE-DELETE
+
+VEB-TREE-DELETE(V, x) 1 if V.min == V.max 2 V.min = NIL 3 V.max = NIL 4
+elseif V.u = = 2 5 if x == 0 6 V.min = 1 7 else V.min = 0 8 V.max =
+V.min 9 else if x == V.min 10 first-cluster =
+VEB-TREE-MINIMUM(V.summary) 11 x = index(first-cluster,
+VEB-TREE-MINIMUM(V.cluster[first-cluster])) 12 V.min = x 13
+VEB-TREE-DELETE(V.cluster[high(x)], low(x)) 14 if
+VEB-TREE-MINIMUM(V.cluster[high(x),low(x)]) == NIL 15
+VEB-TREE-DELETE(V.summary, high(x)) 16 if x == V.max 17 summary-max =
+VEB-TREE-MAXIMUM(V.summary) 18 if summary-max == NIL 19 V.max = V.min 20
+else V.max = index(summary-max,
+VEB-TREE-MAXIMUM(V.cluster[summary-max])) 21 elseif x == V.max 22 V.max
+= index(high(x), VEB-TREE-MAXIMUM(V.cluster[high(x)])
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 554). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/maps/veb-tree/vEB-TREE-DELETE

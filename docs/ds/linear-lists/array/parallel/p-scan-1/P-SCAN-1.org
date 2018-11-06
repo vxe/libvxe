@@ -1,0 +1,9 @@
+* P-SCAN-1
+
+The following procedure P-SCAN-1 performs the ˝-prefix computation in
+parallel, albeit inefficiently:
+
+P-SCAN-1(x) 1 n = x.length 2 let y[1.. n] be a new array 3
+P-SCAN-1-AUX(x, y, 1, n) 4 return y
+
+* software-engineering/data-structures/linear-lists/array/parallel/P-SCAN-1

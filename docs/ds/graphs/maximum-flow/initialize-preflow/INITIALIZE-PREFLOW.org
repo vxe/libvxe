@@ -1,0 +1,8 @@
+* INITIALIZE-PREFLOW
+
+INITIALIZE-PREFLOW(G,s) 1 for each vertex ∈ G.V 2 v.h = 0 3 v.e = 0 4
+for each edge (u,v) ∈ G.E 5 (u,v).f = 0 6 s.h = |G.V| 7 for each vertex
+∈ s.Adj 8 (s,v).f = c(s,v) 9 v.e = c(s,v) 10 s.e = s.e - c(s,v)
+
+[[INITIALIZE-PREFLOW/24C15FB1-6733-468D-98AB-8FB25B65231F.png]]
+* software-engineering/data-structures/graphs/maximum-flow/INITIALIZE-PREFLOW

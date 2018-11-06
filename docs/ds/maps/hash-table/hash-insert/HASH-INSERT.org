@@ -1,0 +1,11 @@
+* HASH-INSERT
+
+HASH-INSERT(T,k) 1 i = 0 2 repeat 3 j = h(k,i) 4 if T [j] == NIL 5 T[j]
+= k 6 return j 7 else i = i + 1 8 until i == m 9 error “hash table
+overflow”
+
+The HASH-INSERT procedure takes as input a hash table T and a key k. It
+either returns the slot number where it stores key k or flags an error
+because the hash table is already full.
+
+* software-engineering/data-structures/maps/HASH-TABLE/HASH-INSERT

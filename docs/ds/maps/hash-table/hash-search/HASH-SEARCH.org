@@ -1,0 +1,10 @@
+* HASH-SEARCH
+
+HASH-SEARCH(T,k) 1 i = 0 2 repeat 3 j = h(k,i) 4 if T [j] == k 5 return
+j 6 i = i + 1 7 until T[j] == NIL or i == m 8 return NIL
+
+The procedure HASH-SEARCH takes as input a hash table T and a key k,
+returning j if it finds that slot j contains key k, or NIL if key k is
+not present in table T.
+
+* software-engineering/data-structures/maps/HASH-TABLE/HASH-SEARCH

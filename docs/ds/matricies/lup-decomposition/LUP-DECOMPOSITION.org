@@ -1,0 +1,20 @@
+* LUP-DECOMPOSITION
+
+The idea behind LUP decomposition is to find three n n matrices L, U,
+and P such that PA D LU; (28.4) where  * L is a unit lower-triangular
+matrix,  * U is an upper-triangular matrix, and  * P is a permutation
+matrix.
+
+LUP-DECOMPOSITION(A) 1 n = A.rows 2 let π[1.. n] be a new array 3 for i
+= 1 to n 4 π[i] = i 5 for k = 1 to n 6 p = 0 7 for i = k to n 8 if |aᵢₖ|
+> p 9 p = |aᵢₖ| 10 k' = i 11 if p == 0 12 error “singular matrix” 13
+exchange π[k] with π[k'] 14 for i = 1 to n 15 exchange aₖᵢ with a\_{k'i}
+16 for i = k + 1 to n 17 aᵢₖ = aᵢₖ/aₖₖ 18 for j = k + 1 to n 19 aᵢⱼ =
+aᵢⱼ - aᵢₖaₖⱼ
+
+** opencv implementation
+
+[[https://docs.opencv.org/3.4/d5/d42/group__core__hal__interface__decomp__lu.html][OpenCV:
+LU matrix decomposition]]
+
+* software-engineering/data-structures/matricies/LUP-DECOMPOSITION

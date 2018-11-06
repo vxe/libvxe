@@ -1,0 +1,12 @@
+* ON-LINE-MAXIMUM
+
+ON-LINE-MAXIMUM(k,n) 1 bestscore = -∞ 2 for i = 1 to k 3 if score(i) >
+bestscore 4 bestscore = score(i) 5 for i = k + 1 to n 6 if score(i) >
+bestscore 7 return i 8 return n
+
+If it turns out that the best-qualified applicant was among the first k
+interviewed, then we hire the nth applicant. We formalize this strategy
+in the procedure ON-LINE-MAXIMUM(kin), which returns the index of the
+candidate we wish to hire.
+
+* software-engineering/data-structures/sets/dynamic-set/ON-LINE-MAXIMUM

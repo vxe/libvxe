@@ -1,0 +1,9 @@
+* RIGHT
+
+RIGHT(i) 1 return 2i + 1
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 152). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/trees/HEAP/RIGHT

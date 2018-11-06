@@ -1,0 +1,6 @@
+* PERMUTE-WITH-ALL
+
+PERMUTE-WITH-ALL(A) 1 n = A.length 2 for i = 1 to n 3 swap A[i] with
+A[RANDOM(1,n)]
+
+* software-engineering/data-structures/linear-lists/array/PERMUTE-WITH-ALL

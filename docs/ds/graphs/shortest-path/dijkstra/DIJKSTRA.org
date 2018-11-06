@@ -1,0 +1,33 @@
+* DIJKSTRA
+
+DIJKSTRA(G,w,s) 1 INITIALIZE-SINGLE-SOURCE(G,s) 2 S = ∅ 3 Q = G.V 4
+while Q ≠ ∅ 5 u = EXTRACT-MIN(Q) 6 S = S ∪ {u} 7 for each vertex v ∈
+G.Adj[u] 8 RELAX(u,v,w)
+
+Dijkstra's algorithm maintains a set S of vertices whose final
+shortest-path weights from the source s have already been determined.
+The algorithm repeatedly selects the vertex u 2 V S with the minimum
+shortest-path estimate, adds u to S, and relaxes all edges leaving u. In
+the following implementation, we use a min-priority queue Q of vertices,
+keyed by their d values.
+
+or more completely:
+
+DIJKSTRA (G = (V,E), w, Source s) 1. INITIALIZE-SINGLE-SOURCE(G, s) 2. S
+:= {} \_* the set of vertices reachable from the source s*\_ 3. Create a
+new min-priority queue Q := V[G] 4. while Q <>{} 5. do u :=
+EXTRACT-MIN(Q) 6. S := S U {u} 7. for each vertex v in Adj[u] 8. do
+RELAX (Q, u, v, w )
+
+END
+
+INITIALIZE-SINGLE-SOURCE (G = (V,E), Source s) 1. for each vertex v in
+V[G] 2. do d[v]:= +infinity \_* priority of vertex v in Q // 3.
+parent[v] : = NIL // parent of v in the shortest path tree rooted at s
+*\_ 4. d[s]:= 0
+
+RELAX (Q, u, v, w) 1. if d[v] > d[u] + w(u,v) 2. then d[v]:= d[u] +
+w(u,v) 3. parent[v]:= u 4. update Q \_* since priority of v is reduced
+*\_
+
+* software-engineering/data-structures/graphs/shortest-path/DIJKSTRA

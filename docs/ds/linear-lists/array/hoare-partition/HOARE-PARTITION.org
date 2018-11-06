@@ -1,0 +1,7 @@
+* HOARE-PARTITION
+
+HOARE-PARTITION(A,p,r) 1 x = A[p] 2 i = p - 1 3 j = r + 1 4 while TRUE 5
+repeat 6 j = j - 1 7 until A[j] ≤ x 8 repeat 9 i = i + 1 10 until A[i] ≥
+x 11 if i < j 12 exchange A[i] with A[j] 13 else return j
+
+* software-engineering/data-structures/linear-lists/array/HOARE-PARTITION

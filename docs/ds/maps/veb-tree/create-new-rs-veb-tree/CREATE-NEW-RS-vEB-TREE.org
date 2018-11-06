@@ -1,0 +1,8 @@
+* CREATE-NEW-RS-vEB-TREE
+
+CREATE-NEW-RS-VEB-TREE(u) 1 allocate a new vEB tree V 2 V.u =u 3 V.min =
+NIL 4 V.max = NIL 5 V.summary = NIL 6 create V.cluster as an empty
+dynamic hash table 7 return V
+
+The key here is that you create this tree using a hash table of size u
+#software-engineering/data-structures/maps/veb-tree/CREATE-NEW-RS-vEB-TREE

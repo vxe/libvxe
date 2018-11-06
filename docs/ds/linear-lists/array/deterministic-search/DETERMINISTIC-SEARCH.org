@@ -1,0 +1,9 @@
+* DETERMINISTIC-SEARCH
+
+Now consider a deterministic linear search algorithm, which we refer to
+as DETERMINISTIC-SEARCH. Specifically, the algorithm searches A for x in
+order, considering AOE1; AŒ2; AŒ3;:::; AŒn until either it finds
+AOEi D x or it reaches the end of the array. Assume that all possible
+permutations of the input array are equally likely.
+
+* software-engineering/data-structures/linear-lists/array/DETERMINISTIC-SEARCH

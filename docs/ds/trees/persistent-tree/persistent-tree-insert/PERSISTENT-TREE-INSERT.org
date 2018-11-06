@@ -1,0 +1,7 @@
+* PERSISTENT-TREE-INSERT
+
+Write a procedure PERSISTENT-TREE-INSERT that, given a persistent tree T
+and a key k to insert, returns a new persistent tree T 0 that is the
+result of inserting k into T.
+
+* software-engineering/data-structures/trees/persistent-tree/PERSISTENT-TREE-INSERT

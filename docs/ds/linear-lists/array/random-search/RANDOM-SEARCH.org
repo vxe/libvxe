@@ -1,0 +1,14 @@
+* RANDOM-SEARCH
+
+5-2 Searching an unsorted array
+
+This problem examines three algorithms for searching for a value x in an
+unsorte= array A consisting of n elements. Consider the following
+randomized strategy. pick a random index i into A. If A[i] = x, then we
+terminate, otherwise, we continue the search by picking a new random
+index into A. We continue picking random indices into A until we fin= an
+index j such that A[j] = x or until we have checke= every element of A.
+Note that we pick from the whole set of indices each time, so that we
+may examine a given element more than once.
+
+* software-engineering/data-structures/linear-lists/array/RANDOM-SEARCH

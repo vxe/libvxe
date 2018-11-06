@@ -1,0 +1,9 @@
+* PROTO-vEB-MINIMUM
+
+PROTO-VEB-MINIMUM(V) 1 if V.u == 2 2 if V.A[0] == 1 3 return 0 4 elseif
+V.A[1] == 1 5 return 1 6 else return NIL 7 else min-cluster =
+PROTO-VEB-MINIMUM(V.summary) 8 if min-cluster == NIL 9 return NIL 10
+else offset = PROTO-VEB-MINIMUM(V.cluster[min-cluster]) 11 return
+index.min-cluster, offset/
+
+* software-engineering/data-structures/maps/veb-tree/PROTO-vEB-MINIMUM

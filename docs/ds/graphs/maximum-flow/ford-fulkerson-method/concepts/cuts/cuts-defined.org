@@ -1,0 +1,11 @@
+* cuts-defined
+
+Cuts of flow networks The Ford-Fulkerson method repeatedly augments the
+flow along augmenting paths until it has found a maximum flow. How do we
+know that when the algorithm terminates, we have actually found a
+maximum flow? The max-flow min-cut theorem, which we shall prove
+shortly, tells us that a flow is maximum if and only if its residual
+network contains no augmenting path. To prove this theorem, though, we
+must first explore the notion of a cut of a flow network.
+
+* software-engineering/data-structures/graphs/maximum-flow/FORD-FULKERSON-METHOD/concepts/cuts

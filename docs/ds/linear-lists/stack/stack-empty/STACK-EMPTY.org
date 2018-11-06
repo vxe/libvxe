@@ -1,0 +1,9 @@
+* STACK-EMPTY
+
+STACK-EMPTY(S) 1 if S.top == 0 2 return TRUE 3 else return FALSE
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 233). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/linear-lists/STACK/STACK-EMPTY

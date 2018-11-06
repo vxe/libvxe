@@ -1,0 +1,10 @@
+* COMPACTIFY-LIST
+
+a procedure COMPACTIFY-LIST.L; F/ that, given the list L and the free
+list F, moves the items in L so that they occupy array positions
+1,2,...,n and adjusts the free list F so that it remains correct,
+occupying array positions n+1,n+2,...,m. The running time of your
+procedure should be O(n), and it should use only a constant amount of
+extra space. Argue that your procedure is correct.
+
+* software-engineering/data-structures/linear-lists/LINKED-LIST/COMPACTIFY-LIST

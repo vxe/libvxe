@@ -1,0 +1,12 @@
+* DAG-SHORTEST-PATHS
+
+DAG-SHORTEST-PATHS(G,w,s) 1 topologically sort the vertices of G 2
+INITIALIZE-SINGLE-SOURCE(G,s) 3 for each vertex u, taken in
+topologically sorted order 4 for each vertex u ∈ G.Adj[u] 5 RELAX(u,v,w)
+
+according to a topological sort of its vertices, we can compute shortest
+paths from a single source in O(V + E) time. Shortest paths are always
+well defind= in a dag, since even if there are negative-weight edges, no
+negative-weight cycles can exist.
+
+* software-engineering/data-structures/graphs/shortest-path/DAG-SHORTEST-PATHS

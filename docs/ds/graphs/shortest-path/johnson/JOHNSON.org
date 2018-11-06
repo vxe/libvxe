@@ -1,0 +1,21 @@
+* JOHNSON
+
+Johnson's algorithm to compute all-pairs shortest paths uses the
+Bellman-Ford algorithm (Section 24.1) an= Dijkstra's algorithm (Section
+24.3) as subroutines. It assumes implicitly that the edges are stored in
+adjacency lists. The algorithm returns the usual |V| x |V| matrix D =
+Dᵢⱼ dᵢⱼ = δ(i,j), or it reports that the input graph contains a
+negative-weight cycle.
+
+JOHNSON(G,w) 1 compute G', where G'.V = G.V G.V ∪ {s} G'.E = G.E ∪
+{(s,v) : v ∈ G.V}, and w(s,v) = 0 for all v ∈ G.v 2 if
+BELLMAN-FORD(G',w,s) == FALSE 3 print “the input graph contains a
+negative-weight cycle” 4 else for each vertex v ∈ G'.V 5 set h(v) to the
+value of δ(s,v) computed by the Bellman-Ford algorithm 6 for each edge
+(u,v) ∈ G'.E 7 w\^ (u,v) = w(u,v) + h(u) - h(v) 8 let D = (dᵤᵥ) be a new
+n x n matrix 9 for each vertex u ∈ G.V 10 run DIJKSTRA(G,w\^, u)/ y to
+compute δ\^(u,v) for all v ∈ G.V 11 for each vertex v ∈ G.V 12 dᵤᵥ =
+δ\^(u,v) + h(v) - h(u) 13 return D
+
+[[JOHNSON/1BC0A486-BCFD-44E2-B249-F35EF93FFCA0.png]]
+* software-engineering/data-structures/graphs/shortest-path/JOHNSON

@@ -1,0 +1,13 @@
+* MERGE-SORT
+
+MERGE-SORT(A,p,r) 1 if p < r 2 q = ⌊ b + r / 2 ⌋ 3 MERGE-SORT(A, p, q)
+MERGE-SORT(A, q + 1, r) 5 MERGE(A, p, q, r)
+
+We can now use the MERGE procedure as a subroutine in the merge sort
+algorithm. The procedure MERGE-SORT(A, p, r) sorts the elements in the
+subarray A[p..r]. If p ≥ r, the subarray has at most one element and is
+therefore already sorted. Otherwise, the divide step simply computes an
+index q that partitions A[p..r] into two subarrays: A[p.. q], containing
+⌈n/2⌉ elements, and A[q + 1..r] containing ⌊n/2⌋ elements
+
+* software-engineering/data-structures/linear-lists/array/MERGE-SORT

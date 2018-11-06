@@ -1,0 +1,7 @@
+* LUP-SOLVE
+
+LUP-SOLVE(L,U,π,b) 1 n = L.rows 2 let x and y be new vectors of length n
+3 for i = 1 to n 4 yᵢ = b\_π[i] - ∑ⱼ₌₁ⁱ⁻¹ lᵢⱼyⱼ 5 for i = n downto 1 6
+xᵢ = (yᵢ - ∑ⁿⱼ₌ᵢ₊₁ uᵢⱼxⱼ) / uᵢᵢ 7 return x
+
+* software-engineering/data-structures/matricies/LUP-SOLVE

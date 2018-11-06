@@ -1,0 +1,12 @@
+* HOPCROFT-KARP
+
+Give an algorithm that runs in O(E) time to find a maximal set of
+vertex-disjoint shortest augmenting paths P₁, P₂,...,Pₖ for a given
+matching M. Conclude that the total running time of HOPCROFT-KARP is
+O(√V E)
+
+HOPCROFT-KARP(G) 1 M = ∅ 2 repeat 3 let P = {P₁, P₂,...,Pₖ} be a maximal
+set of vertex-disjoint shortest augmenting paths with respect to M 4 M =
+M ⨂ (P₁ ∪ p₂ ∪ ... ∪ pₖ) 5 until P == ∅ 6 return M
+
+* software-engineering/data-structures/graphs/cardinality-matching/HOPCROFT-KARP

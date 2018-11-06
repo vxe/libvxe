@@ -1,0 +1,25 @@
+* SELECT
+
+The SELECT algorithm determines the ith smallest of an input array of
+n>1 distinct elements by executing the following steps. (If n D 1, then
+SELECT merely returns its only input value as the ith smallest.) 1.
+Divide the n elements of the input array into bn=5c groups of 5 elements
+each and at most one group made up of the remaining n mod 5 elements. 2.
+Find the median of each of the dn=5e groups by first insertion-sorting
+the elements of each group (of which there are at most 5) and then
+picking the median from the sorted list of group elements. 2. 3. Use
+SELECT recursively to find the median x of the dn=5e medians found in
+step 2. (If there are an even number of medians, then by our convention,
+x is the lower median.) 3. 4. Partition the input array around the
+median-of-medians x using the modified version of PARTITION. Let k be
+one more than the number of elements on the low side of the partition,
+so that x is the kth smallest element and there are nk elements on the
+high side of the partition. 4. 5. If i D k, then return x. Otherwise,
+use SELECT recursively to find the ith smallest element on the low side
+if i<k, or the .i  k/th smallest element on the high side if i>k.
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 220). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/linear-lists/array/SELECT

@@ -1,0 +1,11 @@
+* RB-INSERT-FIXUP
+
+RB-INSERT-FIXUP(T,z) 1 while z.p.color == RED 2 if z.p = = z.p.p.left 3
+y = z.p.p.right 4 if y.color == RE= 5 z.p.color = BLACK case 1 6 y.color
+= BLACK case 1 7 z.p.p.color = RED case 1 8 z = z.p.p case 1 9 else if z
+== z.p.right 10 z = z.p case 2 11 LEFT-ROTATE(T, z) / case 2 12
+z.p.color = BLACK case 3 13 z.p.p.color = RED case 3 14 RIGHT-ROTATE(T,
+z.p.p) / case 3 15 else (same as then clause with “right” and “left”
+exchanged) 16 T.root.color = BLACK
+
+* software-engineering/data-structures/trees/search-tree/red-black-tree/RB-INSERT-FIXUP

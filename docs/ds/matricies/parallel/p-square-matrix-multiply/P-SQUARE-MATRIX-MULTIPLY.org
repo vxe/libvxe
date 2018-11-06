@@ -1,0 +1,7 @@
+* P-SQUARE-MATRIX-MULTIPLY
+
+P-SQUARE-MATRIX-MULTIPLY(A, B) 1 n = A.rows 2 let C be a new n x n
+matrix 3 parallel for i = 1 to n 4 parallel for new j = 1 to n 5 cᵢⱼ = 0
+6 for new k = 1 to n 7 cᵢⱼ = cᵢⱼ + aᵢₖ * bₖⱼ 8 return C
+
+* software-engineering/data-structures/matricies/parallel/P-SQUARE-MATRIX-MULTIPLY

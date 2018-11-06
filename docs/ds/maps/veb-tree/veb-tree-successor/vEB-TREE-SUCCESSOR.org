@@ -1,0 +1,17 @@
+* vEB-TREE-SUCCESSOR
+
+VEB-TREE-SUCCESSOR(V, x) 1 if V.u == 2 2 if x == 0 an= V.max == 1 3
+return 1 4 else return NIL 5 elseif V.min ≠ NIL and x < V.min 6 return
+V.min 7 else max-low = VEB-TREE-MAXIMUM(V.cluster[high(x)]) 8 if max-low
+≠ NIL and low(x) < max-low 9 offset =
+VEB-TREE-SUCCESSOR(V.cluster[high(x)], low(x)) 10 return index(high(x),
+offset ) 11 else succ-cluster = VEB-TREE-SUCCESSOR(V.summary, high(x))
+12 if succ-cluster == NIL 13 return NIL 14 else offset =
+VEB-TREE-MINIMUM(V.cluster[succ-cluster]) 15 return index(succ-cluster,
+offset)
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 551). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/maps/veb-tree/vEB-TREE-SUCCESSOR

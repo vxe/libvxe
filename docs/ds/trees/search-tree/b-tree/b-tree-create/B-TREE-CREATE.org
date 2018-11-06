@@ -1,0 +1,8 @@
+* B-TREE-CREATE
+
+B-TREE-CREATE(T) 1 x = ALLOCATE-NODE() 2 x.leaf = TRUE 3 x.n = 0 4
+DISK-WRITE(x) 5 T.root = x
+
+B-TREE-CREATE requires O(1) disk operations and O(1) CPU time.
+
+* software-engineering/data-structures/trees/search-tree/b-TREE/B-TREE-CREATE

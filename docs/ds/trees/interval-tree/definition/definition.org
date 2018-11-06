@@ -1,0 +1,22 @@
+* definition
+
+* software-engineering/data-structures/trees/interval-tree/definition
+
+** Naive approach
+
+In a simple case, the intervals do not overlap and they can be inserted
+into a simple [[https://en.wikipedia.org/wiki/Binary_search_tree][binary
+search tree]] and queried in O(log *n*) time. However, with arbitrarily
+overlapping intervals, there is no way to compare two intervals for
+insertion into the tree since orderings sorted by the beginning points
+or the ending points may be different. A naive approach might be to
+build two parallel trees, one ordered by the beginning point, and one
+ordered by the ending point of each interval.
+
+This allows discarding half of each tree in O(log *n*) time, but the
+results must be merged, requiring O(*n*) time. This gives us queries in
+O(*n* + log *n*) = O(*n*), which is no better than brute-force.
+
+Interval trees solve this problem. This article describes two
+alternative designs for an interval tree, dubbed the *centered interval
+tree* and the *augmented tree*.

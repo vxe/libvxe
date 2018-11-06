@@ -1,0 +1,5 @@
+* MAKE-SET
+
+MAKE-SET(x) 1 x.p = 2 x.rank = 0
+
+* software-engineering/data-structures/sets/MAKE-SET

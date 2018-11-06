@@ -1,0 +1,8 @@
+* FIB-HEAP-PRUNE
+
+Give an efficient implementation of FIB-HEAP-PRUNE.H; r\_, which deletes
+q D min.r; H:n\_ nodes from H. You may choose any q nodes to delete.
+Analyze the amortized running time of your implementation. (Hint: You
+may need to modify the data structure and potential function.)
+
+* software-engineering/data-structures/trees/HEAP/fibonacci-heap/FIB-HEAP-PRUNE

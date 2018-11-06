@@ -1,0 +1,7 @@
+* PRINT-OPTIMAL-PARENS
+
+PRINT-OPTIMAL-PARENS(s, i, j) 1 if i == j 2 print “A”i 3 else print “(”
+4 PRINT-OPTIMAL-PARENS(s, i, s[i,j]) 5 PRINT-OPTIMAL-PARENS(s, s[i, j] +
+1, j) 6 print “)”
+
+* software-engineering/data-structures/matricies/PRINT-OPTIMAL-PARENS

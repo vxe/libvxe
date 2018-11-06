@@ -1,0 +1,9 @@
+* FIB-HEAP-LINK
+
+FIB-HEAP-LINK(H,y,x) 1 remove y from the root list of H 2 make y a child
+of x, incrementing x.degree 3 y.mark = FALSE
+
+This procedure increments the attribute x:degree and clears the mark on
+y.
+
+* software-engineering/data-structures/trees/HEAP/fibonacci-heap/FIB-HEAP-LINK

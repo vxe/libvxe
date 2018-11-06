@@ -1,0 +1,8 @@
+* MEMOIZED-MATRIX-CHAIN
+
+MEMOIZED-MATRIX-CHAIN(p) 1 n = p.length - 1 2 let m[1.. n, 1.. n] be a
+new table 3 for i = 1 to n 4 for j = i to n 5 m[i, j] = ∞ 6 return
+LOOKUP-CHAIN(m, p, 1, n)
+
+[[MEMOIZED-MATRIX-CHAIN/A50E9D65-4FEB-489E-AB44-2CE4E1365679.png]]
+* software-engineering/data-structures/matricies/MEMOIZED-MATRIX-CHAIN

@@ -1,0 +1,8 @@
+* RELABEL-TO-FRONT
+
+RELABEL-TO-FRONT(G, s, t) 1 INITIALIZE-PREFLOW(G, s) 2 L = G.V - {s,t}
+in any order 3 for each vertex u ∈ G.V - {s,t} 4 u.current = u.N.head 5
+u = L.head 6 while u ≠ NIL 7 old-height = u.h 8 DISCHARGE(u) 9 if u.h >
+old-height 10 move u to the front of list L 11 u = u.next
+
+* software-engineering/data-structures/graphs/maximum-flow/RELABEL-TO-FRONT

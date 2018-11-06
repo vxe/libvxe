@@ -1,0 +1,5 @@
+* MAKE-HEAP
+
+MAKE-HEAP() creates and returns a new heap containing no elements.
+
+* software-engineering/data-structures/trees/HEAP/MAKE-HEAP

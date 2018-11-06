@@ -1,0 +1,11 @@
+* LOOKUP-CHAIN
+
+LOOKUP-CHAIN(m,p,i,j) 1 if m[i,j] < ∞ 2 return m[i, j] 3 if i == j 4
+m[i, j] = 0 5 else for k = i to j - 1 6 q = LOOKUP-CHAIN(m, p, i, k) +
+LOOKUP-CHAIN(m, p, k + 1, j) + pᵢ₋₁pₖpⱼ 7 if q < m[i, j] 8 m[i, j] = q 9
+return m[i, j]
+
+i honestly have no idea what this is, but its a some dynamic programming
+thing
+
+* software-engineering/data-structures/matricies/LOOKUP-CHAIN

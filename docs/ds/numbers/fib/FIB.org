@@ -1,0 +1,11 @@
+* FIB
+
+FIB(n) 1 if n ≤ 1 2 return n 3 else x = FIB(n-1) 4 y = FIB(n-2) 5 return
+x + y
+
+You would not really want to compute large Fibonacci numbers this way,
+because this computation does much repeated work.
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (The MIT Press) (Page 775). The MIT
+Press. Kindle Edition. #software-engineering/data-structures/numbers/FIB

@@ -1,0 +1,14 @@
+* MAYBE-MST-C
+
+In this problem, we give pseudocode for three different algorithms. Each
+one takes a connected graph and a weight function as input and returns a
+set of edges T. For each algorithm, either prove that T is a minimum
+spanning tree or prove that T is not necessarily a minimum spanning
+tree. Also describe the most efficient implementation of each algorithm,
+whether or not it computes a minimum spanning tree.
+
+MAYBE-MST-C(G,w) 1 T = ∅ 2 for each edge e, taken in arbitrary order 3 T
+= T ∪ {e} 4 if T has a cycle c 5 let e' be a maximum-weight edge on c 6
+T = T - {e'} 7 return T
+
+* software-engineering/data-structures/graphs/mst/MAYBE-MST-C

@@ -1,0 +1,6 @@
+2OVER\\
+( d1 d2 -- d1 d2 d1 ) Makes a copy of the second pair of numbers and
+pushes it on top.
+
+* software-engineering/languages/forth/stack-operations/2over
+#software-engineering/data-structures/linear-lists/STACK/2over

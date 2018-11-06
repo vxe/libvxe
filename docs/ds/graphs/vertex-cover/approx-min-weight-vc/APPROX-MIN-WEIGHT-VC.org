@@ -1,0 +1,25 @@
+* APPROX-MIN-WEIGHT-VC
+
+APPROX-MIN-WEIGHT-VC(G,w) 1 C = ∅ 2 compute x~, an optimal solution to
+the linear program in lines (35.17)--(35.20) 3 for each v ∈ V 4 if x~(v)
+≥ 1/2 5 C = C ∪ {v} 6 return C
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 1126). The MIT Press. Kindle
+Edition.
+
+The APPROX-MIN-WEIGHT-VC procedure works as follows.
+
+Line 1 initializes the vertex cover to be empty.
+
+Line 2 formulates the linear program in lines (35.17)--(35.20) and then
+solves this linear program. An optimal solution gives each vertex  an
+associated value x~(v) where 0 <= x~(v) <= 1. We use this value to guide
+the choice of which vertices to add to the vertex cover C in lines 3--5.
+If x~(v)>= 1/2, we add  to C; otherwise we do not. In effect, we are
+“rounding” each fractional variable in the solution to the linear
+program to 0 or 1 in order to obtain a solution to the 0-1 integer
+program in lines (35.14)--(35.16). Finally, line 6 returns the vertex
+cover C.
+
+* software-engineering/data-structures/graphs/vertex-cover/APPROX-MIN-WEIGHT-VC

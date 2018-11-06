@@ -1,0 +1,9 @@
+* MILLER-RABIN
+
+The procedure MILLER-RABIN is a probabilistic search for a proof that n
+is composite.
+
+MILLER-RABIN(n,s) 1 for j = 1 to s 2 a = RANDOM(1, n - 1) 3 if
+WITNESS(a,n) 4 return COMPOSITE definitely 5 return PRIME almost surely
+
+* software-engineering/data-structures/numbers/MILLER-RABIN

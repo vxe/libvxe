@@ -1,0 +1,11 @@
+* ALLOCATE-OBJECT
+
+We keep the free objects in a singly linked list, which we call the free
+list. The free list uses only the *next* array, which stores the *next*
+pointers within the list. The head of the free list is held in the
+global variable *free*.
+
+ALLOCATE-OBJECT() 1 if free == NIL 2 error “out of space” 3 else x =
+free 4 free = x.next 5 return x
+
+* software-engineering/data-structures/memory/ALLOCATE-OBJECT

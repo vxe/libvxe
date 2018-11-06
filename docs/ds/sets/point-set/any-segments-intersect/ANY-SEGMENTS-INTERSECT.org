@@ -1,0 +1,19 @@
+* ANY-SEGMENTS-INTERSECT
+
+The following algorithm takes as input a set S of n line segments,
+returning the boolean value TRUE if any pair of segments in S
+intersects, and FALSE otherwise. A *red-black tree* maintains the total
+preorder T.
+
+ANY-SEGMENTS-INTERSECT(S) 1 T = nil 2 *sort the endpoints of the
+segments in S from left to right, breaking ties by putting left
+endpoints before right endpoints and breaking further ties by putting
+points with lower y-coordinates first* 3 for each point p in the sorted
+list of endpoints 4 if p is the left endpoint of a segment s 5
+INSERT(T,s) 6 if ((ABOVE(T,s) exists and intersects s) or (BELOW.T; s/
+exists and intersects s)) 7 return TRUE 8 if (p is the right endpoint of
+a segment s) 9 if ((both ABOVE(T,s) and BELOW(T,s) exist\\
+ and ABOVE(T,s) intersects BELOW(T,s)) 10 return TRUE 11 DELETE(T,s) 12
+return FALSE
+
+* software-engineering/data-structures/sets/point-set/ANY-SEGMENTS-INTERSECT

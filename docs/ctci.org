@@ -1,0 +1,802 @@
+# _*_ mode:org _*_
+#+TITLE: ctci
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+
+* utilities
+  these are the utilities that I guess are used in multiple implementations
+** random-int
+#+BEGIN_SRC java :tangle Interview.java
+public static int randomInt(int n) {
+    return (int) (Math.random() * n);
+}
+
+#+END_SRC
+** random-int-range
+#+BEGIN_SRC java :tangle Interview.java
+public static int randomIntInRange(int min, int max) {
+    return randomInt(max + 1 - min) + min;
+}
+#+END_SRC
+** random-boolean
+#+BEGIN_SRC java :tangle Interview.java
+public static boolean randomBoolean() {
+    return randomIntInRange(0, 1) == 0;
+}
+
+public static boolean randomBoolean(int percentTrue) {
+    return randomIntInRange(1, 100) <= percentTrue;
+}
+#+END_SRC
+*** random boolean matrix
+ #+BEGIN_SRC java :tangle Interview.java
+ public static boolean[][] randomBooleanMatrix(int M, int N, int percentTrue) {
+     boolean[][] matrix = new boolean[M][N];
+     for (int i = 0; i < M; i++) {
+         for (int j = 0; j < N; j++) {
+             matrix[i][j] = randomBoolean(percentTrue);
+         }
+     }
+     return matrix;
+ }
+ #+END_SRC
+** random-matrix
+#+BEGIN_SRC java :tangle Interview.java
+public static int[][] randomMatrix(int M, int N, int min, int max) {
+    int[][] matrix = new int[M][N];
+    for (int i = 0; i < M; i++) {
+        for (int j = 0; j < N; j++) {
+            matrix[i][j] = randomIntInRange(min, max);
+        }
+    }
+    return matrix;
+}
+#+END_SRC
+** random-array
+#+BEGIN_SRC java :tangle Interview.java
+public static int[] randomArray(int N, int min, int max) {
+    int[] array = new int[N];
+    for (int j = 0; j < N; j++) {
+        array[j] = randomIntInRange(min, max);
+    }
+    return array;
+}
+#+END_SRC
+** random-linked-list
+#+BEGIN_SRC java :tangle Interview.java
+public static LinkedListNode randomLinkedList(int N, int min, int max) {
+    LinkedListNode root = new LinkedListNode(randomIntInRange(min, max),
+                                             null, null);
+    LinkedListNode prev = root;
+    for (int i = 1; i < N; i++) {
+        int data = randomIntInRange(min, max);
+        LinkedListNode next = new LinkedListNode(data, null, null);
+        prev.setNext(next);
+        prev = next;
+    }
+    return root;
+}
+#+END_SRC
+** linked-list-with-value
+#+BEGIN_SRC java :tangle Interview.java
+public static LinkedListNode linkedListWithValue(int N, int value) {
+    LinkedListNode root = new LinkedListNode(value, null, null);
+    LinkedListNode prev = root;
+    for (int i = 1; i < N; i++) {
+        LinkedListNode next = new LinkedListNode(value, null, null);
+        prev.setNext(next);
+        prev = next;
+    }
+    return root;
+}
+#+END_SRC
+** linked-list-from-array
+#+BEGIN_SRC java :tangle Interview.java
+public static LinkedListNode createLinkedListFromArray(int[] vals) {
+    LinkedListNode head = new LinkedListNode(vals[0], null, null);
+    LinkedListNode current = head;
+    for (int i = 1; i < vals.length; i++) {
+        current = new LinkedListNode(vals[i], null, current);
+    }
+    return head;
+}
+#+END_SRC
+** array-to-string
+#+BEGIN_SRC java :tangle Interview.java
+public static String arrayToString(int[] array) {
+    if (array == null) return "";
+    return arrayToString(array, 0, array.length - 1);
+}
+#+END_SRC
+** array-to-string
+#+BEGIN_SRC java :tangle Interview.java
+public static String arrayToString(int[] array, int start, int end) {
+    StringBuilder sb = new StringBuilder();
+    for (int i = start; i <= end; i++) {
+        int v = array[i];
+        sb.append(v + ", ");
+    }
+    return sb.toString();
+}
+#+END_SRC
+** string-array-to-string
+#+BEGIN_SRC java :tangle Interview.java
+public static String stringArrayToString(String[] array) {
+    StringBuilder sb = new StringBuilder();
+    for (String v : array) {
+        sb.append(v + ", ");
+    }
+    return sb.toString();
+}
+#+END_SRC
+** binary-to-string
+#+BEGIN_SRC java :tangle Interview.java
+public static String toFullBinaryString(int a) {
+    String s = "";
+    for (int i = 0; i < 32; i++) {
+        Integer lsb = new Integer(a & 1);
+        s = lsb.toString() + s;
+        a = a >> 1;
+    }
+    return s;
+}
+#+END_SRC
+** to-base_n-string
+#+BEGIN_SRC java :tangle Interview.java
+public static String toBaseNString(int a, int base) {
+
+    String s = "";
+    while (true) {
+        int lastdigit = a % base;
+        s = lastdigit + s;
+        a = a / base;
+        if (a == 0)
+            break;
+    }
+
+    return s;
+}
+#+END_SRC
+** print-matrix
+#+BEGIN_SRC java :tangle Interview.java
+public static void printMatrix(int[][] matrix) {
+    for (int i = 0; i < matrix.length; i++) {
+        for (int j = 0; j < matrix[i].length; j++) {
+            if (matrix[i][j] < 10 && matrix[i][j] > -10) {
+                System.out.print(" ");
+            }
+            if (matrix[i][j] < 100 && matrix[i][j] > -100) {
+                System.out.print(" ");
+            }
+            if (matrix[i][j] >= 0) {
+                System.out.print(" ");
+            }
+            System.out.print(" " + matrix[i][j]);
+        }
+        System.out.println();
+    }
+}
+#+END_SRC
+** print-binary-matrix
+#+BEGIN_SRC java :tangle Interview.java
+public static void printMatrix(boolean[][] matrix) {
+    for (int i = 0; i < matrix.length; i++) {
+        for (int j = 0; j < matrix[i].length; j++) {
+            if (matrix[i][j]) {
+                System.out.print("1");
+            } else {
+                System.out.print("0");
+            }
+        }
+        System.out.println();
+    }
+}
+#+END_SRC
+** print-int-array
+#+BEGIN_SRC java :tangle Interview.java
+public static void printIntArray(int[] array) {
+    for (int i = 0; i < array.length; i++) {
+        System.out.print(array[i] + " ");
+    }
+    System.out.println("");
+}
+#+END_SRC
+** char-array-to-string
+#+BEGIN_SRC java :tangle Interview.java
+public static String charArrayToString(char[] array) {
+    StringBuilder buffer = new StringBuilder(array.length);
+    for (char c : array) {
+        if (c == 0) {
+            break;
+        }
+        buffer.append(c);
+    }
+    return buffer.toString();
+}
+#+END_SRC
+** list-of-of-points-to-string
+#+BEGIN_SRC java :tangle Interview.java
+public static String listOfPointsToString(ArrayList<Point> list) {
+    StringBuilder buffer = new StringBuilder();
+    for (Point p : list) {
+        buffer.append("(" + p.x + "," + p.y + ")");
+    }
+    return buffer.toString();
+}
+#+END_SRC
+** random-binary-search-tree
+#+BEGIN_SRC java :tangle Interview.java
+public static TreeNode randomBST(int N, int min, int max) {
+    int d = randomIntInRange(min, max);
+    TreeNode root = new TreeNode(d);
+    for (int i = 1; i < N; i++) {
+        root.insertInOrder(randomIntInRange(min, max));
+    }
+    return root;
+}
+#+END_SRC
+** tree-from-array
+#+BEGIN_SRC java :tangle Interview.java
+public static TreeNode createTreeFromArray(int[] array) {
+    if (array.length > 0) {
+        TreeNode root = new TreeNode(array[0]);
+        java.util.Queue<TreeNode> queue = new java.util.LinkedList<TreeNode>();
+        queue.add(root);
+        boolean done = false;
+        int i = 1;
+        while (!done) {
+            TreeNode r = (TreeNode) queue.element();
+            if (r.left == null) {
+                r.left = new TreeNode(array[i]);
+                i++;
+                queue.add(r.left);
+            } else if (r.right == null) {
+                r.right = new TreeNode(array[i]);
+                i++;
+                queue.add(r.right);
+            } else {
+                queue.remove();
+            }
+            if (i == array.length) {
+                done = true;
+            }
+        }
+        return root;
+    } else {
+        return null;
+    }
+}
+#+END_SRC
+** long-string-example
+#+BEGIN_SRC java :tangle Interview.java
+public static String getLongTextBlob() {
+    String book = "As they rounded a bend in the path that ran beside the river, Lara recognized the silhouette of a fig tree atop a nearby hill. The weather was hot and the days were long. The fig tree was in full leaf, but not yet bearing fruit. "
+                 + "Soon Lara spotted other landmarks�an outcropping of limestone beside the path that had a silhouette like a man�s face, a marshy spot beside the river where the waterfowl were easily startled, a tall tree that looked like a man with his arms upraised. They were drawing near to the place where there was an island in the river. The island was a good spot to make camp. They would sleep on the island tonight."
+                 + "Lara had been back and forth along the river path many times in her short life. Her people had not created the path�it had always been there, like the river�but their deerskin-shod feet and the wooden wheels of their handcarts kept the path well worn. Lara�s people were salt traders, and their livelihood took them on a continual journey. ";
+    String book_mod = book.replace('.', ' ').replace(',', ' ')
+        .replace('-', ' ');
+    return book_mod;
+}
+#+END_SRC
+** long-string-example-to-list
+#+BEGIN_SRC java :tangle Interview.java
+public static String[] getLongTextBlobAsStringList() {
+    return getLongTextBlob().split(" ");
+}
+#+END_SRC
+** get-list-of-words
+   #+BEGIN_SRC java :tangle Interview.java
+   public static String[] getListOfWords() {
+    return getLongTextBlob().split(" ");
+}
+
+   #+END_SRC
+** trie-from-list-of-words
+#+BEGIN_SRC java :tangle Interview.java
+
+// idk what getListofWords is so redefining it above
+public static Trie getTrieDictionary() {
+    return new Trie(getListOfWords());
+}
+#+END_SRC
+** words-list-as-hash-set
+#+BEGIN_SRC java :tangle Interview.java
+public static HashSet<String> getWordListAsHashSet() {
+    String[] wordList = getListOfWords();
+    HashSet<String> wordSet = new HashSet<String>();
+    for (String s : wordList) {
+        wordSet.add(s);
+    }
+    return wordSet;
+}
+#+END_SRC
+** end static methods
+#+BEGIN_SRC   public class Interview {
+  }
+#+END_SRC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:
+* problems-by-chapter
+** big-O
+*** example-16
+   #+BEGIN_SRC java :tangle Interview.java
+      class Example {
+
+         public static int powersOf2(int n) {
+             if (n < 1) {
+                 return 0;
+             } else if (n == 1) {
+                 System.out.println(1);
+                 return 1;
+             } else {
+                 int prev = powersOf2(n / 2);
+                 int curr = prev * 2;
+                 System.out.println(curr);
+                 return curr;
+             }
+         }
+         public static void main(String[] args) {
+             powersOf2(4);
+         }
+     }   
+   #+END_SRC
+*** [[file:./print-sorted-strings.org][print-sorted-strings]]
+** chapter 1 arrays-strings
+*** 1 is-unique
+    DEADLINE: <2018-08-15 Wed>
+    could call this class unique instead, and just have a bunch of static methods representing the concept 
+    of uniqueness
+     #+BEGIN_SRC java :tangle Interview.java
+       class Uniqueness {
+           
+           public static boolean isUniqueChars(String str) {
+               if (str.length() > 128) {
+                   return false;
+               }
+               int checker = 0;
+               for (int i = 0; i < str.length(); i++) {
+                   int val = str.charAt(i) - 'a';
+                   if ((checker & (1 << val)) > 0) return false;
+                   checker |= (1 << val);
+               }
+               return true;
+           }
+           
+           public static boolean isUniqueChars2(String str) {
+               if (str.length() > 128) {
+                   return false;
+               }
+
+               boolean[] char_set = new boolean[128];
+               for (int i = 0; i < str.length(); i++) {
+                   int val = str.charAt(i);
+                   if (char_set[val]) return false;
+                   char_set[val] = true;
+               }
+               return true;
+           }
+           
+           public static void main(String[] args) {
+               String[] words = {"abcde", "hello", "apple", "kite", "padle"};
+               for (String word : words) {
+                   System.out.println(word + ": " + isUniqueChars(word) + " " + isUniqueChars2(word));
+               }
+           }
+ #+END_SRC
+*** 2 check-permutation
+    #+BEGIN_SRC java :tangle Interview.java
+    class Permudations {}
+    #+END_SRC
+*** 3 urlify
+    this could be a general URL class
+    #+BEGIN_SRC java :tangle Interview.java
+    class URL {}
+    #+END_SRC
+*** 4 palindrome-permutation
+    this could be a plaindrome class
+    #+BEGIN_SRC java :tangle Interview.java
+    class Palindrome {}
+    #+END_SRC
+*** 5 one-away
+    idk what this is 
+*** 6 string-compression
+    #+BEGIN_SRC java :tangle Interview.java
+    class Compression {}
+    #+END_SRC
+    seems pretty self explanatory, string compression
+*** 7 rotate-matrix
+    MatrixOperation is polymorphic on matrix type and provides the standard operations you would expect on them
+    #+BEGIN_SRC java :tangle Interview.java
+    class MatrixOperatons
+    #+END_SRC
+    matrix functions, could include wrappers to tensorflow
+*** 8 zero-matrix
+    general matrix factory for outputting matricies
+    #+BEGIN_SRC java :tangle Interview.java
+    class Matrix {}
+    #+END_SRC
+    yeah could probably fold this guy into the previous one
+*** 9 string-rotation
+    everything you could ever possibly want to do to a string
+    #+BEGIN_SRC java :tangle Interview.java
+    class StringOperations {}
+    #+END_SRC
+    a rotation is just a permutation.  Maybe string re-arragnement just to make the whole thine more concrete
+** chapter 2 linked-lists
+   so the question here, is one linked list library called linkedlistutil or something else.  I'd like smoethong
+   polymorphic on various list implementations which takes in a list and makes the below operations available to 
+   to it.
+    #+BEGIN_SRC java :tangle Interview.java
+      class LLOperations {
+          // *** 1 remove-dups
+          // *** 2 return-kth-to-last
+          // *** 3 delete-middle-node
+          // *** 4 partition
+          // *** 5 sum-lists
+          // *** 6 palindrome
+          // *** 7 intersection
+          // *** 8 loop-detection
+      }
+    #+END_SRC
+** chapter 3 stacks-and-queues
+   I think the class should be be.vxe.lb
+   #+BEGIN_SRC java :tangle Interview.java
+     class StackOperations{
+            // *** implementation
+            // *** 1 three-in-one
+            // *** 2 stack-min
+            // *** 3 stack-of-plates
+            // *** 4 queue-via-stacks
+            // *** 5 sort-stack
+            // *** 6 animal-shelter
+     }
+   #+END_SRC
+** chapter 4 graphs
+*** 1 implementation
+    #+BEGIN_SRC java :tangle Interview.java
+    class Graph{}
+    #+END_SRC
+    #+BEGIN_SRC java :tangle Interview.java
+      class GraphOperations{
+          // *** 2 route-between-nodes
+          // *** 3 minimal-tree
+          // *** 4 list-of-depths
+          // *** 5 validate-bst
+          // *** 6 successor
+          // *** 7 build-order
+          // *** 8 first-common-ancestor
+          // *** 9 bst-sequences
+          // *** 10 check-subtree
+          // *** 11 random-node
+          // *** 12 paths-with-sum
+      }
+    #+END_SRC
+** chapter 5 bit-manipulation
+*** 1 insertion
+*** 2 binary-to-string
+*** 3 flip-bit-to-win
+*** 4 next-number
+*** 5 
+*** 6 conversion
+*** 7 pairwise-swap
+*** 8 draw-line
+** chapter 6 math-and-logic
+*** 1 
+*** 2
+*** 3
+*** 4
+*** 5 egg-drop
+*** 6 
+*** 7 the-apocalypse
+*** 8 
+*** 9
+*** 10 test-strips
+** chapter 7 object-oriented-design
+*** 1 deck-of-cards
+*** 2 call-center
+*** 3 jukebox
+*** 4 parking-lot
+*** 5 online-book-reader
+*** 6 jigsaw
+*** 7 chat-server
+*** 8 othello
+*** 9 circular-array
+*** 10 minesweeper
+*** 11 file-system
+*** 12 hash-table
+** chapter 8 recursion and dynamic-programming
+*** implementation
+*** 1 triple-step
+*** 2 robot-in-a-grid
+*** 3 magic-index
+*** 4 power-set
+*** 5 recursive-multiply
+*** 6 towers-of-hanoi
+*** 7 permutations-without-dups
+*** 8 permutations-with-dups
+*** 9 parens
+*** 10 paint-fill
+*** 11 coins
+*** 12 eight-queens
+*** 13 stack-of-boxes
+*** 14 boolean-evaluation
+** chapter 9 scalability and memory limits
+*** 2 social-network
+*** 5 cache 
+** chapter 10 sorting and searching
+*** 1 sorted-merge
+*** 2 group-anagrams
+*** 3 search-in-rotated-array
+*** 4 sorted-search-no-size
+*** 5 sparse-search
+*** 6 
+*** 7 missing-int
+*** 8 find-duplicates
+*** 9 sorted-matrix-search
+*** 10 rank-from-stream
+*** 11 peaks-and-valleys
+** chapter 11 testing
+** chapter 12 c/c++
+** chapter 13 java
+*** intro
+*** 1 private-constructor
+*** 5 treemap-hashmap-linkedhashmap
+*** 6 object-reflection
+*** 7 lambda-expression
+*** 8 lambda-random
+** chapter 14 databases
+** chapter 15 threads-and-locks
+*** demo-a
+*** demo-b
+*** demo-locks
+*** demo-synchronization
+*** demo-synchronization-blocking
+*** demo-wait-notify
+*** dining-philosophers
+*** deadlock-free-class
+*** call-in-order
+*** synchronized-methods
+*** fizzbuzz
+** chapter 16 moderate
+*** 1 number-swapper
+    #+BEGIN_SRC java :tangle Interview.java
+    class NumberSwapper{}
+    #+END_SRC
+*** 2 word-frequencies
+    #+BEGIN_SRC java :tangle Interview.java
+    class StringStats {}
+    #+END_SRC
+*** 3 intersection
+    #+BEGIN_SRC java :tangle Interview.java
+    class SetOperations{}
+    #+END_SRC
+*** 4 tic-tac-win
+    #+BEGIN_SRC java :tangle Interview.java
+    class TicTacWin {}
+    #+END_SRC
+*** 5 factorial-zeros
+    #+BEGIN_SRC java :tangle Interview.java
+    class FactorialZeros {}
+    #+END_SRC
+*** 6 smallest-difference
+    #+BEGIN_SRC java :tangle Interview.java
+    class SmallestDifference {}
+    #+END_SRC
+*** 7 number-max
+    #+BEGIN_SRC java :tangle Interview.java
+    class NumberMax{}
+    #+END_SRC
+*** 8 english-int
+    #+BEGIN_SRC java :tangle Interview.java
+    class EnglishInt {}
+    #+END_SRC
+*** 9 operations
+    #+BEGIN_SRC java :tangle Interview.java
+    class Operations{}
+    #+END_SRC
+*** 10 living-people
+    #+BEGIN_SRC java :tangle Interview.java
+    class LivingPeople{}
+    #+END_SRC
+*** 11 diving-board
+    #+BEGIN_SRC java :tangle Interview.java
+    class DivingBoard {}
+    #+END_SRC
+*** 12 xml-encoding
+    #+BEGIN_SRC java :tangle Interview.java
+    class Encoder {}
+    #+END_SRC
+*** 13 bisect-squares
+    #+BEGIN_SRC java :tangle Interview.java
+    class BisectSquares {}
+    #+END_SRC
+*** 14 best-line
+    #+BEGIN_SRC java :tangle Interview.java
+    class BestLine {}
+    #+END_SRC
+*** 15 master-mind
+    #+BEGIN_SRC java :tangle Interview.java 
+    class MasterMind {}
+    #+END_SRC
+*** 16 sub-sort
+    #+BEGIN_SRC java :tangle Interview.java  
+    class SubSort {}
+    #+END_SRC
+*** 17 contiguous-sequence
+    #+BEGIN_SRC java :tangle Interview.java  
+    class ContiguousSequence {}
+    #+END_SRC
+*** 18 pattern-matcher
+    #+BEGIN_SRC java :tangle Interview.java  
+    class PatternMatcher {}
+    #+END_SRC
+*** 19 pond-sizes
+    #+BEGIN_SRC java :tangle Interview.java 
+    class PondSizes
+    #+END_SRC
+*** 20 t9
+    #+BEGIN_SRC java :tangle Interview.java 
+    class T9 {}
+    #+END_SRC
+*** 21 sum-swap
+    #+BEGIN_SRC java :tangle Interview.java 
+    class SumSwap {}
+    #+END_SRC
+*** 22 langtons-ant
+    #+BEGIN_SRC java :tangle Interview.java 
+    class LangtonsAnt {}
+    #+END_SRC
+*** 23 rand7-from-rand5
+    #+BEGIN_SRC java :tangle Interview.java 
+    class RandFrom
+    #+END_SRC
+*** 24 pairs-with-sum
+    #+BEGIN_SRC java :tangle Interview.java 
+    class PairtWithSum{}
+    #+END_SRC
+*** 25 lru-cache
+    #+BEGIN_SRC java :tangle Interview.java 
+    class Cache {}
+    #+END_SRC
+*** 26 calculator
+    #+BEGIN_SRC java :tangle Interview.java 
+    class Calculator
+    #+END_SRC
+** chapter 17 hard
+*** 1 add-without-plus
+    #+BEGIN_SRC java :tangle Interview.java
+    class Adder {}
+    #+END_SRC
+*** 2 shuffle
+    #+BEGIN_SRC java :tangle Interview.java
+    class Shuffler {}
+    #+END_SRC
+*** 3 random-set
+    #+BEGIN_SRC java :tangle Interview.java
+    class RandomSet {}
+    #+END_SRC
+*** 4 missing-number
+    #+BEGIN_SRC java :tangle Interview.java
+    class MissingNumber {}
+    #+END_SRC
+*** 5 letters-and-number
+    #+BEGIN_SRC java :tangle Interview.java
+    class LettersAndNumber
+    #+END_SRC
+*** 6 count-of-2s
+    #+BEGIN_SRC java :tangle Interview.java
+    class CountOf2s {}
+    #+END_SRC    
+*** 7 baby-names
+    #+BEGIN_SRC java :tangle Interview.java
+    class BabyNames {}
+    #+END_SRC
+*** 8 circus-tower
+    #+BEGIN_SRC java :tangle Interview.java
+    class CircusTower {}
+    #+END_SRC
+*** 9 kth-multiple
+    #+BEGIN_SRC java :tangle Interview.java
+    class KthMultiple {}
+    #+END_SRC
+*** 10 majority-element
+    #+BEGIN_SRC java :tangle Interview.java
+    class MajorityElement {}
+    #+END_SRC
+*** 11 word-distance
+    #+BEGIN_SRC java :tangle Interview.java
+    class WordDistance {}
+    #+END_SRC
+*** 12 bi-node
+    #+BEGIN_SRC java :tangle Interview.java
+    class BiNode {}
+    #+END_SRC
+*** 13 re-space
+    #+BEGIN_SRC java :tangle Interview.java
+    class ReSpace {}
+    #+END_SRC
+*** 14 smallest-k
+    #+BEGIN_SRC java :tangle Interview.java
+    class SmallestK {}
+    #+END_SRC
+*** 15 
+*** 16 the-masseuse
+    #+BEGIN_SRC java :tangle Interview.java
+    class Masseuse {}
+    #+END_SRC
+*** 17 multi-search
+    #+BEGIN_SRC java :tangle Interview.java
+    class MultiSearch {}
+    #+END_SRC
+*** 18 shortest-supersequence
+    #+BEGIN_SRC java :tangle Interview.java
+    class ShortestSupersequence {}
+    #+END_SRC
+*** 19 missing-two
+    #+BEGIN_SRC java :tangle Interview.java
+    class MissingTwo{}
+    #+END_SRC
+*** 20 continuous-median
+    #+BEGIN_SRC java :tangle Interview.java
+    class ContinuousMedian{}
+    #+END_SRC
+*** 21 volume-of-histogram
+    #+BEGIN_SRC java :tangle Interview.java
+    class Histogram {}
+    #+END_SRC
+*** 22 word-transformer
+    #+BEGIN_SRC java :tangle Interview.java
+    class WordTransformer{}
+    #+END_SRC
+*** 23 max-black-square
+    #+BEGIN_SRC java :tangle Interview.java
+    class MaxBlockSquare{}
+    #+END_SRC
+*** 24 max-submatrix
+    #+BEGIN_SRC java :tangle Interview.java
+    class MaxSubmatrix {}
+    #+END_SRC
+*** 25 word-rectangle
+    #+BEGIN_SRC java :tangle Interview.java
+    class WordRectangle{}
+    #+END_SRC
+*** 26 sparse-similarity
+    #+BEGIN_SRC java :tangle Interview.java
+    class SparseSimilarity {}
+    #+END_SRC
+** chapter 18
+*** 1
+*** 2
+*** 3
+*** 4
+*** 5
+*** 6
+*** 7
+*** 8
+*** 9
+*** 10
+*** 11
+*** 12
+*** 13

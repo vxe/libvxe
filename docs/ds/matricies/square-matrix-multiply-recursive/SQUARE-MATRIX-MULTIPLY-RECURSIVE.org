@@ -1,0 +1,18 @@
+* SQUARE-MATRIX-MULTIPLY-RECURSIVE
+
+SQUARE-MATRIX-MULTIPLY-RECURSIVE(A, B) 1 n = A.rows 2 let C be a new n x
+n matrix 3 if n == 1 4 c₁₁ = a₁₁  b₁₁ 5 else partition A, B, and C as
+in equations (4.9) 6 C₁₁ = SQUARE-MATRIX-MULTIPLY-RECURSIVE(A₁₁, B₁₁) +
+SQUARE-MATRIX-MULTIPLY-RECURSIVE(A₁₂, B₂₁) 7 C12 =
+SQUARE-MATRIX-MULTIPLY-RECURSIVE(A₁₁, B₁₂) +
+SQUARE-MATRIX-MULTIPLY-RECURSIVE(A₁₂, B₂₂) 8 C21 =
+SQUARE-MATRIX-MULTIPLY-RECURSIVE(A₂₁, B₁₁) +
+SQUARE-MATRIX-MULTIPLY-RECURSIVE(A₂₂, B₂₁) 9 C22 =
+SQUARE-MATRIX-MULTIPLY-RECURSIVE(A₂₁, B₁₂) +
+SQUARE-MATRIX-MULTIPLY-RECURSIVE(A₂₂, B₂₂) 10 return C
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 77). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/matricies/SQUARE-MATRIX-MULTIPLY-RECURSIVE

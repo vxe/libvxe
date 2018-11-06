@@ -1,0 +1,10 @@
+* TREE-SEARCH
+
+TREE-SEARCH(x, k 1 if x == NIL or k == x.key 2 return x 3 if k < x.key 4
+return TREE-SEARCH(x.left, k) 5 else return TREE-SEARCH(x.right, k)
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 290). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/trees/TREE-SEARCH

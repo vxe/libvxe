@@ -1,0 +1,12 @@
+* FASTER-ALL-PAIRS-SHORTEST-PATHS
+
+FASTER-ALL-PAIRS-SHORTEST-PATHS(W) 1 n = W.rows 2 L\^(1) = W 3 m = 1 4
+while m < n - 1 5 let L⁽²ᵐ⁾ be a new n x n matrix 6 L⁽²ᵐ⁾ =
+EXTEND-SHORTEST-PATHS(L⁽ᵐ⁾, L⁽ᵐ⁾) 7 m = 2m 8 return L⁽ᵐ⁾
+
+Because each of the ⌈lg(n - 1)⌉ matrix products takes Θ(n³) time,
+FASTERALL-PAIRS-SHORTEST-PATHS runs in Θ(n³lg n)time. Observe that the
+code is tight, containing no elaborate data structures, and the constant
+hidden in the Θ-notation is therefore small.
+
+* software-engineering/data-structures/graphs/shortest-path/FASTER-ALL-PAIRS-SHORTEST-PATHS

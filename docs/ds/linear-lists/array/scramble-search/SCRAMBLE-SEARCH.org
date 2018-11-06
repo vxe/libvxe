@@ -1,0 +1,14 @@
+* SCRAMBLE-SEARCH
+
+Finally, consider a randomized algorithm SCRAMBLE-SEARCH that works by
+first randomly permuting the input array and then running the
+deterministic linear search given above on the resulting permuted array.
+
+SCRAMBLE-SEARCH(A) p = permute(A) DETERMINISTIC(p)
+#software-engineering/data-structures/linear-lists/array/DETERMINISTIC-SEARCH
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 144). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/linear-lists/array/SCRAMBLE-SEARCH

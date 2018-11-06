@@ -1,0 +1,6 @@
+* PSEUDOPRIME
+
+PSEUDOPRIME(n) 1 if MODULAR-EXPONENTIATION(2, n - 1,n) !≡ 1 (mod n) 2
+return COMPOSITE definitely 3 else return PRIME we hope!
+
+* software-engineering/data-structures/numbers/PSEUDOPRIME

@@ -1,0 +1,6 @@
+* ALLOCATE-NODE
+
+ALLOCATE-NODE, which allocates one disk page to be used as a new node in
+O(1).
+
+* software-engineering/data-structures/memory/ALLOCATE-NODE

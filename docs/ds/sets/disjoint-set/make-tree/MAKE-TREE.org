@@ -1,0 +1,5 @@
+* MAKE-TREE
+
+MAKE-TREE(v) creates a tree whose only node is v
+
+* software-engineering/data-structures/sets/disjoint-set/MAKE-TREE

@@ -1,0 +1,6 @@
+* SAME-COMPONENT
+
+SAME-COMPONENT(u) 1 if FIND-SET(u) == FIND-SET(v) 2 return TRUE 3 else
+return FALSE
+
+* software-engineering/data-structures/graphs/reachability/connected-components/SAME-COMPONENT

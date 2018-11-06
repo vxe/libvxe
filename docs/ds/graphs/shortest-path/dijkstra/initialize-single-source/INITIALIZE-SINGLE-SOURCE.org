@@ -1,0 +1,6 @@
+* INITIALIZE-SINGLE-SOURCE
+
+INITIALIZE-SINGLE-SOURCE(G) 1 for each vertex v ∈ G.v 2 v.d = ∞ 3 v.π =
+NIL 4 s.d = 0
+
+* software-engineering/data-structures/graphs/shortest-path/dijkstra/INITIALIZE-SINGLE-SOURCE

@@ -1,0 +1,11 @@
+* RB-JOIN
+
+We wish to implement the operation RB-JOIN.T1;x;T2/, which destroys T1
+and T2 and returns a red-black tree T D T1 [fxg[ T2. Let n be the total
+number of nodes in T1 and T2.
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 332). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/trees/search-tree/red-black-tree/RB-JOIN

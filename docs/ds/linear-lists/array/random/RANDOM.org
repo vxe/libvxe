@@ -1,0 +1,7 @@
+* RANDOM
+
+Describe an implementation of the procedure RANDOM.a; b/ that only makes
+calls to RANDOM.0; 1/. What is the expected running time of your
+procedure, as a function of a and b?
+
+* software-engineering/data-structures/linear-lists/array/RANDOM

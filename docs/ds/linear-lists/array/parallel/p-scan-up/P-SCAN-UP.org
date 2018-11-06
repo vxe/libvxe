@@ -1,0 +1,7 @@
+* P-SCAN-UP
+
+P-SCAN-UP(x, t, i, j) 1 if i == j 2 return x[i] 3 else 4 k = ⌊i + j 2 ⌋
+5 t[k] = spawn P-SCAN-UP(x, t, i, k) 6 right = P-SCAN-UP(x, t, k + 1, j)
+7 sync 8 return \_\_\_\_\_\_\_\_ fill in the blank
+
+* software-engineering/data-structures/linear-lists/array/parallel/P-SCAN-UP

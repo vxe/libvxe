@@ -1,0 +1,7 @@
+* vEB-TREE-MEMBER
+
+VEB-TREE-MEMBER(V,x) 1 if x == V.min or x == V.max 2 return TRUE 3
+elseif V.u == 2 4 return FALSE 5 else return
+VEB-TREE-MEMBER(V.cluster[high(x)],low(x))
+
+* software-engineering/data-structures/maps/veb-tree/vEB-TREE-MEMBER

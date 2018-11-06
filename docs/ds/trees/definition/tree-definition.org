@@ -1,0 +1,17 @@
+* tree-definition
+
+* software-engineering/data-structures/trees/definition
+
+Let us define a tree formally as a finite set T of one or more nodes
+such that:
+
+1) there is one specially designated node called the root of the tree,
+   root(T); and
+
+2) the remaining nodes (excluding the root) are partitioned into m ≥ 0
+   disjoint sets T₁, ..., Tₘ, and each of these sets in turn is a tree.
+   The trees T₁, ..., Tₘ are called the subtrees of the root.
+
+Knuth, Donald E.. The Art of Computer Programming: Volume 1: Fundamental
+Algorithms (3rd Edition) (Kindle Locations 9616-9621). Pearson
+Education. Kindle Edition.

@@ -1,0 +1,13 @@
+* EXTENDED-EUCLID
+
+EXTENDED-EUCLID(a,b) 1 if b = = 0 2 return (a,1,0) 3 else (d',x',y') =
+EXTENDED-EUCLID(b, a mod b) 4 (d, x, y) = (d', y', x' - ⌊a/b⌋ y') 5
+return (d,x,y)
+
+We now rewrite Euclid's algorithm to compute additional useful
+information. Specifically, we extend the algorithm to compute the
+integer coefficients x and y such that
+
+d = gcd(a,b) = ax + by
+
+* software-engineering/data-structures/numbers/EXTENDED-EUCLID

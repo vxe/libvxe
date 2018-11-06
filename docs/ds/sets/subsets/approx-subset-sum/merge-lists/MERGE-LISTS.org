@@ -1,0 +1,9 @@
+* MERGE-LISTS
+
+We also use an auxiliary procedure MERGE-LISTS.L; L0/, which returns the
+sorted list that is the merge of its two sorted input lists L and L0
+with duplicate values removed. Like the MERGE procedure we used in merge
+sort (Section 2.3.1), MERGE-LISTS runs in time O.jLj C jL0 j/. We omit
+the pseudocode for MERGELISTS.
+
+* software-engineering/data-structures/sets/subsets/APPROX-SUBSET-SUM/merge-lists

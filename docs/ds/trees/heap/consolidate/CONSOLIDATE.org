@@ -1,0 +1,19 @@
+* CONSOLIDATE
+
+CONSOLIDATE(H) 1 let A[0..D(H,n)] be a new array 2 for i = 0 to D(H,n) 3
+A[i] = nil 4 for each node w in the root list of H 5 x = w 6 d =
+x.degree 7 while A[d] != nil 8 y = A[d] another node with the same
+degree as x 9 if x.key > y.key 10 exchange x with y 11
+FIB-HEAP-LINK(H,y,x) 12 A[d] = NIL 13 d = d + 1 14 A[d] = x 15 H.min =
+NIL 16 for i = 0 to D(H.n) 17 if A[i] != NIL 18 if H.min = = NIL 19
+create a root list for H containing just A[i] 20 H.min = A[i] 21 else
+insert A[i] into H's root list 22 if A[i].key < H.min.key 23 H.min =
+A[i]
+
+The procedure CONSOLIDATE uses an auxiliary array A[0..D(H,n)] to keep
+track of roots according to their degrees. If A[i] = y, then y is
+currently a root with y.degree = i. Of course, in order to allocate the
+array we have to know how to calculate the upper bound D.H:n/ on the
+maximum degree, but we will see how to do so in Section 19.4.
+
+* software-engineering/data-structures/trees/HEAP/CONSOLIDATE

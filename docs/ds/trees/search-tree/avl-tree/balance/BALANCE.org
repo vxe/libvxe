@@ -1,0 +1,8 @@
+* BALANCE
+
+Describe a procedure BALANCE(x) which takes a subtree rooted at x whose
+left and right children are height balanced and have heights that differ
+by at most 2, i.e., |x.right.h,x.left.h| <= 2 and alters the subtree
+rooted at x to be height balanced. (Hint: Use rotations.)
+
+* software-engineering/data-structures/trees/search-tree/avl-tree/BALANCE

@@ -1,0 +1,6 @@
+* MAX-HEAP-INSERT
+
+MAX-HEAP-INSERT(A, key) 1 A.heap-size = A.heap-size + 1 2 A[A.heap-size]
+= -∞ 3 HEAP-INCREASE-KEY(A, A.heap-size, key)
+
+* software-engineering/data-structures/trees/HEAP/MAX-HEAP-INSERT

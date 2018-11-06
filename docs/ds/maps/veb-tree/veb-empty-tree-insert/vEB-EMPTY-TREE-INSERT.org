@@ -1,0 +1,5 @@
+* vEB-EMPTY-TREE-INSERT
+
+VEB-EMPTY-TREE-INSERT(V,x) 1 V.min = x 2 V.max = x
+
+* software-engineering/data-structures/maps/veb-tree/vEB-EMPTY-TREE-INSERT

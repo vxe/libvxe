@@ -1,0 +1,8 @@
+* NAIVE-STRING-MATCHER
+
+NAIVE-STRING-MATCHER(T,P) 1 n = T.length 2 m = P.length 3 for s = 0 to n
+- m 4 if P [1..m] == T [s + 1..s + m] 5 print “Pattern occurs with
+shift” s
+
+[[NAIVE-STRING-MATCHER/C500B384-235C-4C85-B812-CABCAF91A1F0.png]]
+* software-engineering/data-structures/text/NAIVE-STRING-MATCHER

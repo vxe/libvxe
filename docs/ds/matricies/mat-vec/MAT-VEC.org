@@ -1,0 +1,8 @@
+* MAT-VEC
+
+MAT-VEC(A,x) 1 n = A.rows 2 let y be a new vector of length n 3 parallel
+for i = 1 to n 4 yᵢ = 0 5 parallel for i = 1 to n 6 for new j = 1 to n 7
+yᵢ = yᵢ + aᵢⱼxⱼ 8 return y
+
+[[MAT-VEC/6967BD53-72C4-48E0-A34F-825705C01BB5.png]]
+* software-engineering/data-structures/matricies/MAT-VEC

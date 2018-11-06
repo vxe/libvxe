@@ -1,0 +1,6 @@
+* PERMUTE-BY-SORTING
+
+PERMUTE-BY-SORTING(A) 1 n = A.length 2 let P [1..n] be a new array 3 for
+i = 1 to n 4 P[i] = RANDOM(1,n³) 5 sort A, using P as sort keys
+
+* software-engineering/data-structures/linear-lists/array/PERMUTE-BY-SORTING

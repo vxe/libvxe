@@ -1,0 +1,13 @@
+* B-TREE-DELETE
+
+The procedure B-TREE-DELETE deletes the key k from the subtree rooted at
+x. We design this procedure to guarantee that whenever it calls itself
+recursively on a node x, the number of keys in x is at least the minimum
+degree t. Note that this condition requires one more key than the
+minimum required by the usual B-tree conditions, so that sometimes a key
+may have to be moved into a child node before recursion descends to that
+child. This strengthened condition allows us to delete a key from the
+tree in one downward pass without having to “back up” (with one
+exception, which we'll explain).
+
+* software-engineering/data-structures/trees/search-tree/b-TREE/B-TREE-DELETE

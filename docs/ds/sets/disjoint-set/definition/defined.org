@@ -1,0 +1,11 @@
+* defined
+
+* software-engineering/data-structures/sets/disjoint-set/definition
+
+In [[https://en.wikipedia.org/wiki/Mathematics][mathematics]] , two
+[[https://en.wikipedia.org/wiki/Set_(mathematics)][sets]] are said to be
+disjoint sets if they have no
+[[https://en.wikipedia.org/wiki/Element_(mathematics)][element]] in
+common. Equivalently, disjoint sets are sets whose
+[[https://en.wikipedia.org/wiki/Intersection_(set_theory)][intersection]]
+is the [[https://en.wikipedia.org/wiki/Empty_set][empty set]] .[1]

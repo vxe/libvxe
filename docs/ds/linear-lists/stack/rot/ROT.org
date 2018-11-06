@@ -1,0 +1,4 @@
+ROT ( n1 n2 n3 -- n2 n3 n1 ) Rotates the third item to the top.
+
+* software-engineering/languages/forth/stack-operations/rot
+#software-engineering/data-structures/linear-lists/STACK/rot

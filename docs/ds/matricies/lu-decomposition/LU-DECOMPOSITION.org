@@ -1,0 +1,25 @@
+* LU-DECOMPOSITION
+
+-  L is a unit lower-triangular matrix, 
+-  U is an upper-triangular matrix, and 
+-  P is a permutation matrix.
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 815). The MIT Press. Kindle
+Edition.
+
+LU-DECOMPOSITION(A) 1 n = A.rows 2 let L and U be new n x n matrices 3
+initialize U with 0s below the diagonal 4 initialize L with 1s on the
+diagonal and 0s above the diagonal 5 for k = 1 to n 6 uₖₖ = aₖₖ 7 for i
+= k + 1 to n 8 lᵢₖ = aᵢₖ / aₖₖ aᵢₖ holds vᵢ 9 uₖᵢ = aₖᵢ aₖᵢ 10 for i = k
++ 1 to n 11 for j = k + 1 to n 12 aᵢⱼ = aᵢⱼ - lᵢₖuₖⱼ 13 return L and U
+
+* software-engineering/data-structures/matricies/LU-DECOMPOSITION
+
+-  implementations
+
+   -  [[http://commons.apache.org/proper/commons-math/apidocs/org/apache/commons/math4/linear/LUDecomposition.html][LUDecomposition
+      (Apache Commons Math 4.0-SNAPSHOT API)]]
+   -  
+
+

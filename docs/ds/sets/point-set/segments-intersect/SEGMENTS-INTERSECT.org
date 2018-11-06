@@ -1,0 +1,16 @@
+* SEGMENTS-INTERSECT
+
+SEGMENTS-INTERSECT(p₁, p₂, p₃, p₄) 1 d₁ = DIRECTION(p₃, p₄, p₁) 2 d₂ =
+DIRECTION(p₃, p₄, p₂) 3 d₃ = DIRECTION(p₁, p₂, p₃) 4 d₄ = DIRECTION(p₁,
+p₂, p₄) 5 if ((d₁ > 0 and d₂ < 0) or (d₁ < 0 and d₂ > 0) and (d₃ > 0 and
+d₄ < 0) or (d₃ < 0 and d₄ > 0)) 6 return TRUE 7 elseif d₁ == 0 an=
+ON-SEGMENT(p₃, p₄, p₁) 8 return TRUE 9 elseif d₂ == 0 an= ON-SEGMENT(p₃,
+p₄, p₂) 10 return TRUE 11 elseif d₃ == 0 an= ON-SEGMENT(p₁, p₂, p₃) 12
+return TRUE 13 elseif d₄ == 0 an= ON-SEGMENT(p₁, p₂, p₄) 14 return TRUE
+15 else return FALSE
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 1018). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/sets/point-set/SEGMENTS-INTERSECT

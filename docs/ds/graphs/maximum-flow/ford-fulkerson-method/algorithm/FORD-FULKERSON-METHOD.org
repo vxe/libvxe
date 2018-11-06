@@ -1,0 +1,7 @@
+* FORD-FULKERSON-METHOD
+
+FORD-FULKERSON-METHOD(G, s, t) 1 initialize flow f to 0 2 while there
+exists an augmenting path p in the residual network G\_f 3 augment flow
+f along p 4 return f
+
+* software-engineering/data-structures/graphs/maximum-flow/FORD-FULKERSON-METHOD/algorithm

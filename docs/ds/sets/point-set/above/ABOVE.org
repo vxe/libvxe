@@ -1,0 +1,10 @@
+* ABOVE
+
+ABOVE(T,s) return the segment immediately above segment s in T.
+
+segment in this case refers to line segment in the context of
+computational geometry
+
+* software-engineering/data-structures/sets/point-set/above
+
+* software-engineering/data-structures/sets/point-set/above

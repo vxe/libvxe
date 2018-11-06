@@ -1,0 +1,7 @@
+* INCREASE-KEY
+
+INCREASE-KEY.(S,x,k) increases the value of element x's key to the new
+value k, which is assumed to be at least as large as x's current key
+value.
+
+* software-engineering/data-structures/sets/INCREASE-KEY

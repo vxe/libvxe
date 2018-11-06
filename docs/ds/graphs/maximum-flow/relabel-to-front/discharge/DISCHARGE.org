@@ -1,0 +1,12 @@
+* DISCHARGE
+
+DISCHARGE(u) 1 while u.e > 0 2 v = u.current 3 if v == NIL 4 RELABEL(u)
+5 u.current = u.N.head 6 elseif c\_f(u,v) > 0 and u.h == u.h + 1 7
+PUSH(u,v) 8 else u.current = v.next-neighbor
+
+An overflowing vertex u is discharged by pushing all of its excess flow
+through admissible edges to neighboring vertices, relabeling u as
+necessary to cause edges leaving u to become admissible. The pseudocode
+goes as follows.
+
+* software-engineering/data-structures/graphs/maximum-flow/relabel-to-front/DISCHARGE

@@ -1,0 +1,8 @@
+* WITNESS
+
+WITNESS(a, n) 1 let t and u be such that t ≥ 1, u is odd, and n - 1 =
+2ᵗu 2 x₀ = MODULAR-EXPONENTIATION(a, u, n) 3 for i = 1 to t 4 xᵢ = x²ᵢ₋₁
+mod n 5 if xᵢ == 1 and= xᵢ₋₁ ≠ 1 and xᵢ₋₁ ≠ n - 1 6 return TRUE 7 if xₜ
+≠ 1 8 return TRUE 9 return FALSE
+
+* software-engineering/data-structures/numbers/WITNESS

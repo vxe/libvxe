@@ -1,0 +1,14 @@
+* order-statistic-tree
+
+* software-engineering/data-structures/trees/search-tree/os-tree/definition
+
+In [[https://en.wikipedia.org/wiki/Computer_science][computer science]]
+, an order statistic tree is a variant of the
+[[https://en.wikipedia.org/wiki/Binary_search_tree][binary search tree]]
+(or more generally, a [[https://en.wikipedia.org/wiki/B-tree][B-tree]]
+[1]) that supports two additional operations beyond insertion, lookup
+and deletion: *
+[[https://en.wikipedia.org/wiki/Selection_algorithm][Select(i)]] ---
+find the *i'*th smallest element stored in the tree * Rank(*x*) -- find
+the rank of element *x* in the tree, i.e. its index in the sorted list
+of elements of the tree

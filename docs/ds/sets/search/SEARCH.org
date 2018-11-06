@@ -1,0 +1,11 @@
+* SEARCH
+
+SEARCH(S, k) A query that, given a set S and a key value k, returns a
+pointer x to an element in S such that x.key D k, or NIL if no such
+element belongs to S.
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 230). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/sets/SEARCH

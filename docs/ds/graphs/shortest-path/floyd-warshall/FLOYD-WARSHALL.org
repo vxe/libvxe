@@ -1,0 +1,12 @@
+* FLOYD-WARSHALL
+
+FLOYD-WARSHALL(W) 1 n = W.rows 2 D⁽⁰⁾ = W 3 for k = 1 to n 4 let D⁽ᵏ⁾ =
+(dᵢⱼ⁽ᵏ⁾) be a new n x n matrix 5 for i = 1 to n 6 for j = 1 to n 7
+dᵢⱼ⁽ᵏ⁾ = min(dᵢⱼ⁽ᵏ⁻ⁱ⁾, d⁽ᵏ⁻¹⁾/{ik}, + d⁽ᵏ⁻¹⁾/{kj} ) 8 return D⁽ⁿ⁾
+
+In this section, we shall use a different dynamic-programming
+formulation to solve the all-pairs shortest-paths problem on a directed
+graph G = (V,E). The resulting algorithm, known as the Floyd-Warshall
+algorithm, runs in Θ(V³)
+
+* software-engineering/data-structures/graphs/shortest-path/FLOYD-WARSHALL

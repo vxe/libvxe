@@ -1,0 +1,12 @@
+* OFF-LINE-MINIMUM
+
+OFF-LINE-MINIMUM(m,n) 1 for i = 1 to n 2 determine j such that i ∈ Kⱼ 3
+if j ≠ m + 1 4 extracted[j] = i 5 let l be the smallest value greater
+than j for which set Kₗ exists 6 Kₗ = Kⱼ ∪ Kₗ destroying Kⱼ 7 return
+extracted
+
+The off-line minimum problem asks us to maintain a dynamic set T of
+elements from the domain {1, 2,..., n} under the operations INSERT and
+EXTRACT-MIN.
+
+* software-engineering/data-structures/sets/dynamic-set/OFF-LINE-MINIMUM

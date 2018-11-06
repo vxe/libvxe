@@ -1,0 +1,6 @@
+* PROTO-vEB-MEMBER
+
+PROTO-VEB-MEMBER(V, x) 1 if V.u == 2 2 return V.A[x] 3 else return
+PROTO-VEB-MEMBER(V.cluster[high(x)],low(x))
+
+* software-engineering/data-structures/maps/veb-tree/PROTO-vEB-MEMBER

@@ -1,0 +1,7 @@
+* SQUARE-MATRIX-MULTIPLY
+
+SQUARE-MATRIX-MULTIPLY(A, B) 1 n = A.rows 2 let C be a new n x n matrix
+3 for i = 1 to n 4 for j = 1 to n 5 cᵢⱼ = 0 6 for k = 1 to n 7 cᵢⱼ = cᵢⱼ
++ aᵢₖbₖⱼ 8 return C
+
+* software-engineering/data-structures/matricies/SQUARE-MATRIX-MULTIPLY

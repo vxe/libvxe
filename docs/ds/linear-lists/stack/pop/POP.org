@@ -1,0 +1,6 @@
+* POP
+
+POP(S) 1 if STACK-EMPTY(S) 2 error “underflow” 3 else S.top = S.top - 1
+4 return S[S.top + 1]
+
+* software-engineering/data-structures/linear-lists/STACK/POP

@@ -1,0 +1,6 @@
+* GENERIC-MST
+
+GENERIC-MST(G,w) 1 A = ∅ 2 while A does not form a spanning tree 3 find
+an edge (u,v) that is safe for A 4 A = A ∪ {(u,v)} 5 return A
+
+* software-engineering/data-structures/graphs/mst/GENERIC-MST

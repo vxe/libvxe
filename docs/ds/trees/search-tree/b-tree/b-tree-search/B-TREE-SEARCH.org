@@ -1,0 +1,15 @@
+* B-TREE-SEARCH
+
+B-TREE-SEARCH(x,k) 1 i = 1 2 while i  x.n and k > x.key\_i 3 i = i + 1
+4 if i  x.n and k == x.key\_i 5 return(x.i) 6 elseif x.leaf 7 return
+NIL 8 else DISK-READ(x.c\_i) 9 return B-TREE-SEARCH(x.c\_i, k)
+
+B-TREE-SEARCH is a straightforward generalization of the TREE-SEARCH
+procedure defined for binary search trees. B-TREE-SEARCH takes as input
+a pointer to the root node x of a subtree and a key k to be searched for
+in that subtree. The top-level call is thus of the form
+B-TREE-SEARCH(T.root,k) If k is in the B-tree, B-TREE-SEARCH returns the
+ordered pair (y,i) consisting of a node y and an index i such that
+y.key\_i = k. Otherwise, the procedure returns NIL.
+
+* software-engineering/data-structures/trees/search-tree/b-TREE/B-TREE-SEARCH

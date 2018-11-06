@@ -1,0 +1,9 @@
+* max-flow-min-cut-theorem
+
+* software-engineering/data-structures/graphs/maximum-flow/FORD-FULKERSON-METHOD/concepts/cuts/max-flow-min-cut-theorem
+
+Theorem 26.6 (Max-flow min-cut theorem) If f is a flow in a flow network
+G D .V; E/ with source s and sink t, then the following conditions are
+equivalent: 1. f is a maximum flow in G. 2. 2. The residual network G\_f
+contains no augmenting paths. 3. 3. | f | = c(S, T) for some cut (S,T)
+of G.

@@ -1,0 +1,7 @@
+* RANDOM-SAMPLE
+
+RANDOM-SAMPLE(m, n) 1 if m == 0 2 return ∅ 3 else S = RANDOM-SAMPLE(m -
+1, n - 1) 4 i = RANDOM(1, n) 5 if i ∈ S 6 S = S ∪ {n} 7 else S = S ∪ {i}
+8 return S S is an m element subset where 0 ≤ m ≤ n
+
+* software-engineering/data-structures/sets/RANDOM-SAMPLE

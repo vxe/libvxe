@@ -1,0 +1,13 @@
+* TRANSITIVE-CLOSURE
+
+TRANSITIVE-CLOSURE(G) 1 n = |G.V| 2 let T⁰ = (tᵢⱼ⁰) be a new n x n
+matrix 3 for i = 1 to n 4 for j = 1 to n 5 if i == j or (i,j) ∈ G.E 6
+tᵢⱼ⁰ = 1 7 else tᵢⱼ⁰ = 0 8 for k = 1 to n 9 let Tᵏ = (tᵢⱼᵏ) be a new n x
+n matrix 10 for i = 1 to n 11 for j = 1 to n 12 tᵢⱼᵏ = tᵢⱼᵏ⁻¹ ∨ (tᵢₖᵏ⁻¹
+∧ tₖⱼᵏ⁻¹) 13 return Tⁿ
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 698). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/graphs/reachability/TRANSITIVE-CLOSURE

@@ -1,0 +1,19 @@
+* KMP-MATCHER
+
+We now present a linear-time string-matching algorithm due to Knuth,
+Morris, and Pratt. This algorithm avoids computing the transition
+function ı altogether, and its matching time is Θ(n) using just an
+auxiliary function π , which we precompute from the pattern in time Θ(M)
+and store in an array π[1.. m]. The array π allows us to compute the
+transition function δ efficiently (in an amortized sense) “on the fly”
+as needed.
+
+KMP-MATCHER(T,P) 1 n = T.length 2 m = P.length 3 π =
+COMPUTE-PREFIX-FUNCTION(P) 4 q = 0// number of characters matche= 5 for
+i = 1 to n scan the text from left to right 6 while q > 0 and P[q + 1] ≠
+T[i] 7 q = π[q] next character not to match 8 if P [q + 1] == T[i] 9 q =
+q + 1// next character matches 10 if q == m is all of P matched? 11
+print “Pattern occurs with shift” i - m 12 q = π[q] look for the next
+match
+
+* software-engineering/data-structures/text/KMP-MATCHER/compute-prefix-function

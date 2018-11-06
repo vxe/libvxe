@@ -1,0 +1,11 @@
+* OPTIMAL-BST
+
+OPTIMAL-BST(p, q, n) 1 let e[1..n + 1, 0.. n], w[1.. n + 1, 0.. n], and
+root[1..n, 1..n] be new tables 2 for i = 1 to n + 1 3 e[i, i - 1] = qᵢ₋₁
+4 w[i, i - 1] = qᵢ₋₁ 5 for l = 1 to n 6 for i = 1 to n - l + 1 7 j = i +
+l - 1 8 e[i, j ] = 1 9 w[i, j ] = w[i, j - 1] + pⱼ + qⱼ 10 for r = i to
+j 11 t = e[i, r - 1] + e[r + 1, j] + w[i, j] 12 if t < e[i, j] 13 e[i,
+j] = t 14 root[i, j] = r 15 return e and root
+
+[[OPTIMAL-BST/586B2B52-3E08-4D71-8EEE-0792689657F2.png]]
+* software-engineering/data-structures/trees/search-tree/OPTIMAL-BST

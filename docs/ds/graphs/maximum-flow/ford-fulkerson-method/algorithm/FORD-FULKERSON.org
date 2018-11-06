@@ -1,0 +1,20 @@
+* FORD-FULKERSON
+
+FORD-FULKERSON(G,s,t) 1 for each edge (u,v) ∈ G.E 2 (u,v).f = 0 3 while
+there exists a path p from s to t in the residual network G\_f 4 c\_f(p)
+= min{c\_f(u,v) : (u,v) is in p} 5 for each edge (u,v) in p 6 if (u,v) ∈
+G.E 7 (u,v) = (u,v).f + c\_f(p) 8 else (v,u).f = (v,u).f - cf(p)
+
+This section presents the Ford-Fulkerson method for solving the
+maximum-flow problem. We call it a “method” rather than an “algorithm”
+because it encompasses several implementations with differing running
+times. The Ford-Fulkerson method depends on three important ideas that
+transcend the method and are relevant to many flow algorithms and
+problems: residual networks, augmenting paths, and cuts.
+
+1. residual networks
+2. augmenting path
+3. cuts
+4. ˜
+
+* software-engineering/data-structures/graphs/maximum-flow/FORD-FULKERSON-METHOD/algorithm

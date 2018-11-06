@@ -1,0 +1,14 @@
+* kernel-linked-list
+
+* software-engineering/books/linux-kernel-development/6-data-structures
+
+* software-engineering/data-structures/linear-lists/doubly-linked-list
+
+The linked list is the simplest and most common data structure in the
+Linux kernel. A *linked list* is a data structure that allows the
+storage and manipulation of a variable number of *elements*, called the
+*nodes* of the list.
+
+"Oftentimes, however, it is desirable simply to iterate over all
+processes in the system. This is easy because the task list is a
+circular, doubly linked list"

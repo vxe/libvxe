@@ -1,0 +1,11 @@
+* PRINT-ALL-PAIRS-SHORTEST-PATH
+
+PRINT-ALL-PAIRS-SHORTEST-PATH(i,j) 1 if i == j 2 print i 3 elseif πᵢⱼ ==
+NIL 4 print “no path from” i “to” j “exists” 5 else
+PRINT-ALL-PAIRS-SHORTEST-PATH(Π,i, πᵢⱼ) 6 print j
+
+PRINT-ALL-PAIRS-SHORTEST-PATH(Π,i, j) 1 if i == j 2 print i 3 elseif πᵢⱼ
+== NIL 4 print “no path from” i “to” j “exists” 5 else
+PRINT-ALL-PAIRS-SHORTEST-PATH(Π,i,πᵢⱼ) 6 print j
+
+* software-engineering/data-structures/graphs/shortest-path/PRINT-ALL-PAIRS-SHORTEST-PATH

@@ -1,0 +1,13 @@
+* MAT-VEC-MAIN-LOOP
+
+This code recursively spawns the first half of the iterations of the
+loop to execute in parallel with the second half of the iterations and
+then executes a sync, thereby creating a binary tree of execution where
+the leaves are individual loop iterations, as shown in Figure 27.4.
+
+MAT-VEC-MAIN-LOOP(A, x, y, n, i, i') 1 if i == i' 2 for j = 1 to n 3 yᵢ
+= yᵢ + aᵢⱼxⱼ 4 else mid == ⌊ (i + i')/2 ⌋ 5 spawn MAT-VEC-MAIN-LOOP(A,
+x, y, n, i, mid) 6 MAT-VEC-MAIN-LOOP(A, x, y, n, mid + 1, i') 7 sync
+
+[[MAT-VEC-MAIN-LOOP/65E92632-BAF6-4AD1-92E0-BDA859AEC59A.png]]
+* software-engineering/data-structures/matricies/MAT-VEC-MAIN-LOOP

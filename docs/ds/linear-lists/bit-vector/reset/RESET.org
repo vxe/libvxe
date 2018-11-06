@@ -1,0 +1,10 @@
+* RESET
+
+INCREMENT and RESET operations takes time O.n/ on an initially zero
+counter.
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 459). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/linear-lists/bit-vector/RESET

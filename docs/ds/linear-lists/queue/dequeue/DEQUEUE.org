@@ -1,0 +1,6 @@
+* DEQUEUE
+
+DEQUEUE(Q) 1 x = Q[Q.head] 2 if Q.head == Q.length 3 Q.head = 1 4 else
+Q.head = Q.head + 1 5 return x
+
+* software-engineering/data-structures/linear-lists/QUEUE/DEQUEUE

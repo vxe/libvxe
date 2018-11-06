@@ -1,0 +1,14 @@
+* MATRIX-CHAIN-ORDER
+
+Instead of computing the solution to recurrence (15.7) recursively, we
+compute the optimal cost by using a tabular, bottom-up approach. (We
+present the corresponding top-down approach using memoization in Section
+15.3.)
+
+MATRIX-CHAIN-ORDER(p) 1 n = p.length - 1 2 let m[1..n,1.. n] and s[1.. n
+- 1, 2..n] be new tables 3 for i = 1 to n 4 m[i, i] = 0 5 for l = 2 to n
+l is the chain length 6 for i = 1 to n - l + 1 7 j = i + l - 1 8 m[i, j]
+= ∞ 9 for k = i to j - 1 10 q = m[i, k] + m[k + 1, j] + pᵢ₋₁PₖPⱼ 11 if q
+< m[i, j] 12 m[i, j] = q 13 s[i, j] = k 14 return m and s
+
+* software-engineering/data-structures/matricies/MATRIX-CHAIN-ORDER

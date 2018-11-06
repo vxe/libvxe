@@ -1,0 +1,11 @@
+* LIST-DELETE
+
+The procedure LIST-DELETE removes an element x from a linked list L. It
+must be given a pointer to x, and it then “splices” x out of the list by
+updating pointers. If we wish to delete an element with a given key, we
+must first call LIST-SEARCH to retrieve a pointer to the element.
+
+LIST-DELETE(L, x) 1 if x.prev ≠ NIL 2 x.prev.next = x.next 3 else L.head
+= x.next 4 if x.next ≠ NIL 5 x.next.prev = x.prev
+
+* software-engineering/data-structures/linear-lists/LINKED-LIST/LIST-DELETE

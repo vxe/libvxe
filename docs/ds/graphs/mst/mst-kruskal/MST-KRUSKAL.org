@@ -1,0 +1,8 @@
+* MST-KRUSKAL
+
+MST-KRUSKAL(G,w) 1 A = ∅ 2 for each vertex v ∈ G.V 3 MAKE-SET(v) 4 sort
+the edges of G.E into nondecreasing order by weight w 5 for each edge
+(u,v) ∈ G.E, taken in nondecreasing order by weight 6 if FIND-SET(u) ≠
+FIND-SET(v) 7 A = A ∪ {(u,v)} 8 UNION(u,v) 9 return A
+
+* software-engineering/data-structures/graphs/mst/MST-KRUSKAL

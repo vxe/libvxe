@@ -1,0 +1,5 @@
+* DIRECTION
+
+DIRECTION.(p\_i, p\_j, p\_k) 1 return (p\_k - p\_i) x (p\_j - p\_i)
+
+* software-engineering/data-structures/sets/point-set/DIRECTION

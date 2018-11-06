@@ -1,0 +1,5 @@
+* CHAINED-HASH-SEARCH
+
+CHAINED-HASH-INSERT(T,x) 1 insert x at the head of list T[h(k)]
+
+* software-engineering/data-structures/maps/HASH-TABLE/CHAINED-HASH-SEARCH
