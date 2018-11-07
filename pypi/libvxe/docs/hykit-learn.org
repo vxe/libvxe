@@ -1,0 +1,37 @@
+# _*_ mode:org _*_
+#+TITLE: hykit-learn
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+** [[file:./miscellaneous-examples.org][miscellaneous-examples]]
+** examples-based-on-real-world-datasets
+** biclustering
+** calibration
+** classification
+** clustering
+** pipelines-and-composite-estimators
+** covariance-estimation
+** cross-decomposition
+** dataset-examples
+** decomposition
+** ensemble-methods
+** tutorial-exercises
+** feature-selection
+** gaussian-process-for-machine-learning
+** generalized-linear-models
+** manifold-learning
+** gaussian-mixture-models
+** model-selection
+** multioutput-methods
+** nearest-neighbors
+** neural-networks
+** preprocessing
+** semi-supervised-classification
+** support-vector-machines
+** working-with-text-documents
+** decision-trees
+
+* variables
+# Local Variables:
+# eval: (wiki-mode)
+# End:

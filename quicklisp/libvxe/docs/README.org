@@ -3,8 +3,11 @@
 #+STARTUP: indent
 #+OPTIONS: toc:nil
 
+
+
+* libraries
 - parenscript
 - cl-supercollider
 - nyqust
 
-* implementation
+* [[file:~/.emacs.d/lib/libvxe/quicklisp/libvxe/README][Implementation]]

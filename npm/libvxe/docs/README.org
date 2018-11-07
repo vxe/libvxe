@@ -3,11 +3,14 @@
 #+STARTUP: indent
 #+OPTIONS: toc:nil
 node utils
-* client
-** gis-functions
-** generating-css
-** manipulating-css-grids
-* server
-** grpc
-** websockets
-** rest-api
+
+* libraries
+** client
+*** gis-functions
+*** generating-css
+*** manipulating-css-grids
+** server
+*** grpc
+*** websockets
+*** rest-api
+* [[file:~/.emacs.d/lib/libvxe/npm/libvxe/README.org][implementation]]

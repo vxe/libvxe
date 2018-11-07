@@ -2,4 +2,4 @@
 #+TITLE: obscure assembly language code
 #+STARTUP: indent
 #+OPTIONS: toc:nil
-Currently mmix and jasmin (java).  Let the hijinks ensue
+* modules

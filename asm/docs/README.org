@@ -1,0 +1,12 @@
+# -*- mode:org -*-
+#+TITLE: forth-interpreter-in-mmix
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+- stack visualizer library
+
+* libraries
+  - [[http://mmix.cs.hm.edu/examples/hellognu.html][setting up binutils]]
+  - mmdk
+  - jonesforth
+* [[file:~/.emacs.d/lib/libvxe/asm/README.org][implementation]]

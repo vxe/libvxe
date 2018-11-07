@@ -1,0 +1,16 @@
+# -*- mode:org -*-
+#+TITLE: libvxe
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+Things I'm working on in clojure as well as re-usable bits for use in subsequent applications
+** Overview :TOC:
+- [[#libraries][Libraries]]
+  - [[#client][client]]
+  - [[#server][server]]
+- [[#implementation][Implementation]]
+
+* Libraries
+** client
+** server
+* [[file:src/main/clj/libvxe/docs/README.org][Implementation]]

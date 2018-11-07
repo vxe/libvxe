@@ -2,20 +2,25 @@
 #+TITLE: libvxe
 #+STARTUP: indent
 #+OPTIONS: toc:nil
+
+
 * libraries
 ** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/README.org][clojure]]
 ** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/src/main/clj/libvxe/core.cljs::(ns%20libvxe.core][clojurescript]]
-** [[file:./hy.org][hy]]
+** [[file:~/.emacs.d/lib/libvxe/pypi/libvxe/docs/README.org::*Libraries][hy]]
 ** [[file:~/.emacs.d/lib/libvxe/src/docs/README.org::*clasp][c++]]
 ** [[file:~/.emacs.d/lib/libvxe/quicklisp/libvxe/docs/README.org][common-lisp]]
-** [[file:./java.org][java]]
+** [[file:~/.emacs.d/lib/libvxe/mvn/libvxe/src/main/java/com/vxe/be/docs/README.org][java]]
 ** [[file:~/.emacs.d/lib/libvxe/npm/libvxe/docs/README.org][javascript]]
-** forth
+** [[file:~/.emacs.d/lib/libvxe/asm/docs/README.org][forth]]
 * puzzles
 ** [[file:./README-ctci.org][ctci]]
-** [[file:./README-cph.org][cph]]
+** [[file:./cph.org][cph]]
 ** [[file:./rosetta-code.org][rosetta-code]]
-
+* conventions
+- except for c++,the second link is open tasks/notes and link to module/src file org files
+- execpt for c++, the first link is a list of libraries and a link to the implementation
+- every source file has an org file
 
 # Local Variables:
 # eval: (wiki-mode)

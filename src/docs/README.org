@@ -1,45 +1,9 @@
 # _*_ mode:org _*_
-#+TITLE: c++
+#+TITLE: Implementation
 #+STARTUP: indent
 #+OPTIONS: toc:nil
 
+- [ ] cph example
+- [ ] hello world for clasp
 * libraries
-** clasp  
-*** clang-architecture
-*** generate-complation-database
-*** hello-world
-* implementation
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Local Variables:
-# eval: (wiki-mode)
-# End:
+* [[file:~/.emacs.d/lib/libvxe/src/README.org][implementation]]

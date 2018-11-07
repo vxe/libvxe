@@ -1,4 +1,4 @@
-(ns libvxe.core
+(ns libvxe.ui
     (:require [reagent.core :as reagent :refer [atom]]))
 
 (enable-console-print!)
