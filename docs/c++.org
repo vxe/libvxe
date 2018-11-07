@@ -1,0 +1,28 @@
+# _*_ mode:org _*_
+#+TITLE: c++
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+** opencv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Local Variables:
+# eval: (wiki-mode)
+# End:

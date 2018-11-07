@@ -4,41 +4,16 @@
 #+OPTIONS: toc:nil
 
 * libraries
-** clojure/java
-- [ ] ctci problem texts
-*** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/src/main/clj/libvxe/docs/README.org][implementation]]
-*** [[file:./food-database.org][food-database]]
-*** [[file:./commons-math.org][commons-math]]
-*** [[file:./weka.org][weka]]
-*** [[file:./rolling-stones.org][rolling-stones]]
-*** [[file:./loco.org][loco]]
-*** [[file:./graalvm][graalvm]]
-**** [[file:./truffle.org][truffle]]
-** [[file:./hy.org][hy]] 
-*** [[file:./sklearn.org][sklearn]]
-*** essentia
-*** [[file:./flask.org][flask]]
-*** [[file:./opencv.org][opencv]]
-*** [[file:./turicreate.org][turicreate]]
-*** [[file:./nrepl.org][nrepl]]
-** c++
-*** opencv
-** forth
+** clojure
+** [[file:./hy.org][hy]]
+** [[file:./c++.org][c++]]
 ** common-lisp
-** [[file:./racket.org][racket]]
-** asm
+** [[file:./java.org][java]]
+** forth
 ** clojurescript
 ** javascript
 *** [[file:./react-components.org][react-components]]
 *** [[file:./vorpal.org][vorpal]]
-** java
-
-** elisp
-
-
-
-
-
 * tools
 ** llvm
 ** [[file:./maxima.org][maxima]]
@@ -48,7 +23,7 @@
 ** swig
 ** ansible
 ** antlr
-* algorithms
+* puzzles
 ** [[file:./README-ctci.org][ctci]]
 ** [[file:./README-cph.org][cph]]
 ** [[file:./rosetta-code.org][rosetta-code]]
