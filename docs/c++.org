@@ -2,7 +2,10 @@
 #+TITLE: c++
 #+STARTUP: indent
 #+OPTIONS: toc:nil
-** opencv
+
+- [ ] use cling
+
+
 
 
 

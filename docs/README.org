@@ -2,27 +2,17 @@
 #+TITLE: libvxe
 #+STARTUP: indent
 #+OPTIONS: toc:nil
-
 * libraries
-** clojure
+** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/README.org][clojure]]
+** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/src/main/clj/libvxe/core.cljs::(ns%20libvxe.core][clojurescript]]
 ** [[file:./hy.org][hy]]
-** [[file:./c++.org][c++]]
-** common-lisp
-** [[file:./java.org][java]]
-** forth
-** clojurescript
+** [[file:~/.emacs.d/lib/libvxe/src/docs/README.org::*clasp][c++]]
 ** javascript
 *** [[file:./react-components.org][react-components]]
 *** [[file:./vorpal.org][vorpal]]
-* tools
-** llvm
-** [[file:./maxima.org][maxima]]
-** [[file:./pandoc.org][pandoc]]
-** [[file:./emacs.org][emacs]]
-
-** swig
-** ansible
-** antlr
+** [[file:./common-lisp.org][common-lisp]]
+** [[file:./java.org][java]]
+** forth
 * puzzles
 ** [[file:./README-ctci.org][ctci]]
 ** [[file:./README-cph.org][cph]]

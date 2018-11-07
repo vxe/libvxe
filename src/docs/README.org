@@ -1,0 +1,44 @@
+# _*_ mode:org _*_
+#+TITLE: c++
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+* clasp  
+** clang-architecture
+** generate-complation-database
+** hello-world
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ # Local Variables:
+ # eval: (wiki-mode)
+ # End:
