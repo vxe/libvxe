@@ -7,11 +7,9 @@
 ** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/src/main/clj/libvxe/core.cljs::(ns%20libvxe.core][clojurescript]]
 ** [[file:./hy.org][hy]]
 ** [[file:~/.emacs.d/lib/libvxe/src/docs/README.org::*clasp][c++]]
-** javascript
-*** [[file:./react-components.org][react-components]]
-*** [[file:./vorpal.org][vorpal]]
-** [[file:./common-lisp.org][common-lisp]]
+** [[file:~/.emacs.d/lib/libvxe/quicklisp/libvxe/docs/README.org][common-lisp]]
 ** [[file:./java.org][java]]
+** [[file:~/.emacs.d/lib/libvxe/npm/libvxe/docs/README.org][javascript]]
 ** forth
 * puzzles
 ** [[file:./README-ctci.org][ctci]]

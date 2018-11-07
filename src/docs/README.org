@@ -3,10 +3,12 @@
 #+STARTUP: indent
 #+OPTIONS: toc:nil
 
-* clasp  
-** clang-architecture
-** generate-complation-database
-** hello-world
+* libraries
+** clasp  
+*** clang-architecture
+*** generate-complation-database
+*** hello-world
+* implementation
 
 
 
@@ -38,7 +40,6 @@
 
 
 
-
- # Local Variables:
- # eval: (wiki-mode)
- # End:
+# Local Variables:
+# eval: (wiki-mode)
+# End:
