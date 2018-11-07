@@ -1,14 +1,14 @@
 (ns libvxe.spotify
   (:require [clojure.data.codec.base64]
             [cemerick.url]
-            [home.lib :refer :all]
+            ;; [home.lib :refer :all]
             [clojure.tools.logging :as log])
   (:use
    [com.rpl.specter :refer :all]
    [clojure.java.shell :only [sh]]))
 
 (defn encode-base64 [original]
-(String. (clojure.data.codec.base64/encode (.getBytes original)) "UTF-8"))
+  (String. (clojure.data.codec.base64/encode (.getBytes original)) "UTF-8"))
 
 (def atm--client-secret (atom ""))
 
@@ -65,6 +65,11 @@
     (reset! atm--authorization-code resp)
     resp))
 
+(defn expand-home [s]
+  (if (.startsWith s "~")
+    (clojure.string/replace-first s "~" (System/getProperty "user.home"))
+    s))
+
 (defn io-fs--read-configuration []
   (let [config-file (read-string (slurp (expand-home "~/config.edn")))
         client-secret  (:client-secret config-file)
@@ -82,7 +87,7 @@
 
 (defn login []
   (let
-      [key (do (println "login here\n https://accounts.spotify.com/authorize/?client_id=e11274026afa4840b9b715e7cb0d8fbb&response_type=code&redirect_uri=http://localhost:8888/spotify/login&scope=playlist-read-private%20user-library-read&state=34fFs29kd09")
+      [key (do (println "login here\n https://accounts.spotify.com/authorize/?client_id=e11274026afa4840b9b715e7cb0d8fbb&response_type=code&redirect_uri=http://localhost:8888/auth&scope=playlist-read-private%20user-library-read&state=34fFs29kd09")
                (flush) (read-line)
                )]
     (do
@@ -103,6 +108,13 @@
     (catch Exception e
       (do (io-web--refresh-access-token)
           (log/error "token expired, try again though, it should be refreshed now")))))
+
+(defn capitalize-words 
+  "Capitalize every word in a string"
+  [s]
+  (->> (clojure.string/split (str s) #"\b") 
+       (map clojure.string/capitalize)
+       clojure.string/join))
 
 (defn get-song-id [song artist]
   (distinct (select [ALL :artists ALL #(re-matches (re-pattern (str ".*" (capitalize-words artist) ".*")) (:name %)) :id]

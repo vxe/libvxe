@@ -6,6 +6,7 @@
 * libraries
 ** clojure/java
 - [ ] ctci problem texts
+*** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/src/main/clj/libvxe/docs/README.org][implementation]]
 *** [[file:./food-database.org][food-database]]
 *** [[file:./commons-math.org][commons-math]]
 *** [[file:./weka.org][weka]]
