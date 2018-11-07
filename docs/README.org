@@ -2,8 +2,7 @@
 #+TITLE: libvxe
 #+STARTUP: indent
 #+OPTIONS: toc:nil
-
-
+Software projects
 * libraries
 ** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/README.org][clojure]]
 ** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/src/main/clj/libvxe/core.cljs::(ns%20libvxe.core][clojurescript]]
