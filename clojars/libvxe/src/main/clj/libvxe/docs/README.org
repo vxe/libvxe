@@ -5,8 +5,9 @@
 description
 - algorithmic composition as focus area
 - super colliedr common lisp
+  
 - maybe this should be a static site for all lisp
-- [ ] nyquist install
+- [ ] nyquist install, doesn't work I dont think
   #+BEGIN_SRC shell
   svn co svn://svn.code.sf.net/p/nyquist/code/trunk/nyquist nyquist
   cd nyquest
