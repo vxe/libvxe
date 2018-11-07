@@ -1,90 +1,37 @@
 # _*_ mode:org _*_
-#+TITLE: sklearn
+#+TITLE: hykit-learn
 #+STARTUP: indent
 #+OPTIONS: toc:nil
 
+** [[file:./miscellaneous-examples.org][miscellaneous-examples]]
+** examples-based-on-real-world-datasets
+** biclustering
+** calibration
+** classification
+** clustering
+** pipelines-and-composite-estimators
+** covariance-estimation
+** cross-decomposition
+** dataset-examples
+** decomposition
+** ensemble-methods
+** tutorial-exercises
+** feature-selection
+** gaussian-process-for-machine-learning
+** generalized-linear-models
+** manifold-learning
+** gaussian-mixture-models
+** model-selection
+** multioutput-methods
+** nearest-neighbors
+** neural-networks
+** preprocessing
+** semi-supervised-classification
+** support-vector-machines
+** working-with-text-documents
+** decision-trees
 
-* nearest neighbors
-
-#+BEGIN_SRC hy
-  (setv X (.array numpy [[-1 2] [-2 -1] [-3 -2] [1 1] [2 1] [3 2]])) ; input sequence
-  (setv nbrs (.fit (sklearn.neighbors.NearestNeighbors :algorithm "ball_tree" :n_neighbors 2) X)) ; model
-  (.kneighbors nbrs X) ; output
-
-  ; or equivalently
-
-  (defn knn [input neighbor-count]
-        (setv X (.array numpy input)) ; input sequence
-        (setv nbrs (.fit (sklearn.neighbors.NearestNeighbors :algorithm "ball_tree" :n_neighbors neighbor-count) X)) ; model
-        (.kneighbors nbrs X))
-
-#+END_SRC
-
-
-the equivalent python:
-#+BEGIN_SRC python
-from sklearn.neighbors import NearestNeighbors
->>> import numpy as np
->>> X = np.array([[-1, -1], [-2, -1], [-3, -2], [1, 1], [2, 1], [3, 2]])
->>> nbrs = NearestNeighbors(n_neighbors=2, algorithm='ball_tree').fit(X)
->>> distances, indices = nbrs.kneighbors(X)
->>> indices                                           
-array([[0, 1],
-       [1, 0],
-       [2, 1],
-       [3, 4],
-       [4, 3],
-       [5, 4]]...)
->>> distances
-array([[0.        , 1.        ],
-       [0.        , 1.        ],
-       [0.        , 1.41421356],
-       [0.        , 1.        ],
-       [0.        , 1.        ],
-       [0.        , 1.41421356]])
-#+END_SRC
-
-
-#+BEGIN_QUOTE
-There are many learning routines which rely on nearest neighbors at
-their core. One example is kernel density estimation, discussed in the
-density estimation section.
-
-#+END_QUOTE
-
-#+BEGIN_QUOTE
-The principle behind nearest neighbor methods is to find a predefined
-number of training samples closest in distance to the new point, and
-predict the label from these. The number of samples can be a
-user-defined constant (k-nearest neighbor learning), or vary based on
-the local density of points (radius-based neighbor learning).
-#+END_QUOTE
-
-* intro
-alright good ol' sklearn.  Lets install it.
-
-- numpy dependency might be an issue, as will another native library
-  it call out to, I'd imagine.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* local_vars
-  # Local Variables:
-  # eval: (wiki-mode)
-  # End:
+* variables
+# Local Variables:
+# eval: (wiki-mode)
+# End:
