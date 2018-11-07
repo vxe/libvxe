@@ -1,0 +1,136 @@
+# _*_ mode:org _*_
+#+TITLE: cph-1.2-input-and-output
+#+STARTUP: indent
+#+OPTIONS: toc:nil
+
+*  Input and output   
+** STDIN STDOUT
+   In some contest systems, files are used for input and output. An easy solution
+    for this is to write the code as usual using standard streams, but add the following
+    lines to the beginning of the code:
+
+    After this, the program reads the input from the file ”input.txt” and writes the
+    output to the file ”output.txt”.
+
+   #+BEGIN_SRC c++
+   freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+
+   #+END_SRC
+
+** reading lines
+   If the amount of data is unknown, the following loop is useful:
+   #+BEGIN_SRC c++
+     while (cin >> x) {
+     // code
+     }
+
+     // This loop reads elements from the input one after another, until there is no more
+     // data available in the input.
+
+   #+END_SRC
+   
+   Sometimes the program should read a whole line from the input, possibly
+   containing spaces. This can be accomplished by using the getline
+   function:
+   #+BEGIN_SRC c++
+   string s;
+   getline(cin, s);
+
+   #+END_SRC
+
+   
+
+   
+** cout
+   #+BEGIN_SRC c++
+   // boiler plate for faster io
+     // ios::sync_with_stdio(0); 
+     // cin.tie(0);
+
+
+       int a = 123, b = 456;
+       string x = "monkey";
+       cout << a << " " << b << " " << x << "\n";
+
+   #+END_SRC
+      The cout stream is used for output as follows:
+
+** cin
+   #+BEGIN_SRC c++
+   // boiler plate for faster io
+    // ios::sync_with_stdio(0); 
+     // cin.tie(0);
+
+       int a, b;
+       string x;
+       cin >> a >> b >> x; // read two ints and a string all new line or space delimited
+
+   #+END_SRC 
+  In most contests, standard streams are used for reading input and writing output.
+   In C++, the standard streams are cin for input and cout for output. In addition,
+   the C functions scanf and printf can be used.
+   The input for the program usually consists of numbers and strings that are
+   separated with spaces and newlines. They can be read from the cin stream as
+   follows:
+
+   4
+
+  This kind of code always works, assuming that there is at least one space or
+   newline between each element in the input. For example, the above code can
+   read both of the following inputs:
+   123 456 monkey
+
+   123
+   456
+   monkey
+
+** additional topics
+*** improving input efficiency with runtime configuration
+    #+BEGIN_SRC c++
+
+    #+END_SRC
+    Input and output is sometimes a bottleneck in the program. The following
+    lines at the beginning of the code make input and output more efficient:
+
+    Note that the newline "\n" works faster than endl, because endl always
+    causes a flush operation.
+
+*** scanf
+ The C functions scanf and printf are an alternative to the C++ standard
+    streams. They are usually a bit faster, but they are also more difficult to use. The
+    following code reads two integers from the input:
+    int a, b;
+    scanf("%d %d", &a, &b);
+
+    The following code prints two integers:
+    int a = 123, b = 456;
+    printf("%d %d\n", a, b);
+
+
+    5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  # Local Variables:
+  # eval: (wiki-mode)
+  # End:
