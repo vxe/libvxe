@@ -14,7 +14,6 @@
 ** [[file:~/.emacs.d/lib/libvxe/npm/libvxe/docs/README.org][javascript]]
 ** [[file:~/.emacs.d/lib/libvxe/asm/docs/README.org][forth]]
 * puzzles
-** [[file:./README-ctci.org][ctci]]
 ** [[file:./cph.org][cph]]
 ** [[file:./rosetta-code.org][rosetta-code]]
 * conventions
