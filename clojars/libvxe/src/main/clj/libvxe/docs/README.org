@@ -3,6 +3,25 @@
 #+STARTUP: indent
 #+OPTIONS: toc:nil
 description
+- algorithmic composition as focus area
+- super colliedr common lisp
+- maybe this should be a static site for all lisp
+- [ ] nyquist install
+  #+BEGIN_SRC shell
+  svn co svn://svn.code.sf.net/p/nyquist/code/trunk/nyquist nyquist
+  cd nyquest
+  mkdir build 
+  cd build
+  cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 ..
+
+
+  svn co svn://svn.code.sf.net/p/nyquist/code/trunk/nyquist nyquist;cd nyquist;mkdir build ;cd build;cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 ..
+  #+END_SRC
+  
+- [ ] need wrappers for essentia in hy
+  
+  http://essentia.upf.edu/documentation/installing.html
+  
 - [ ] convert app example to clojurescript
   - need to read client id/secret from config file
   - src
