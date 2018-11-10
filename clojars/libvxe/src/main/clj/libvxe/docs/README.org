@@ -194,6 +194,24 @@ app.listen(8888);
   - [[#string-utilities][string utilities]]
 
 * modules
+- [ ] delete ssh key
+#+BEGIN_SRC clojure
+  (defn delete-ssh-key
+    ([host]
+     (let [command (me.raynes.conch.low-level/proc "ssh-keygen" "-R" host)]
+       (future (me.raynes.conch.low-level/stream-to-out command :out)))))
+#+END_SRC
+
+- [ ] wiki search function
+    #+BEGIN_SRC clojure
+(defn wiki
+  ([query]
+   (let [command (me.raynes.conch.low-level/proc "wikit" query "-line" "80")]
+     (future (me.raynes.conch.low-level/stream-to-out command :out))))
+  ([query external]
+   (let [command (me.raynes.conch.low-level/proc "wikit" query "-b")]
+     (future (me.raynes.conch.low-level/stream-to-out command :out)))))
+  #+END_SRC
 ** ui
 ** spotify
 ** food-db
