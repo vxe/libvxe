@@ -4,6 +4,8 @@
 #+OPTIONS: toc:nil
 Software projects
 
+
+^^^ put notes here and such
 * puzzles
 ** [[file:./cph.org][cph]]
 ** [[file:./rosetta-code.org][rosetta-code]]
