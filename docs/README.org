@@ -3,9 +3,19 @@
 #+STARTUP: indent
 #+OPTIONS: toc:nil
 Software projects
-
-
-^^^ put notes here and such
+* libraries
+** [[file:~/.emacs.d/lib/libvxe/elisp/docs/README.org][elisp]]
+** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/README.org][clojure]]
+- [ ] clojure parallel let https://github.com/eunmin/plet
+- [ ] using channels like promises/futures
+  - http://www.smashcompany.com/technology/how-to-listen-for-the-delivery-of-a-promise-in-clojure
+** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/src/main/clj/libvxe/core.cljs::(ns%20libvxe.core][clojurescript]]
+** [[file:~/.emacs.d/lib/libvxe/pypi/libvxe/docs/README.org::*Libraries][hy]]
+** [[file:~/.emacs.d/lib/libvxe/src/docs/README.org::*clasp][c++]]
+** [[file:~/.emacs.d/lib/libvxe/quicklisp/libvxe/docs/README.org][common-lisp]]
+** [[file:~/.emacs.d/lib/libvxe/mvn/libvxe/src/main/java/com/vxe/be/docs/README.org][java]]
+** [[file:~/.emacs.d/lib/libvxe/npm/libvxe/docs/README.org][javascript]]
+** [[file:~/.emacs.d/lib/libvxe/asm/docs/README.org][forth]]
 * puzzles
 ** [[file:./cph.org][cph]]
 ** [[file:./rosetta-code.org][rosetta-code]]
