@@ -16,6 +16,7 @@ Software projects
   - https://emacs.cafe/emacs/javascript/indium/2018/08/14/indium.html
 - [ ] get eglot working for golang
 ** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/README.org][clojure]]
+- [ ] lein rest refresh examples
 - [ ] REST api for interating with awesome web api server for consumption from emacs
   - https://github.com/toddmotto/public-apis
 - [ ] clojure parallel let https://github.com/eunmin/plet
@@ -24,6 +25,10 @@ Software projects
 ** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/src/main/clj/libvxe/core.cljs::(ns%20libvxe.core][clojurescript]]
 ** [[file:~/.emacs.d/lib/libvxe/pypi/libvxe/docs/README.org::*Libraries][hy]]
 ** [[file:~/.emacs.d/lib/libvxe/src/docs/README.org::*clasp][c++]]
+- [ ] DBSCAN density based spatial clustering of applicatinos with noise
+- [ ] MAD (mediab absolute deviation from the mean) algorithm implementation
+- [ ] time ephemeris repo
+  - https://sourceforge.net/projects/timeephem/files/latest/download
 - [ ] hello world opencv
 ** [[file:~/.emacs.d/lib/libvxe/quicklisp/libvxe/docs/README.org][common-lisp]]
 ** [[file:~/.emacs.d/lib/libvxe/mvn/libvxe/src/main/java/com/vxe/be/docs/README.org][java]]
