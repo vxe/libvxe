@@ -5,6 +5,7 @@
 Software projects
 * libraries
 ** [[file:~/.emacs.d/lib/libvxe/elisp/docs/README.org][elisp]]
+- [ ] get eglot working for golang
 ** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/README.org][clojure]]
 - [ ] clojure parallel let https://github.com/eunmin/plet
 - [ ] using channels like promises/futures
