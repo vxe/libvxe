@@ -1,0 +1,4 @@
+# -*- mode:org -*-
+#+TITLE: README
+#+STARTUP: indent
+#+OPTIONS: toc:nil
