@@ -16,6 +16,8 @@ Software projects
   - https://emacs.cafe/emacs/javascript/indium/2018/08/14/indium.html
 - [ ] get eglot working for golang
 ** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/README.org][clojure]]
+- [ ] tech ascent opencv wrapper with javacpp
+- [ ] add spit clipboard function
 - [ ] lein rest refresh examples
 - [ ] REST api for interating with awesome web api server for consumption from emacs
   - https://github.com/toddmotto/public-apis
@@ -32,7 +34,7 @@ Software projects
 - [ ] hello world opencv
 ** [[file:~/.emacs.d/lib/libvxe/quicklisp/libvxe/docs/README.org][common-lisp]]
 ** [[file:~/.emacs.d/lib/libvxe/mvn/libvxe/src/main/java/com/vxe/be/docs/README.org][java]]
-** [[file:~/.emacs.d/lib/libvxe/npm/libvxe/docs/README.org][javascript]]
+** [[file:~/.emacs.d/lib/libvxe/npm/libvxe/docs/README.org][javascript]]em
 ** [[file:~/.emacs.d/lib/libvxe/asm/docs/README.org][forth]]
 * puzzles
 ** [[file:./cph.org][cph]]
