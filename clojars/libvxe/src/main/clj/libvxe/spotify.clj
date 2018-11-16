@@ -1,9 +1,11 @@
 (ns libvxe.spotify
-  (:require [clojure.data.codec.base64]
-            [cemerick.url]
-            ;; [home.lib :refer :all]
-            [clojure.tools.logging :as log])
+  (:require
+   [clojure.data.codec.base64]
+   [cemerick.url]
+   ;; [home.lib :refer :all]
+   [clojure.tools.logging :as log])
   (:use
+   [libvxe.core]
    [com.rpl.specter :refer :all]
    [clojure.java.shell :only [sh]]))
 
@@ -65,10 +67,10 @@
     (reset! atm--authorization-code resp)
     resp))
 
-(defn expand-home [s]
-  (if (.startsWith s "~")
-    (clojure.string/replace-first s "~" (System/getProperty "user.home"))
-    s))
+;; (defn expand-home [s]
+;;   (if (.startsWith s "~")
+;;     (clojure.string/replace-first s "~" (System/getProperty "user.home"))
+;;     s))
 
 (defn io-fs--read-configuration []
   (let [config-file (read-string (slurp (expand-home "~/config.edn")))
