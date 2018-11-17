@@ -4,11 +4,38 @@
 #+OPTIONS: toc:nil
 dev environments for language runtimes
 * languages
+** [[file:~/.emacs.d/lib/libvxe/elisp/docs/README.org][elisp]]
+- [ ] bassmacs splash screen
+- [ ] init.el.debug
+  - [ ] C-x C-t switch
+  - [ ] winner mode and keybindnigs
+- [ ] youtube video on emacs as html/css editor doing a flexbox type
+  layout
+  https://medium.com/@shuvohabib/learn-css-grid-and-flexbox-fundamentals-before-2019-hits-the-ground-765010c6e21f?sk=973a4fb7684e11a363d7ad9f03aaf400
+- [ ] indium setup youtube video
+  - https://emacs.cafe/emacs/javascript/indium/2018/08/14/indium.html
+- [ ] get eglot working for golang
 ** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/README.org][clojure]]
+- [ ] how to manipulate javacpp presets
+  - https://github.com/vxe/javacpp-presets
+- [X] tech ascent opencv wrapper with javacpp
+- [ ] add spit clipboard function
+
+- [ ] REST api for interating with awesome web api server for consumption from emacs
+  - https://github.com/toddmotto/public-apis
+- [ ] clojure parallel let https://github.com/eunmin/plet
+- [ ] using channels like promises/futures
+  - http://www.smashcompany.com/technology/how-to-listen-for-the-delivery-of-a-promise-in-clojure
 ** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/src/main/clj/libvxe/core.cljs::(ns%20libvxe.core][clojurescript]]
 ** [[file:~/.emacs.d/lib/libvxe/pypi/libvxe/docs/README.org::*Libraries][hy]]
 ** [[file:~/.emacs.d/lib/libvxe/src/docs/README.org::*clasp][c++]]
+- [ ] DBSCAN density based spatial clustering of applicatinos with noise
+- [ ] MAD (mediab absolute deviation from the mean) algorithm implementation
+- [ ] time ephemeris repo
+  - https://sourceforge.net/projects/timeephem/files/latest/download
+- [ ] hello world opencv
 ** [[file:~/.emacs.d/lib/libvxe/quicklisp/libvxe/docs/README.org][common-lisp]]
 ** [[file:~/.emacs.d/lib/libvxe/mvn/libvxe/src/main/java/com/vxe/be/docs/README.org][java]]
 ** [[file:~/.emacs.d/lib/libvxe/npm/libvxe/docs/README.org][javascript]]
 ** [[file:~/.emacs.d/lib/libvxe/asm/docs/README.org][forth]]
+
