@@ -1,0 +1,7 @@
+* P-SCAN-3
+
+P-SCAN-3(x) 1 n = x.length 2 let y[1..n] and t[1..n] be new arrays 3
+y[1] = x[1] 4 if n > 1 5 P-SCAN-UP(x, t, 2, n) 6 P-SCAN-DOWN(x[1], x, t,
+y, 2, n)./ 7 return y
+
+* software-engineering/data-structures/linear-lists/array/parallel/P-SCAN-3

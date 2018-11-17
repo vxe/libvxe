@@ -1,0 +1,11 @@
+* TRIM
+
+TRIM(L, δ) 1 let m be the length of L 2 L' = 3 last = y₁ 4 for i = 2 to
+m 5 if yᵢ > last(1 + δ) / yᵢ ≥ last because L is sorted 6 append yᵢ onto
+the end of L' 7 last = yᵢ 8 return L'
+
+Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L.; Stein,
+Clifford. Introduction to Algorithms (Page 1130). The MIT Press. Kindle
+Edition.
+
+* software-engineering/data-structures/linear-lists/LINKED-LIST/TRIM

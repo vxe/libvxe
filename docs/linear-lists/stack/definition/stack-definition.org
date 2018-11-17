@@ -1,0 +1,19 @@
+* stack-definition
+
+* software-engineering/data-structures/linear-lists/STACK/definition
+
+Linear lists in which insertions, deletions, and accesses to values
+occur almost always at the first or the last node are very frequently
+encountered, and we give them special names:
+
+A stack is a linear list for which all insertions and deletions (and
+usually all accesses) are made at one end of the list. A queue is a
+linear list for which all insertions are made at one end of the list;
+all deletions (and usually all accesses) are made at the other end. A
+deque (“ double-ended queue”) is a linear list for which all insertions
+and deletions (and usually all accesses) are made at the ends of the
+list.
+
+Knuth, Donald E.. The Art of Computer Programming: Volume 1: Fundamental
+Algorithms (3rd Edition) (Kindle Locations 7308-7312). Pearson
+Education. Kindle Edition.

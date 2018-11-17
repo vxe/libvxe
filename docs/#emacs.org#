@@ -1,10 +1,10 @@
 # _*_ mode:org _*_
-#+TITLE: common-lisp
+#+TITLE: emacs
 #+STARTUP: indent
 #+OPTIONS: toc:nil
 
 
-- c++-interop
+* [[file:./window-geometry.org][window-geometry]]
 
 
 

@@ -1,0 +1,5 @@
+* COMPARE-EXCHANGE
+
+COMPARE-EXCHANGE(A,i,j) 1 if A[i] > A[j] 2 exchange A[i] with A[j]
+
+* software-engineering/data-structures/linear-lists/array/COMPARE-EXCHANGE

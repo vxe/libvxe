@@ -3,46 +3,29 @@
 #+STARTUP: indent
 #+OPTIONS: toc:nil
 Software projects
-* libraries
-** [[file:~/.emacs.d/lib/libvxe/elisp/docs/README.org][elisp]]
-- [ ] bassmacs splash screen
-- [ ] init.el.debug
-  - [ ] C-x C-t switch
-  - [ ] winner mode and keybindnigs
-- [ ] youtube video on emacs as html/css editor doing a flexbox type
-  layout
-  https://medium.com/@shuvohabib/learn-css-grid-and-flexbox-fundamentals-before-2019-hits-the-ground-765010c6e21f?sk=973a4fb7684e11a363d7ad9f03aaf400
-- [ ] indium setup youtube video
-  - https://emacs.cafe/emacs/javascript/indium/2018/08/14/indium.html
-- [ ] get eglot working for golang
-** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/README.org][clojure]]
-- [ ] tech ascent opencv wrapper with javacpp
-- [ ] add spit clipboard function
-- [ ] lein rest refresh examples
-- [ ] REST api for interating with awesome web api server for consumption from emacs
-  - https://github.com/toddmotto/public-apis
-- [ ] clojure parallel let https://github.com/eunmin/plet
-- [ ] using channels like promises/futures
-  - http://www.smashcompany.com/technology/how-to-listen-for-the-delivery-of-a-promise-in-clojure
-** [[file:~/.emacs.d/lib/libvxe/clojars/libvxe/src/main/clj/libvxe/core.cljs::(ns%20libvxe.core][clojurescript]]
-** [[file:~/.emacs.d/lib/libvxe/pypi/libvxe/docs/README.org::*Libraries][hy]]
-** [[file:~/.emacs.d/lib/libvxe/src/docs/README.org::*clasp][c++]]
-- [ ] DBSCAN density based spatial clustering of applicatinos with noise
-- [ ] MAD (mediab absolute deviation from the mean) algorithm implementation
-- [ ] time ephemeris repo
-  - https://sourceforge.net/projects/timeephem/files/latest/download
-- [ ] hello world opencv
-** [[file:~/.emacs.d/lib/libvxe/quicklisp/libvxe/docs/README.org][common-lisp]]
-** [[file:~/.emacs.d/lib/libvxe/mvn/libvxe/src/main/java/com/vxe/be/docs/README.org][java]]
-** [[file:~/.emacs.d/lib/libvxe/npm/libvxe/docs/README.org][javascript]]em
-** [[file:~/.emacs.d/lib/libvxe/asm/docs/README.org][forth]]
-* puzzles
+* lisp
+Notes and reviews of new libraries
+- [[file:./clojure.org][clojure]]
+- [[file:./hy.org][hy]]
+- [[file:./common-lisp.org][common-lisp]] 
+- [[file:./lfe.org][lfe]]
+- [[file:./pixie.org][pixie]]
+- nyquist
+* algorithms
+Implementations of algorithms in mathematical pseudocode,lisp and c++
+- [[file:./linear-lists.org][linear-lists]]
+- [[file:./rectangular-lists.org][rectangular-lists]]
+- [[file:./trees.org][trees]]
+- [[file:./graphs.org][graphs]]
+* competitive-programming
 ** [[file:./cph.org][cph]]
 ** [[file:./rosetta-code.org][rosetta-code]]
 * conventions
 - except for c++,the second link is open tasks/notes and link to module/src file org files
 - execpt for c++, the first link is a list of libraries and a link to the implementation
 - every source file has an org file
+
+
 
 # Local Variables:
 # eval: (wiki-mode)

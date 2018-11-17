@@ -1,5 +1,0 @@
-* FREE-OBJECT
-
-FREE-OBJECT(x) 1 x.next = free 2 free = x
-
-* software-engineering/data-structures/memory/FREE-OBJECT

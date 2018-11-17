@@ -1,0 +1,29 @@
+* RECURSIVE-FFT
+
+RECURSIVE-FFT(a) 1 n = a.length n is a power of 2 2 if n == 1 3 return a
+4 ωₙ = e\^2πi/n 5 ω = 1 6 a [1] = (a₀, a₂,...,aₙ₋₂) 7 a [2] = (a₁,
+a₃,...,aₙ) 8 y [3] = RECURSIVE-FFT(a [4]) 9 y [5] = RECURSIVE-FFT(a [6])
+10 for k = 0 to n/2 - 1 11 yₖ = yₖ [7] + ω yₖ [8] 12 yₖ₊₍ₙ\_/₂₎ = yₖ [9]
+- ωyₖ [10] 13 ω == ωωn 14 return y y is assume= to be a column vector
+
+* software-engineering/data-structures/linear-lists/array/RECURSIVE-FFT
+
+[1] 0
+
+[2] 1
+
+[3] 0
+
+[4] 0
+
+[5] 1
+
+[6] 1
+
+[7] 0
+
+[8] 1
+
+[9] 0
+
+[10] 1

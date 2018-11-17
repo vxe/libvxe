@@ -1,0 +1,12 @@
+* MULTIPOP
+
+Now we add the stack operation MULTIPOP(S, k) , which removes the k top
+objects of stack S, popping the entire stack if the stack contains fewer
+than k objects. Of course, we assume that k is positive; otherwise the
+MULTIPOP operation leaves the stack unchanged. In the following
+pseudocode, the operation STACK-EMPTY returns TRUE if there are no
+objects currently on the stack, and FALSE otherwise.
+
+MULTIPOP(S, k) 1 while not STACK-EMPTY(S) and k > 0 2 POP(S) 3 k = k - 1
+
+* software-engineering/data-structures/linear-lists/STACK/MULTIPOP

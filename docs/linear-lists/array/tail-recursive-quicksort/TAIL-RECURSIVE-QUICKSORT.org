@@ -1,0 +1,7 @@
+* TAIL-RECURSIVE-QUICKSORT
+
+TAIL-RECURSIVE-QUICKSORT(A, p, r) 1 while p < r 2 Partition and sort
+left subarray. 3 q = PARTITION(A, p, r) 4 TAIL-RECURSIVE-QUICKSORT(A, p,
+q - 1) 5 p = q + 1
+
+* software-engineering/data-structures/linear-lists/array/TAIL-RECURSIVE-QUICKSORT

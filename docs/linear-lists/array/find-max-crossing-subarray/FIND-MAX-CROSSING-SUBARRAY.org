@@ -1,0 +1,14 @@
+* FIND-MAX-CROSSING-SUBARRAY
+
+FIND-MAX-CROSSING-SUBARRAY(A,low, mid, high) 1 left-sum = -∞ 2 sum = 0 3
+for i = mid downto low 4 sum = sum + A[i] 5 if sum > left-sum 6 left-sum
+= sum 7 max-left = i 8 right-sum = -∞ 9 sum = 0 10 for j = mid + 1 to
+high 11 sum = sum + A[j] 12 if sum > right-sum 13 right-sum = sum 14
+max-right = j 15 return (max-left, max-right,left-sum + right-sum)
+
+FIND-MAX-CROSSING-SUBARRAY takes as input the array A and the indices
+low, mid, and high, and it returns a tuple containing the indices
+demarcating a maximum subarray that crosses the midpoint, along with the
+sum of the values in a maximum subarray.
+
+* software-engineering/data-structures/linear-lists/array/FIND-MAX-CROSSING-SUBARRAY

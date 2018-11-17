@@ -1,0 +1,18 @@
+* MERGE
+
+Our MERGE procedure takes time ‚.n/, where n = r - p + 1 is the total
+number of elements being merged, and it works as follows. Returning to
+our cardplaying motif, suppose we have two piles of cards face up on a
+table. Each pile is sorted, with the smallest cards on top. We wish to
+merge the two piles into a single sorted output pile, which is to be
+face down on the table. Our basic step consists of choosing the smaller
+of the two cards on top of the face-up piles, removing it from its pile
+(which exposes a new top card), and placing this card face down onto
+
+MERGE(A, p, q, r) 1 n₁ = q - p + 1 2 n₂ = r - q 3 let L[1.. n₁ + 1] and
+R[1.. n₂ + 1] be new arrays 4 for i = 1 to n₁ 5 L[i] = A[p + i - 1] 6
+for j = 1 to n₂ 7 R[j] = A[q + j] 8 L[n₁ + 1] = ∞ 9 R[n₂ + 1] = ∞ 10 i =
+1 11 j = 1 12 for k = p to r 13 if L[i] ≤ R[j] 14 A[k] = L[i] 15 i = i +
+1 16 else A[k] = R[j] 17 j = j + 1
+
+* software-engineering/data-structures/linear-lists/array/MERGE

@@ -1,0 +1,22 @@
+* LCS-LENGTH
+
+In the longest-common-subsequence problem, we are given two sequences:
+
+X =
+
+and
+
+Y =
+
+and wish to find a maximum length common subsequence of X and Y. This
+section shows how to efficiently solve the LCS problem using dynamic
+programming.
+
+LCS-LENGTH.X, Y/ 1 m = X.length 2 n = Y.length 3 let b[1.. m, 1.. n] and
+c[0.. m, 0.. n] be new tables 4 for i = 1 to m 5 c[i, 0] = 0 6 for j = 0
+to n 7 c[0, j] = 0 8 for i = 1 to m 9 for j = 1 to n 10 if xᵢ == yᵢ 11
+c[i, j] = c[i - 1, j - 1] + 1 12 b[i, j] = “top left” 13 elseif c[i - 1,
+j] ≥ c[i, j - 1] 14 c[i, j] = c[i - 1, j] 15 b[i, j] = “up” 16 else c[i,
+j] = c[i, j - 1] 17 b[i, j] = “left” 18 return c and b
+
+* software-engineering/data-structures/linear-lists/sequence/LCS-LENGTH

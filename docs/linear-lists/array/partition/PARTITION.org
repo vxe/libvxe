@@ -1,0 +1,10 @@
+* PARTITION
+
+Partitioning the array The key to the algorithm is the PARTITION
+procedure, which rearranges the subarray AOEp:: r in place.
+
+PARTITION(A, p, r) 1 x = A[r] 2 i = p - 1 3 for j = p to r - 1 4 if A[j
+] ≤ x 5 i = i + 1 6 exchange A[i] with A[j] 7 exchange A[i + 1] with
+A[r] 8 return i + 1
+
+* software-engineering/data-structures/linear-lists/array/PARTITION

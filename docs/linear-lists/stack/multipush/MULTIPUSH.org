@@ -1,0 +1,7 @@
+* MULTIPUSH
+
+If the set of stack operations included a MULTIPUSH operation, which
+pushes k items onto the stack, would the O(1) bound on the amortized
+cost of stack operations continue to hold?
+
+* software-engineering/data-structures/linear-lists/STACK/MULTIPUSH

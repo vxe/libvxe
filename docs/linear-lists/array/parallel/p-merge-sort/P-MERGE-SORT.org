@@ -1,0 +1,14 @@
+* P-MERGE-SORT
+
+This version of merge sort is similar to the MERGE-SORT' procedure we
+saw earlier, but unlike MERGE-SORT', it takes as an argument an output
+subarray B, which will hold the sorte= result. In particular, the call
+P-MERGE-SORT(A, p, r, B, s) sorts the elements in A[p.. r] and stores
+them in B[s.. s + r - p].
+
+P-MERGE-SORT(A, p, r, B, s) 1 n = r - p + 1 2 if n == 1 3 B[s] = A[p] 4
+else let T[1.. n] be a new array 5 q = ⌊(p + r)/2⌋ 6 q' = q - p + 1 7
+spawn P-MERGE-SORT(A, p, q, T, 1) 8 P-MERGE-SORT(A, q + 1, r, T, q₀ + 1)
+9 sync 10 P-MERGE(T, 1, q₀, q₀ + 1, n, B, s)
+
+* software-engineering/data-structures/linear-lists/array/parallel/P-MERGE-SORT

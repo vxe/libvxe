@@ -1,3 +1,0 @@
-* B-TREE-INSERT-NONFULL
-
-* software-engineering/data-structures/trees/search-tree/b-TREE/B-TREE-INSERT-NONFULL

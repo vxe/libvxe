@@ -1,31 +1,10 @@
 # _*_ mode:org _*_
-#+TITLE: hy
+#+TITLE: clojure
 #+STARTUP: indent
 #+OPTIONS: toc:nil
 
 
-- python-interop
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Local Variables:
-# eval: (wiki-mode)
-# End:* python-libraries
+- java-interop
 
 
 

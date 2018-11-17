@@ -1,0 +1,17 @@
+* P-MERGE
+
+We are now prepared to write pseudocode for the multithreaded merging
+procedure itself. Like the MERGE procedure on page 31, the P-MERGE
+procedure assumes that the two subarrays to be merged lie within the
+same array. Unlike MERGE, however, P-MERGE does not assume that the two
+subarrays to be merged are adjacent within the array.
+
+P-MERGE(T, p1, r1, p2, r2, A, p3) 1 n₁ = r₁ - p₁ + 1 2 n₂ = r₂ - p₂ + 1
+3 if n₁ < n₂ ensure that n₁ ≥ n₂ 4 exchange p₁ with p₂ 5 exchange r₁
+with r₂ 6 exchange n₁ with n₂ 7 if n₁ == 0 both empty? 8 return 9 else
+q₁ = ⌊(p₁ + r₁/ 2)⌋ 10 q₂ = BINARY-SEARCH(T[q₁], T, p₂, r₂) 11 q₃ = p₃ +
+(q₁ - p₁) / + (q₂ - p₂) 12 A[q₃] = T [q₁] 13 spawn P-MERGE(T, p₁, q₁ -
+1, p₂, q₂ - 1, A, p₃) 14 P-MERGE(T, q₁ + 1, r₁, q₂, r₂, A, q₃ + 1) 15
+sync
+
+* software-engineering/data-structures/linear-lists/array/parallel/P-MERGE

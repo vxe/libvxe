@@ -1,0 +1,24 @@
+* COUNTING-SORT
+
+COUNTING-SORT(A,B,k) 1 let C[0..k] be a new array 2 for i = 0 to k 3
+C[i] = 0 4 for j = 1 to A.length 5 C[A[j]] = C[A[j]] + 1 6 C[i] now
+contains the number of elements equal to i. 7 for i = 1 to k 8 C[i] =
+C[i] + C[i - 1] 9 C[i] now contains the number of elements less than or
+equal to i. 10 for j = A.length downto 1 11 B[C[A[j]]] = A[j] 12 C[A[j]]
+= C[A[j]] - 1
+
+Counting sort assumes that each of the n input elements is an integer in
+the range 0 to k, for some integer k. When k =O.n/, the sort runs in
+O(n)/ time. Counting sort determines, for each input element x, the
+number of elements less than x. It uses this information to place
+element x directly into its position in the output array.
+
+For example, if 17 elements are less than x, then x belongs in output
+position 18. We must modify this scheme slightly to handle the situation
+in which several elements have the same value, since we do not want to
+put them all in the same position. In the code for counting sort, we
+assume that the input is an array A[1..n], and thus A.length = n. We
+require two other arrays: the array B[1..n] holds the sorted output, and
+the array C[0..k] provides temporary working storage.
+
+* software-engineering/data-structures/linear-lists/array/COUNTING-SORT

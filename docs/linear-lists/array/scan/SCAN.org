@@ -1,0 +1,6 @@
+* SCAN
+
+SCAN(x) 1 n = x.length 2 let y[1..n] be a new array 3 y[1] = x[1] 4 for
+i = 2 to n 5 y[i] = y[i - 1] ⨂ x[i] 6 return y
+
+* software-engineering/data-structures/linear-lists/array/SCAN

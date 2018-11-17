@@ -1,0 +1,13 @@
+* LIST-SEARCH
+
+The procedure LIST-SEARCH.L; k/ finds the first element with key k in
+list L by a simple linear search, returning a pointer to this element.
+If no object with key k appears in the list, then the procedure returns
+NIL. For the linked list in Figure 10.3(a), the call LIST-SEARCH.L; 4/
+returns a pointer to the third element, and the call LIST-SEARCH.L; 7/
+returns NIL.
+
+LIST-SEARCH(L,k) 1 x = L.head 2 while x ≠ NIL and x.key ≠ k 3 x = x.next
+4 return x
+
+* software-engineering/data-structures/linear-lists/LINKED-LIST/LIST-SEARCH

@@ -1,0 +1,6 @@
+* SUM-ARRAYS
+
+SUM-ARRAYS(A, B, C) 1 parallel for i = 1 to A.length 2 C[i] = A[i] +
+B[i]
+
+* software-engineering/data-structures/linear-lists/array/SUM-ARRAYS

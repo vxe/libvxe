@@ -1,31 +1,9 @@
 # _*_ mode:org _*_
-#+TITLE: hy
+#+TITLE: lfe
 #+STARTUP: indent
 #+OPTIONS: toc:nil
 
-
-- python-interop
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Local Variables:
-# eval: (wiki-mode)
-# End:* python-libraries
+- erlang-interop
 
 
 

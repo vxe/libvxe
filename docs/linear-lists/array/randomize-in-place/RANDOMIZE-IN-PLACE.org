@@ -1,0 +1,6 @@
+* RANDOMIZE-IN-PLACE
+
+RANDOMIZE-IN-PLACE(A) 1 n = A.length 2 for i = 1 to n 3 swap A[i] with
+A[RANDOM(i, n)]
+
+* software-engineering/data-structures/linear-lists/array/RANDOMIZE-IN-PLACE

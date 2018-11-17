@@ -1,0 +1,7 @@
+* INCREMENT
+
+INCREMENT(A) 1 i = 0 2 while i < A.length and A[i] == 1 3 A[i] = 0 4 i =
+i + 1 5 if i < A.length 6 A[i] = 1
+
+This is incrementing a binary counter mind you
+#software-engineering/data-structures/linear-lists/bit-vector/INCREMENT

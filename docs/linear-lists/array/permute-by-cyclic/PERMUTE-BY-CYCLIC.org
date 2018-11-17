@@ -1,0 +1,7 @@
+* PERMUTE-BY-CYCLIC
+
+PERMUTE-BY-CYCLIC(A) 1 n = A.length 2 let B[1.. n] be a new array 3
+offset = RANDOM(1,n) 4 for i = 1 to n 5 dest = i + offset 6 if dest > n
+7 dest = dest - n 8 B[dest] = A[i] 9 return B
+
+* software-engineering/data-structures/linear-lists/array/PERMUTE-BY-CYCLIC

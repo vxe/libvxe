@@ -1,0 +1,6 @@
+* APPEND
+
+* software-engineering/data-structures/linear-lists/APPEND
+
+take N lists and output one list consisting of all the other lists
+placed sequentially in front of each other.
