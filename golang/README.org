@@ -1,0 +1,25 @@
+* golang
+  :PROPERTIES:
+  :CUSTOM_ID: golang
+  :END:
+
+go code dump
+
+** Install
+   :PROPERTIES:
+   :CUSTOM_ID: install
+   :END:
+
+#+BEGIN_EXAMPLE
+    go get github.com/vxe/golang
+#+END_EXAMPLE
+
+* LICENSE
+  :PROPERTIES:
+  :CUSTOM_ID: license
+  :END:
+
+[[http://landley.net/toybox/license.html][[[http://img.shields.io/badge/license-0BSD-blue.svg]]]]
+
+This is distributed under the
+[[http://landley.net/toybox/license.html][BSD Zero Clause License]].
