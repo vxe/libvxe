@@ -1,6 +1,7 @@
 package libvxe
 
 import (
+	// "github.com/junegunn/fzf"
     // "encoding/json"
     "log"
     "net/http"
@@ -23,4 +24,9 @@ func Launch() string {
     router := mux.NewRouter()
     log.Fatal(http.ListenAndServe(":8000", router))
 	return "hi"
+}
+
+
+func Fzfthing() string {
+    return "hi"
 }
