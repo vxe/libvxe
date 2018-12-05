@@ -1,7 +1,7 @@
-package main
-
+package libvxe
 
 import (
+    // "encoding/json"
     "log"
     "net/http"
     "github.com/gorilla/mux"
@@ -9,20 +9,18 @@ import (
 
 // nolint
 var (
-	version = "0.0.1-SNAPSHOT"
+	version = "0.0.1_SNAPSHOT"
 	commit  = "snapshot"
 )
 
-// Version will get a version of the package golang
+// Version will get a version of the package libvxe
 func Version() string {
 	return version
 }
 
 
-
-
-// our main function
-func main() {
+func Launch() string {
     router := mux.NewRouter()
     log.Fatal(http.ListenAndServe(":8000", router))
+	return "hi"
 }

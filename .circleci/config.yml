@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: /go/src/github.com/vxe/golang
+    working_directory: /go/src/github.com/vxe/libvxe
     docker:
       - image: kyoh86/gotest
     steps:
@@ -13,7 +13,7 @@ jobs:
           name: go test
           command: "go test -race ./..."
   cover:
-    working_directory: /go/src/github.com/vxe/golang
+    working_directory: /go/src/github.com/vxe/libvxe
     docker:
       - image: kyoh86/gotest
     steps:
@@ -28,7 +28,7 @@ jobs:
           name: upload a coverage
           command: "bash <(curl -s https://codecov.io/bash)"
   lint:
-    working_directory: /go/src/github.com/vxe/golang
+    working_directory: /go/src/github.com/vxe/libvxe
     docker:
       - image: kyoh86/gotest
     steps:
