@@ -6,7 +6,7 @@
 
   :min-lein-version "2.7.1"
 
-  :dependencies [
+  :dependencies [[clomacs "0.0.3-SNAPSHOT"]
                  [org.clojure/data.codec "0.1.1"]
                  ;; clj-vxe
                  [com.cemerick/pomegranate "0.4.0"]
